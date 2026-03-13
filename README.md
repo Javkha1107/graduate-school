@@ -5,7 +5,6 @@ Bilingual (Mongolian/English) website for the MNUMS Graduate School, built with 
 ## Setup
 
 ```bash
-cd web
 cp .env.local.example .env.local
 # Fill in your Supabase credentials and admin password
 npm install

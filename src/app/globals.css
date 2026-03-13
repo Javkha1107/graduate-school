@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafbfc;
+  --foreground: #0c1222;
+  --primary: #1a3a7a;
+  --primary-dark: #0f2554;
+  --primary-light: #2d5bc4;
+  --accent: #c8a23c;
+  --accent-light: #f5efd4;
+  --muted: #f0f2f5;
+  --muted-foreground: #5c6b82;
+  --border: #dfe4eb;
+  --card: #ffffff;
+  --destructive: #dc3545;
+  --success: #198754;
+  --surface: #f7f8fa;
+  --gold: #b8941f;
+  --gold-light: #f9f3e0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-surface: var(--surface);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Premium section divider */
+.section-divider {
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 2px;
+}
+
+/* Glass morphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* Premium card hover */
+.card-premium {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.card-premium:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 40px -8px rgba(26, 58, 122, 0.12),
+    0 4px 16px -4px rgba(26, 58, 122, 0.08);
+}
+
+/* Subtle shimmer for hero */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    #fff 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 8s ease-in-out infinite;
+}
+
+/* Rich text editor styles */
+.ql-editor {
+  min-height: 200px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.ql-toolbar.ql-snow {
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-color: var(--border);
+}
+.ql-container.ql-snow {
+  border-radius: 0 0 0.5rem 0.5rem;
+  border-color: var(--border);
+}
+
+/* Autocomplete transparent fix for glass login */
+.admin-autofill-fix:-webkit-autofill,
+.admin-autofill-fix:-webkit-autofill:hover,
+.admin-autofill-fix:-webkit-autofill:focus,
+.admin-autofill-fix:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Prose styles for news content */
+.prose h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+.prose h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+.prose h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: var(--foreground);
+  opacity: 0.85;
+}
+.prose ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.prose ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.prose li {
+  margin-bottom: 0.25rem;
+}
+.prose a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose img {
+  max-width: 100%;
+  border-radius: 0.75rem;
+  margin: 1.5rem 0;
+}
+.prose blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  color: var(--muted-foreground);
+  font-style: italic;
+}

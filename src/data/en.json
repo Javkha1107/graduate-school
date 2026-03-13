@@ -1,0 +1,1830 @@
+{
+  "404": "Page not found",
+  "404return": "GO HOME",
+  "title": "Graduate School MNUMS",
+  "mnums": "Mongolian National University of Medical Sciences",
+  "graduateSchool": "Graduate School",
+  "logo": "./../../../../assets/images/logo-en.png",
+  "news": "News",
+  "newsList": "News and information",
+  "otherNews": "Other news",
+  "readMore": "Read more",
+  "seeAll": "See All",
+  "allCategories": "All",
+  "clickHere": "click here",
+  "search": "Search...",
+  "notFound": "No results found",
+  "contactDesc": "You can contact us using the links below.",
+  "teacherList": "Teaching Staff",
+  "teacherIntroduction": "Introduction",
+  "menu": {
+    "education": "Programmes",
+    "research": "Research",
+    "student": "Student",
+    "admission": "Admission",
+    "about": "About Us",
+    "cajms": "CAJMS",
+    "contact": "Contact",
+    "activity": "Activity",
+    "scholarships": "Scholarships",
+    "admissionInfo": "The Information about Admission",
+    "registration": "Registration",
+    "tuitionFee": "Tuition Fee",
+    "masterOnCampus": "On-Campus Master's Programme",
+    "masterOnline": "Online Master's Programme",
+    "doctoral": "Doctoral Programme",
+    "postDoctoral": "Post-Doctoral Programme",
+    "project": "Project",
+    "publication": "Publication",
+    "regulations": "Regulations",
+    "conferences": "Conferences and Student Day",
+    "orientation": "Orientation and Remedy Lesson",
+    "library": "Library",
+    "journalClub": "Journal Club",
+    "dormitory": "Dormitory",
+    "sportEvents": "Sport Events",
+    "scholarshipStudent": "President's Scholarship for students",
+    "scholarshipTeacher": "Research Scholarship for Faculty's",
+    "scholarshipPostdoc": "Post-Doctoral Scholarship for Researchers",
+    "collaboration": "Collaboration",
+    "collaborationJoint": "Collaboration and Joint Programmes",
+    "kyushu": "Kyushu University",
+    "oita": "Oita University",
+    "lumiere": "Lumiere, Lyon University",
+    "deansGreeting": "Dean's Greeting",
+    "aboutUsPage": "About us",
+    "gepm": "Division of Graduate Education Policy and Management",
+    "units": "Departments and Academic Council of Graduate School",
+    "teachingStaff": "Teaching Staff",
+    "eLearning": "International Cyber Education Centre",
+    "healthResearch": "Department of Health Research",
+    "medicalLaw": "Department of Medical Legislation and Education",
+    "academicCouncil": "The Academic Council of Graduate Education"
+  },
+  "footer": {
+    "address": "Address",
+    "addressText": "Mongolian National University of Medical Sciences, S.Zorig street, Post-48/111 Ulaanbaatar city 14210, Mongolian",
+    "contact": "Contact Us",
+    "contactMail": "graduate@mnums.edu.mn",
+    "contactPhone": "011 32 0623",
+    "social": "Social",
+    "schools": {
+      "otherSchools": "Other schools",
+      "schoolComponents": "School components",
+      "components": {
+        "school1": "School of Medicine",
+        "school2": "International school of mongolian medicine",
+        "school3": "School of dentistry",
+        "school4": "School of Biomedicine",
+        "school5": "School of Pharmacy",
+        "school6": "School of Nursing"
+      },
+      "branchSchools": "Branch schools",
+      "branches": {
+        "school1": "Darkhan-Uul medical school",
+        "school2": "Dornogovi medical school",
+        "school3": "Gobi-Altai medical school"
+      }
+    }
+  },
+  "home": {
+    "mainText": "АШУҮИС-ийн хүрээлэн, лабораторийг түшиглэн судалгаагаа хийж байгаа магистрантад 3 хүртэл, докторантад 5 хүртэл сая төгрөгийн (урвалж бодис, зориулагдсан) тэтгэлгийг 50 хүртэлх суралцагсдад сонгон шалгаруулж олгодог.",
+    "education": {
+      "title": "Training",
+      "master": "On-Campus Master's Programme",
+      "masterOnline": "Online Master's Programme",
+      "doctor": "Doctoral Programme",
+      "postDoctor": "Post-Doctoral Programme"
+    },
+    "scholarship": {
+      "title": "Scholarship",
+      "scholarship1": "President's Scholarship for students",
+      "scholarship2": "Research Scholarship for Faculty's",
+      "scholarship3": "Post-Doctoral Scholarship for Researchers"
+    },
+    "statistic": {
+      "title": "Statistic",
+      "statistic1": "Total students",
+      "statistic2": "Doctoral students",
+      "statistic3": "Master students",
+      "statistic4": "International students"
+    }
+  },
+  "master": {
+    "heading": "MASTER",
+    "title": "Master training",
+    "mainText": "The activities of MNUMS graduate education are regulated by the PROCEDURES REGULATING THE GRADUATE COURSE ACTIVITIES OF THE MONGOLINA NATIONAL UNIVERSITY OF MEDICAL SCIENCES. Admission to master's and doctoral courses is held twice a year. /Spring between February 1-15, autumn between August 25 and September 10/ The student will write and defend a master's thesis according to the sequence below.",
+    "list": {
+      "item1": "Must have studied 10 credits of core courses",
+      "item2": "Department meeting: (The department will announce the meeting)",
+      "item2-1": "Approving research topics",
+      "item2-2": "Approve research methodology",
+      "item2-3": "Assigning a research supervisor and advisor",
+      "item3": "Attend a meeting of the Research Ethics Committee and obtain ethics approval",
+      "item4": "Must have studied 12 credits of major courses",
+      "item5": "Start research (Publish research articles)",
+      "item6": "Progress discussion will be held once at the department meeting",
+      "item7": "Attend Research Ethics Committee meetings and make ethical decisions",
+      "item8": "Entry into preliminary defense: (specified in section 4.2 of the PROCEDURE FOR REGULATING GRADUATE TRAINING ACTIVITIES)",
+      "item8-1": "",
+      "item8-2": "Click here",
+      "item8-3": "for pre-screening materials",
+      "item9": "Entry into preliminary protection: (as specified in section 4.2 of the PROCEDURE FOR REGULATING GRADUATE EDUCATIONAL ACTIVITIES",
+      "item9-1": "",
+      "item9-2": "Click here",
+      "item9-3": "for a list of materials to be submitted by a preliminary defense, who successfully pass.",
+      "item9-4": "",
+      "item9-5": "Click here",
+      "item9-6": "to register after the defense Students who have successfully defended their Master's degree."
+    },
+    "participant": {
+      "last3year": "Key indicators, last 3 years",
+      "personalMaster": "Master student program",
+      "onlineMaster": "Master student online program",
+      "internationalStudent": "International master student"
+    },
+    "tableHead": "Master program curriculums",
+    "field": {
+      "field1": "Education Studies",
+      "field2": "Medicine",
+      "field3": "Bio-Medicine",
+      "field4": "Traditional Medicine",
+      "field5": "Dentistry",
+      "field6": "Public Health",
+      "field7": "Pharmacy",
+      "field8": "Nursing",
+      "field9": "Obstetrics / Midwifery",
+      "field10": "Physical Therapy",
+      "field11": "Occupational Therapy",
+      "field12": "Neuropathy",
+      "field13": "Ophthalmology",
+      "field14": "Otorhinolaryngology",
+      "field15": "Family medicine",
+      "field16": "Traumatology and traumatological surgery",
+      "field17": "Rehabilitation",
+      "field18": "Laboratory diagnostics",
+      "field19": "Traditional medicine",
+      "field20": "Acupuncture and moxibition",
+      "field21": "Pathology",
+      "field22": "Morphology",
+      "field23": "Physiology",
+      "field24": "Immunology",
+      "field25": "Human genetics",
+      "field26": "Microbiology",
+      "field27": "Molecular biology",
+      "field28": "Sport medicine",
+      "field29": "Forensic medicine",
+      "field30": "Biomedicine",
+      "field31": "Dentistry",
+      "field32": "Orthodontics",
+      "field33": "Prosthodontics",
+      "field34": "Oral and maxilotacial surgery",
+      "field35": "Public health",
+      "field36": "Occupational health safety",
+      "field37": "Эрүүл ахуй, тархвар зүй",
+      "field38": "Pharmacy",
+      "field39": "Nursing",
+      "field40": "Neonatal nursing",
+      "field41": "Surgical nursing",
+      "field42": "Nursing in traditional medicine",
+      "field43": "Oncological nursing",
+      "field44": "Intensive care nursing",
+      "field45": "Public health nursing",
+      "field46": "Midwifery",
+      "field47": "Physical therapist",
+      "field48": "Occupational therapist"
+    }
+  },
+  "masterOnline": {
+    "title": "Master - Online",
+    "subjectList": {
+      "subtitle": "Master training",
+      "tag": "Online",
+      "item1": "International Cyber Education Center at Graduate School, Mongolian National University of Medical Sciences (MNUMS) has been established on October 15, 2015 as a pioneering entirely online distance learning graduate education provider for master’s degree programme’s in the Mongolian higher education system. We operated as International Cyber University of Medical Sciences during our inaugural years.",
+      "item2": "Professor Young Moon Chae, honorary professor of MNUMS, visiting professor of Yonsei University in South Korea played enormous role in establishing distance learning platform that is fully operating for a graduate curriculum in Mongolia, with his expertise in developing digital governance and health information system in Asia and Western Pacific region.",
+      "item3": "We work to promote health professionals’ education via learning management system. E-learning has been rapidly evolving at the global stage along with technological advances in recent years, coupled with busy healthcare professionals’ endless needs for continuous medical education and professional growth. Currently we are offering 8 distinct graduate programme’s entirely online for master’s degree, these include as follows."
+    },
+    "subjectList2": {
+      "item1": "Clinical medicine",
+      "item2": "Traditional medicine",
+      "item3": "Health Policy and Management",
+      "item4": "Nursing",
+      "item5": "Oral and Maxillofacial Surgery",
+      "item6": "Modern occupational health",
+      "item7": "Pharmaceutical medicine",
+      "item8": "Bio-Clinical medicine"
+    }
+  },
+  "program": {
+    "subTitle": "Gradueate Curriculum",
+    "category": "Specialized subjects:",
+    "field": "Specialization:",
+    "lsort": "Course type:",
+    "form": "Form of training:",
+    "totalDuration": "Total Package Hours:",
+    "educationLevel": "Level:",
+    "duration": "Study period:",
+    "subject": "Subject of the lesson",
+    "credit": "Credit hours",
+    "total": "Total",
+    "tableHeader1": "BASIC PROFESSIONAL COURSES",
+    "tableHeader2": "PROFESSIONAL COURSES",
+    "tableHeader3": "ELECTIVE COURSES /CHOOSE 3/",
+    "tableHeader3-1": "ELECTIVE COURSES",
+    "masterProject": "Master's research project entry protection",
+    "subjectList1": {
+      "item1": "Research methodology I",
+      "item2": "Research methodology II",
+      "item3": "Biostatistics",
+      "item4": "Academic skills",
+      "item5": "Research ethics",
+      "item6": "Medical education",
+      "item7": "Medical law",
+      "item8": "Methods of creating and presenting scientific works"
+    },
+    "anagaahUhaan": {
+      "title": "Clinical medicine",
+      "subjectCode": "091 Health",
+      "online": "Master's e-learning course",
+      "date": "During the day",
+      "sort": "Bachelor",
+      "year": "2 year",
+      "subjectList2": {
+        "item1": "Clinical Leadership and Project",
+        "item2": "Basic Research Methodology",
+        "item3": "Clinical Epidemiology",
+        "item4": "Quality management system",
+        "item5": "Clinical Trial Research",
+        "item6": "Evidence-Based Medicine"
+      },
+      "subjectList3": {
+        "item1": "Medical risk management",
+        "item2": "Epidemiology of Noncommunicable Diseases",
+        "item3": "Maternal and Child Health",
+        "item4": "New Drug Research",
+        "item5": "Infection Surveillance and Control",
+        "item6": "Cancer Epidemiology",
+        "item7": "Qualitative Research Methodology",
+        "item8": "Applied Biostatistics",
+        "item9": "Research and Practice-I",
+        "item10": "Research and Production Practice-II",
+        "item11": "Other electives"
+      }
+    },
+    "ulamjlaltAnagaahUhaan": {
+      "title": "Traditional medicine",
+      "subjectCode": "091 Health",
+      "online": "Master's e-learning course",
+      "date": "During the day",
+      "sort": "Bachelor",
+      "year": "2 year",
+      "subjectList2": {
+        "item1": "Theory of Mongolian traditional medicine",
+        "item2": "Healthy traditional medicine",
+        "item3": "Risk management of traditional medicine",
+        "item4": "Methods of Clinical Research in Traditional Medicine",
+        "item5": "Evidence-based therapy",
+        "item6": "Study of traditional recipes",
+        "item7": "Evidence-based acupuncture",
+        "item8": "Chemical technology of traditional medicine"
+      },
+      "subjectList3": {
+        "item1": "Ethnic medicine",
+        "item2": "Journal of Traditional Medicine",
+        "item3": "Healthy traditional medicine",
+        "item4": "New Drug Research",
+        "item5": "Integrative medicine",
+        "item6": "Biorhythms and traditional medicine",
+        "item7": "Embodied Medicine",
+        "item8": "Other electives"
+      }
+    },
+    "eruulMendiinBodlogoUdirdlaga": {
+      "title": "Health Policy and Management",
+      "subjectCode": "091 Health",
+      "online": "Master's e-learning course",
+      "date": "During the day",
+      "sort": "Bachelor",
+      "year": "2 year",
+      "subjectList2": {
+        "item1": "Health Policy and Systems",
+        "item2": "System analysis and design",
+        "item3": "Health informatics",
+        "item4": "Health Economics",
+        "item5": "Finance management",
+        "item6": "Public health management"
+      },
+      "subjectList3": {
+        "item1": "Knowledge management",
+        "item2": "Cost management",
+        "item3": "Marketing of ER care",
+        "item4": "Organizational Behavior",
+        "item5": "Public health e-learning",
+        "item6": "Operations management",
+        "item7": "Policy Research Methodology",
+        "item8": "Evaluation of ED projects and bills",
+        "item9": "Quality management of ER care",
+        "item10": "Other electives"
+      }
+    },
+    "suvilahui": {
+      "title": "Nursing",
+      "subjectCode": "091 Health",
+      "online": "Master's e-learning course",
+      "date": "During the day",
+      "sort": "Bachelor",
+      "year": "2 year",
+      "subjectList2": {
+        "item1": "Advanced Nursing Studies",
+        "item2": "Advanced Health Assessment",
+        "item3": "Evidence-based nursing",
+        "item4": "Advanced Critical Decision Making Methodology",
+        "item5": "Patient safety and risk",
+        "item6": "Nursing theory"
+      },
+      "subjectList3": {
+        "item1": "Nursing and Health Policy",
+        "item2": "Nursing Management and Leadership",
+        "item3": "The nature, role and development of the nurse specialist",
+        "item4": "Nursing and Health Informatics",
+        "item5": "Mental Health and Nursing",
+        "item6": "Community Health Nursing",
+        "item7": "Advanced Adult Nursing",
+        "item8": "Advanced Pediatric Nursing",
+        "item9": "Women's Health Nursing",
+        "item10": "Other electives"
+      }
+    },
+    "nuurAmSudlal": {
+      "title": "Oral and Maxillofacial Surgery",
+      "subjectCode": "091 Health",
+      "online": "Master's e-learning course",
+      "date": "During the day",
+      "sort": "Bachelor",
+      "year": "2 year",
+      "subjectList2": {
+        "item1": "Medicinal materials used in oral treatment-II",
+        "item2": "Common disorders of oral mucosa-II",
+        "item3": "Marketing and Management of Oral Aids",
+        "item4": "Partnership",
+        "item5": "Oral and Maxillofacial Surgery",
+        "item6": "Oral treatment of children",
+        "item7": "Prevention of oral diseases-III",
+        "item8": "Dental support anatomy-III",
+        "item9": "Root canal treatment-III",
+        "item10": "Oral injuries",
+        "item11": "Inflammatory diseases of dental origin-II"
+      },
+      "subjectList3": {
+        "item1": "Dental biomaterials",
+        "item2": "Orthodontic treatment of adults",
+        "item3": "Diseases of supporting tissues of teeth, inflammation of soft and root apex",
+        "item4": "Orthognathic surgery",
+        "item5": "Other electives"
+      }
+    },
+    "orchinHudulmuriinEruulMend": {
+      "title": "Modern occupational health",
+      "subjectCode": "091 Health",
+      "online": "Master's e-learning course",
+      "date": "During the day",
+      "sort": "Bachelor",
+      "year": "2 year",
+      "subjectList2": {
+        "item1": "Environmental Health Sciences",
+        "item2": "Occupational health and safety",
+        "item3": "Toxicology and Adverse Effects",
+        "item4": "Environmental risk assessment",
+        "item5": "Health informatics",
+        "item6": "Public health management"
+      },
+      "subjectList3": {
+        "item1": "Health Impact Assessment",
+        "item2": "Food hygiene",
+        "item3": "System analysis and design",
+        "item4": "Municipal industrial and safe waste",
+        "item5": "Public health e-learning",
+        "item6": "Other electives"
+      }
+    },
+    "emZui": {
+      "title": " Pharmaceutical medicine",
+      "subjectCode": "091 Health",
+      "online": "Master's e-learning course",
+      "date": "During the day",
+      "sort": "Bachelor",
+      "year": "2 year",
+      "subjectList2": {
+        "item1": "Drug treatment",
+        "item2": "Pharmacovigilance",
+        "item3": "Biopharmaceutics",
+        "item4": "Pharmaceutical management",
+        "item5": "Pharmaceutical technology",
+        "item6": "Medicinal Botanyt",
+        "item7": "Medicinal chemistry",
+        "item8": "Mongolian pharmaceutical technology"
+      },
+      "subjectList3": {
+        "item1": "Pharmacology",
+        "item2": "Functional biochemistry",
+        "item3": "Laboratory infection control",
+        "item4": "Environmental analytical chemistry",
+        "item5": "Environmental Microbiology",
+        "item6": "Other electives"
+      }
+    }
+  },
+  "doctor": {
+    "heading": "Doctor",
+    "title": "Doctoral training",
+    "mainText": "The activities of MNUMS graduate education are regulated by the PROCEDURES REGULATING THE GRADUATE COURSE ACTIVITIES OF THE MONGOLIAN NATIONAL UNIVERSITY OF MEDICAL SCIENCES. Admission to master's and Ph.D courses has 2 stages.",
+    "subText": "The research work shall be carried out in accordance with clause 7.12 of the regulations regulating the activities of doctoral graduate studies. It includes:",
+    "list": {
+      "item1": "Meeting of department that belongs professional fields:",
+      "item1-1": "To assign Research topics, Research methods, Research supervisors and advisors.",
+      "item2": "Academic Council of the School:",
+      "item2-1": "To approve research topics, research methods, research supervisors and advisors.",
+      "item3": "Obtain permission to start research at the meeting of the Research Ethics Committee:",
+      "item3-1": "Requires the publication of two or more articles where you are the first author, under the affiliation or name of MNUMS, in peer-reviewed professional international journals. One of these articles must be published in a journal indexed in recognized databases such as Web of Science, Scopus, PubMed, or Central Asian Journal of Medical Sciences.",
+      "item3-2": "Requires the publishing two or more articles based on research results in domestic journals. One of these articles, as specified, should be published in the Journal of Health Sciences.",
+      "item4": "JOURNAL CLUB, department meetings:",
+      "item5": "You need to have participated in the meeting or journal club that related department.",
+      "item6": "Academic Council of the School:",
+      "item7": "To confirm the results of the research process.",
+      "item8": "At the meeting of the research ethics committee, the conclusion that the research ethics norms were not violated:",
+      "item9": "Terminology Board Meeting:",
+      "item10": "Evaluation of the Probability Expert Commission Team:",
+      "item11": "",
+      "item11-1": "Click here",
+      "item11-2": "for submissions (list 1-14).",
+      "item12": "Preliminary defense of the degree of Ph.D in Medicine.",
+      "item13": "Defense of the degree of Ph.D in Medicine.",
+      "item14": "",
+      "item14-1": "Click here",
+      "item14-2": "for a list of materials (lists 17-24) to be submitted after receiving real protection.",
+      "item15": "",
+      "item15-1": "Click here",
+      "item15-2": "to download the revision template file.",
+      "item16": "",
+      "item16-1": "Click here",
+      "item16-2": "for post-defense registration students who have successfully defended."
+    },
+    "participant": {
+      "last3year": "Key indicators, last 3 years",
+      "internalStudent": "Ph.D students",
+      "internationalStudent": "International Ph.D students"
+    },
+    "tableHead": "Doctoral Programme",
+    "field": {
+      "field1": "Education Studies",
+      "field2": "Medicine",
+      "field3": "Bio-Medicine",
+      "field4": "Traditional Medicine",
+      "field5": "Dentistry",
+      "field6": "Public Health",
+      "field7": "Pharmacy",
+      "field8": "Nursing",
+      "field9": "Obstetrics / Midwifery",
+      "field10": "Physical Therapy",
+      "field11": "Occupational Therapy",
+      "field12": "Ophthalmology",
+      "field13": "Otorhinolaryngology",
+      "field14": "Family medicine",
+      "field15": "Traumatology and traumatological surgery",
+      "field16": "Rehabilitation",
+      "field17": "Traditional medicine",
+      "field18": "Pathology",
+      "field19": "Morphology",
+      "field20": "Physiology",
+      "field21": "Immunology",
+      "field22": "Human genetics",
+      "field23": "Microbiology",
+      "field24": "Molecular biology",
+      "field25": "Forensic medicine",
+      "field26": "Biomedicine",
+      "field27": "Dentistry",
+      "field28": "Public health",
+      "field29": "Occupational health safety",
+      "field30": "Pharmasy",
+      "field31": "Nursing",
+      "field32": "Midwifery"
+    }
+  },
+  "postdoctoral": {
+    "title": "Post-doctoral",
+    "subjectList": {
+      "subtitle": "MNUMS Post-doctoral Training",
+      "item1": "The number of post-doctoral researchers will be determined and selected at the meeting of the leaders of the Academic Council in accordance with the research priorities and implementation projects of MNUMS.",
+      "item2": "Post-doctoral studies are 1-2 years. Based on the results of the study, it can be extended for up to 1 year.",
+      "item3": "Scholars from foreign and domestic universities, academic and research institutions in cooperation with MNUMS can participate.",
+      "item4": "It will be based on departments, laboratories, institutes and university hospitals of MNUMS.",
+      "item5": "The Research Center will sign a tri-party agreement with the post-doctoral researcher and the supervisor and monitor the implementation of the agreement.",
+      "item6": "Post-doctoral researchers and supervisors will report the results of the research progress to the Research Center every six months. The report of the research project will be discussed and handed over to the Academic Council of MNUMS. The post-doctoral researcher must publish 1 article as the first or responsible author in a journal registered in the Web of Science, Scopus, and Pubmed databases.",
+      "item7": "Under the supervision of the relevant department and supervisor, will guide the teaching and research work of master's and doctoral students.",
+      "item8": "The post-doctoral researcher will be paid at the faculty level.",
+      "item9": " In the event of breach of contract by the researcher, all costs related to post-doctoral research funding will be reimbursed.",
+      "item10": "A post-doctoral researcher is not allowed to engage in dual employment outside the university."
+    },
+    "subjectList2": {
+      "subtitle2": "Requirements for Supervisor",
+      "item1": "To have the academic title of full professor, associate professor or higher at MNUMS",
+      "item2": "To be the leader of foreign, domestic and MNUMS funded research projects"
+    },
+    "subjectList3": {
+      "subtitle3": "Requirements and materials for post-doctoral researchers",
+      "item1": "Form 1 for Government Staff",
+      "item2": "It must not be more than 5 years since the completion of the doctoral degree",
+      "item3": "List of academic and research works certified by the secretary of the academic council of the constituent schools and institutes",
+      "item4": "The decision of the meeting to discuss and support the post-doctoral research project by the academic council of the constituent schools and institutes"
+    }
+  },
+  "projects": {
+    "heading": "PROJECT",
+    "projectTitle": "Title of the project",
+    "projectGoal": "Purpose of the project:",
+    "projectTarget": "Project objective:",
+    "projectLeader": "Project supervisor:",
+    "projectConsultant": "Project consulting:",
+    "projectMembers": "Project team members:",
+    "project1": {
+      "title": "Project 1",
+      "titleBody": "Some pharmacological and technological studies on the extraction of lung-protecting biologically active food supplement from the raw materials of Mongolian traditional medicine",
+      "goalBody": "Conducting some pharmacological and technological research to extract biologically active food supplements for lung protection from Mongolian medicinal plants",
+      "targetBody1": "To carry out chemical and general pharmacological studies of preparations with complex ingredients",
+      "targetBody2": "Studying the effects of the combined formulation in a lipopolysaccharide-induced acute lung injury model",
+      "targetBody3": "To carry out some research on the extraction technology of lung protective biologically active food supplement from the compound formulation",
+      "leaderBody": "Tsagaankhuu Sarnai  (M.D  Ph.D, Assoc.Prof) Senior lecturer of Department of Health and Research, Graduate School, Mongolian National University of Medical Sciences (MNUMS), Secretary of the academic council of graduate training, Editorial assistant of Central Asian Journal of Medical Sciences",
+      "member1": "School of Pharmacy, lecturer in the Department of Clinical Pharmacology and Organization, doctor of pharmacy, professor S.Purevsuren",
+      "member2": "School of Pharmacy, lecturer in the Department of Pharmaceutical Technology, doctor of pharmacy, associate professor D.Jambaninj",
+      "member3": "School of Biomedical, Senior lecturer, Department of Immunology, doctor of medicine B.Ariunzaya",
+      "member4": "School of Biomedical, lecturer at the Department of Forensic Pathology, doctor of medicine J.Tsengelmaa",
+      "member5": "School of Academic, contract lecturer in the Department of Health Research, doctor of biology B.Galindev",
+      "member6": "School of Pharmacy, contract lecturer in the Department of Clinical Pharmacology and organization,PhD candidate L.Ariunzaya"
+    },
+    "project2": {
+      "title": "Project 2",
+      "titleBody": "“Health Equity, Gender and human rights for health professionals” final technical report",
+      "goalBody": "200 researchers and staff members of Mongolia's central state administrative organization, the province's capital health department, and hospital facilities received training on the social determinants of health, and created and strengthened knowledge and understanding through a developed and approved program on equality, gender, and human rights-based approaches, enhancing expertise in the field of program evaluation.",
+      "leaderBody": "Avarzed Amgalanbaatar (M.D  Ph.D, Assoc.Prof) Head, International Cyber Education Center, Graduate School, Mongolian National University of Medical Sciences",
+      "member1": "Teaching supervisor, International Cyber Education Center, Graduate School Yo. Munkhzul",
+      "member2": "Teaching supervisor, International Cyber Education Center, Graduate School A. Ankhbayar",
+      "member3": "Ph D, Teaching supervisor, International Cyber Education Center, Graduate School A. Nomin",
+      "member4": "Ph D, Assoc Prof G. Khulan",
+      "member5": "Ph D M. Undram",
+      "member6": "Teaching supervisor, International Cyber Education Center, Graduate School E. Renchindorj",
+      "member7": "Technical assistant, International Cyber Education Center, Graduate School M. Batbayar",
+      "member8": "Ph D, Prof O. Chimedsuren"
+    },
+    "project3": {
+      "title": "Project 3",
+      "titleBody": "Identify serum ferritin related factors among men with metabolic syndrome ",
+      "goalBody": "Find risk factors to affect serum ferritin level in men with metabolic syndrome",
+      "targetBody1": "Food consumption, and lifestyle difference between men with and without metabolic syndrome",
+      "targetBody2": "Compare risk factors to affect serum ferritin level in men with and without metabolic syndrome",
+      "leaderBody": "S. Munkhbayrlakh /Prof. MD., PhD/",
+      "consultantBody": "Ts. Lkhagvasuren (Prof. MD., PhD)",
+      "member1": "Sh.Uurtuya (Asso. Prof. MD., PhD)",
+      "member2": "N.Erdenebayr (Prof. MD., PhD)",
+      "member3": "N.Sugar (MSc)",
+      "member4": "O.Zesemdorj ( PhD)",
+      "member5": "B.Nomundari MD., PhD)"
+    }
+  },
+  "publication": {
+    "title": "PUBLICATION",
+    "publication23": "Articles published in Web of Science, Scopus, and PubMed 2023",
+    "publication22": "Web of Science, Scopus, and PubMed journals of International Cyber Education Center, 2022",
+    "publication21": "Articles published in Web of Science, Scopus, and PubMed 2021",
+    "publication20": "2020 and earlier"
+  },
+  "library": {
+    "title": "LIBRARY SERVICES",
+    "body": "The Central Library of Health Sciences serves as a comprehensive resource centre for students, researchers, and medical professionals. It provides access to a wide range of books, research materials, and electronic resources to support academic and professional development. In the last academic year, the library expanded its collection with over 6,700 new books and 1,400 e-books.",
+    "schedule": "Library Hours:",
+    "schedule1": "8:00 AM - 8:00 PM",
+    "schedule2": "8:00 AM - 8:00 PM",
+    "internationalOnline": "International e-Learning Center",
+    "internationalOnlineBody": "E-Learning Master's Project Database",
+    "onlineLibrary": "Online database",
+    "guide": "Guide",
+    "guideCatalogy": "Guide to using Cataliog",
+    "guideOnline": "Guide to reading e-books",
+    "guidePublication": "Guide to reading academic works",
+    "timetable": "Library Hours:",
+    "weekday": "Monday - Friday",
+    "weekend": "Saturday - Sunday",
+    "room1": "Reading room A",
+    "room2": "Academic reading room",
+    "room3": "Textbook fund",
+    "room4": "Methods of creating and presenting scientific works",
+    "room5": "Main fund",
+    "room6": "Online reading room",
+    "closed": "Closed"
+  },
+  "institutes": {
+    "title": "INSTITUTE",
+    "body1": "On March 27, 2023, the Graduate School of ASHIUS, Division of Graduate Policy  and Educational Management, and the Central Library of Health Sciences jointly organized the 'DAY FOR STUDENTS IN GRADUATE COURSES OF ASHUIS' on March 27, 2023 for master's and doctoral students. The day was planned to assist in the identification of research subjects and research expenses, as well as to provide prospects for collaborative research effort. It was arranged with the assistance of ASHUIS institutes, the medical molecular diagnostics center, and some companies. 128 master's and doctoral students of ASHIUS participated in the day. 17 master's students and 5 doctoral students from ASHIUS  institutes, medical molecular diagnostic centers and companies were openly announced and presented as researchers for the research project. In addition, two researcher positions have been announced. Graduate and doctoral students who are available for the project may be employed.",
+    "body2": "B. Tsogtbaatar, M.D  Ph.D, senior expert of the UN Children's Fund, attended the event, and a guest talk on 'Informed decision-making' was presented. The Graduate School's Department of Medical Research, the CAJMS journal, and research for 82 students gave assistance and information on work methodology and biostatistics. In addition, approximately 90 students obtained a library card, downloaded the no-cost Endnote application, and visited the dissertation library. ",
+    "body3": "The organizers would like to convey our heartfelt gratitude to the Institute of Medicine, Institute of Biomedicine, Institute of Public Health in ASHIUS, Center for Medical Molecular Diagnostics, Altanburd Ltd. for providing numerous chances to graduate students.",
+    "institute1": "Institute of Public Health",
+    "institute2": "Institute of Mongolian traditional medicine",
+    "institute3": "Institute of Biomedical sciences",
+    "institute4": "Institute of Medical sciences"
+  },
+  "researchDay": {
+    "title": "CONFERENCES",
+    "body1": "MNUMS hosts an annual Academic Conference every April, providing a platform for graduate students, faculty, and researchers to present and discuss their research results. The 66th conference is scheduled for 2024. The event showcases a wide range of research projects, with the highest-rated projects selected for oral presentations. The conference not only encourages academic exchange but also recognizes excellence through the Master's Award, which is presented to the best research project. This conference offers valuable opportunities for networking, feedback, and collaboration within the academic community.",
+    "body2": "In 2024, the 66th conference was held, and in the graduate studies session, 15 online master's students submitted research projects and abstracts. The top 3 projects were selected for oral presentation, and ICEC master's student Sossorbarm was awarded the BEST ONLINE MASTER'S STUDENT award for the project \"Analysis of Innovation Policy in the Pharmaceutical Sector of Mongolia.\"",
+    "body3": "Examining the Results of Mesenchymal Stem Cell Therapy for Shoulder Ligament Tears by Ganbolor, a Master's Student at the Online Master, Presents the Research Project and answering Researchers' Questions.",
+    "body4": "Presenting the Research Project of E. Enkhjargal, a Master's Student at the Online Master, Investigating the Validation of Multidisciplinary Tests in the Diagnosis of Chronic Anemic Heart Disease."
+  },
+  "sportDay": {
+    "title": "STUDENT DAY & OTHER EVENTS",
+    "subtitle": "Sports Competition",
+    "body1": "Student Day is an annual event organised to bridge the gap between students and potential employers. It offers a platform for students to network with industry professionals, learn about career opportunities, and explore internships or job placements. In addition, the event features employer-driven projects, allowing students to participate in real-world initiatives and gain hands-on experience. Student Day also fosters collaboration between the university, businesses, and other organizations, creating valuable connections that enhance students' career prospects.",
+    "body2": "The MNUMS sports team actively participated in the Sports Competition, showcasing their skills and sportsmanship. The Graduate School, in collaboration with the International Students Office, successfully organised a joint sports competition, bringing together students from both local and international backgrounds to compete in a variety of events."
+  },
+  "journal": {
+    "title": "JOURNAL CLUB",
+    "subtitle": "The regular Journal club of the Graduate school was organized.",
+    "subtitleBody": "A journal club that offers chances developed is organized by providing fresh material in the field of recent academic and research, medical, and discussing evidence-based findings.",
+    "body1": "Journal club is organized on the first week of every month by the Health Research Department of the Graduate School.",
+    "body3": "The study was published in a peer-reviewed journal with IF-2,3 in 2022, but it is also unique in that it was jointly performed by researchers from Mongolia, Japan, and Indonesia.",
+    "body2": "The Graduate School organizes Journal Club to train Master’s and Doctoral students in the methodology of academic research within the health sciences. This initiative aims to empower students, enhance the quality of their research, and create opportunities for collaborative discussions between students and faculty. By participating in the Journal Club, students will have the opportunity to:",
+    "item1": "Evaluate and refine their research projects and thesis, gaining valuable feedback from peers and faculty to improve their scientific work.",
+    "item2": "Engage in discussions on international research, broadening their understanding of global trends, innovations, and challenges in the health sciences.",
+    "item3": "Explore various research methods and learn how to apply these techniques to enhance the rigor and impact of their own research.",
+    "item4": "Through these activities, the Journal Club serves as both a learning platform and a forum for intellectual exchange, fostering the development of critical thinking and research skills."
+  },
+  "training": {
+    "title": "ORIENTATION TRAINING",
+    "body1": "The Graduate School and the Division of Graduate Education Policy and Management offer a variety of orientation training sessions for students each year, including:",
+    "body2": "Orientation for New Students:",
+    "body3": "Following annual admissions, new students receive training on how to navigate the learning system, to explain differences between on-campus and online master programme and graduate education policy of MNUMS. Additional training on research methodology, writing thesis and project is also provided.",
+    "body4": "Orientation for Graduate Students and Graduates:",
+    "body5": "This course helps students concentrate on the components of thesis and project, research methods and enhance communication with their supervisor and mentors."
+  },
+  "scholarship": {
+    "title": "SCHOLARSHIP",
+    "mainText": "Research grants and post-doctoral training grants are awarded by the Ministry of Education and Science and MNUMS director's research scholarship for students participating in graduate education.",
+    "scholarship1": {
+      "subtitle": "MNUMS DIRECTOR'S RESEARCH SCHOLARSHIP",
+      "body": "Scholarships of up to 3 million MNT for master's students and up to 5 million MNT for doctoral students (for the purchase of reagents, tools, software, and the cost of publishing articles) are awarded to up to 50 students who are conducting their research based on the institutes and laboratories of MNUMS.",
+      "requirement": "Requirements for scholarship applicants:",
+      "req1": "Must be a citizen of Mongolian",
+      "req2": "Must have a GPA of 3.2 or higher in the master's and doctoral courses of MNUMS",
+      "req3": "Topics and methods of research work must have been discussed",
+      "req4": "The student must not have transferred between schools, departments and programme’s",
+      "req5": "Conduct research based on the research institute, laboratory, and hospital of MNUMS",
+      "req6": "The relevant department or professorial team must have supported the application for the scholarship",
+      "materials": "Scholarship applicants must provide the following materials:",
+      "materialBody": "A student applying for a scholarship must prepare the following materials and submit them to the Department of Policy and Coordination of Graduate Studies.",
+      "material1-1": "Scholarship applicant's application form",
+      "material1-2": "click here",
+      "material1-3": "",
+      "material2": "Copy of identity card",
+      "material3": "Definition of GPA",
+      "material4": "Definition of a mentor teacher",
+      "material5": "Introduction of the research work (write in 1000 words, detailing the innovative aspects, importance and progress of the research work)",
+      "material6": "Definition supported by the relevant department and professorial team",
+      "material7": "Description of the institute director or head of the laboratory or head of the hospital of MNUMS",
+      "material8": "If an academic article is to be published in a peer-reviewed international professional journal, an official letter approved by the journal"
+    },
+    "scholarship2": {
+      "subtitle": "MNUMS POSTDOCTORAL SCHOLARSHIP",
+      "body1": "The number of post-doctoral researchers will be determined and selected at the meeting of the leaders of the Academic Council in accordance with the research priorities and implementation projects of MNUMS.",
+      "body2": "Postdoctoral studies are 1-2 years. Based on the results of the study, it can be extended for up to 1 year.",
+      "body3": "Scholars from foreign and domestic universities, academic and research institutions in cooperation with MNUMS can participate.",
+      "body4": "It will be based on departments, laboratories, institutes and university hospitals of MNUMS.",
+      "body5": "The Research Center will sign a tri-party agreement with the postdoctoral researcher and the supervisor and monitor the implementation of the agreement.",
+      "body6": "Post-doctoral researchers and supervisors will report the results of the research progress to the Research Center every six months. The report of the research project will be discussed and handed over to the Academic Council of MNUMS. The post-doctoral researcher must publish 1 article as the first or responsible author in a journal registered in the Web of Science, Scopus, and Pubmed databases.",
+      "body7": "Under the supervision of the relevant department and supervisor, will guide the teaching and research work of master's and doctoral students.",
+      "body8": "The postdoctoral researcher will be paid at the faculty level.",
+      "body9": "In the event of breach of contract by the researcher, all costs related to postdoctoral research funding will be reimbursed.",
+      "body10": "A post-doctoral researcher is not allowed to engage in dual employment outside the university.",
+      "leaderRequirement": "Requirements for Supervisor:",
+      "leaderReq1": "To have the academic title of full professor, associate professor or higher at MNUMS",
+      "leaderReq2": "To be the leader of foreign, domestic and MNUMS funded research projects",
+      "requirement": "Requirements and materials for post-doctoral researchers:",
+      "req1": "Form 1 for Government Staff",
+      "req2": "It must not be more than 5 years since the completion of the doctoral degree",
+      "req3": "List of academic and research works certified by the secretary of the academic council of the constituent schools and institutes",
+      "req4": "The decision of the meeting to discuss and support the post-doctoral research project by the academic council of the constituent schools and institutes"
+    },
+    "scholarship3": {
+      "subtitle": "POST-DOC RESEARCH SCHOLARSHIP FROM MINISTRY OF EDUCATION AND SCIENCE",
+      "body1": "The Science and Technology Policy, Development and Implementation Coordination Office of the Ministry of Education and Science selects a postdoctoral research contractor to conduct independent academic work of young researchers with a doctorate degree who are the next generation of scientists and create innovations as a result. 'Innovation grant named after the Minister of Science and Technology' is awarded to the contractors of the selected projects.",
+      "body2-1": "The scholarship applicant prepares the proposed project in accordance with the 'Procedure for awarding innovation grants for post-doctoral research' approved by the Minister of Education, Culture and Science Order No. 222 of 2011",
+      "body2-2": "/VIEW PROCEDURE/",
+      "body2-3": "prepares the materials, and enters the selection process.",
+      "body3-1": "For more information about the project,",
+      "body3-2": "please visit."
+    }
+  },
+  "regulations": {
+    "regulation": "REGULATIONS",
+    "linkTitle": "Links",
+    "link1": "Procedure For Regulating Graduate Course Activities",
+    "link2": "Common Procedure For Admission To Master's And Doctoral Courses",
+    "link3": "Mongolian Instructions For Writing A Research Project",
+    "link4": "English Instructions For Writing A Research Project",
+    "link5": "Research Project Writing Template File",
+    "link6": "Preliminary Defense Presentation Sheet Template",
+    "link7": "Link To Correction Of The Mongolian Language Grammar Of The Research Project",
+    "link8": "Other Regulations Relating To Health And Education",
+    "link9": "Issuance Of Documents",
+    "link10": "Anti-Corruption Legislation",
+    "link11": "Regulations Of The Ministry Of Education, Culture, Science And Sports",
+    "link12": "Regulations Of The Ministry Of Health"
+  },
+  "dormitory": {
+    "title": "DORMITORY",
+    "subtitle": "MNUMS offers student housing for both domestic and international students. The accommodation includes furnished rooms, shared bathrooms, and common areas such as a kitchen, laundry room, and study spaces.",
+    "link": "Dormitory link:",
+    "link2": "https://mnums.edu.mn/en/dormitory",
+    "address": "Dormitory location:",
+    "address2": "АШУҮИС дотуур байр Зүүн хотхон",
+    "body1": "There are five student dormitories, one for international students and scholars with capacity of 600 persons and one others for local students with capacity of 600 persons. It is a safe place to live and rooms are furnished. Student affairs and complaints are resolved by a dormitory manager.",
+    "body2": "International students contact the Student and Alumni Affairs office and the office of university registrar in advance to arrange a room at the dormitory. As the dormitory for international students has a limited number of rooms. Earlier booking is advised. The dormitory is guaranteed for government funded students and incoming exchange students. The self-funded students may apply for the dormitory.",
+    "table": {
+      "header1": "Floor",
+      "header2": "Number of person",
+      "header3": "Monthly fee",
+      "header4": "Room condition",
+      "header5": "Room facilities",
+      "header6": "Common facilities",
+      "col1": "Regardless of floor",
+      "col2-1": "1 person",
+      "col2-2": "2 persons /each/",
+      "col3-1": "500.000MNT",
+      "col3-2": "250.000MNT",
+      "col4-1": "Two rooms in one block",
+      "col4-2": "Shared bathroom (between 2 rooms)",
+      "col4-3": "Parket floor",
+      "col4-4": "A person two per room",
+      "col4-5": "Balcony",
+      "col5-1": "Bed",
+      "col5-2": "Chair",
+      "col5-3": "Desk",
+      "col5-4": "Wardrobe",
+      "col5-5": "Bed set",
+      "col5-6": "Shared fridge between two rooms",
+      "col6-1": "Shared kitchen",
+      "col6-2": "Bathroom",
+      "col6-3": "Shower and Laundry",
+      "picture": "Dormitory picture"
+    }
+  },
+  "admission": {
+    "tab1": {
+      "title": "REQUIREMENTS",
+      "subjectList": {
+        "subtitle": "Requirements",
+        "item1-1": "Graduate training activities at MNUMS are governed by the",
+        "item1-2": "PROCEDURES FOR REGULATING GRADUATE COURSE ACTIVITIES OF THE MONGOLIAN NATIONAL UNIVERSITY OF MEDICAL SCIENCES",
+        "item1-3": "for president's regulation A/28, which goes into effect on February 29, 2021."
+      },
+      "subjectList2": {
+        "subtitle": "Admission to master's and doctorate courses has 2 stages.",
+        "item1-1": "Register online at",
+        "item1-2": "3 weeks before the admission exam. Duration of online registration is not less than 10 days.",
+        "item2": "Based on the online registration, the admission examination schedule will be made, the qualified applicants will be selected, and the notice of physical registration will be sent and registered (via the website, phone or e-mail) 2 weeks before the start of the course. The duration of registration is not less than 5 working days."
+      }
+    },
+    "tab2": {
+      "title": "Entry",
+      "subjectList": {
+        "subtitle": "Requirements for Entrants: (Regulation 2.3)",
+        "item1": "2.3.1 Applicants for master's and doctoral programme’s must meet the standards of the Academic School's admission examination developed within the context of the detailed investigation. ",
+        "item2": "2.3.2 Master's program applicants must have a bachelor's degree or an equivalent degree, as well as a bachelor's grade point average of at least 2.5 (75%).",
+        "item3": "2.3.3 Doctoral program applicants must have a master's degree in science or an equivalent degree with a master's grade point average of at least 3.0 (80%).",
+        "item4": "2.3.4 If the applicant enrolls in a master's or doctoral program in a different field (in-depth study) than the one he or she has previously mastered, he or she must study the gap to ensure course content consistency. Remedial courses do not count toward the program's core hours.",
+        "item5": "2.3.5 A international student who chooses to study Mongolian has fulfilled the Mongolian language requirements. The students will abide by the terms and circumstances of the intergovernmental agreement, according to the agreement.",
+        "item6": "2.3.6 An international student who chooses an English-language study program must complete the admission exam criteria using content created collaboratively by the foreign language center and the Academic School. Special requirements for applicants may be imposed based on the suggestions of the component schools, professional departments, and units, depending on the content and characteristics of the particular research program."
+      },
+      "subjectList2": {
+        "subtitle": "TUIFION INFORMATION",
+        "item1": "Registration fee",
+        "item1-1": "20,000₮",
+        "item2": "Bank name",
+        "item2-1": "Khan Bank",
+        "item3": "Beneficiary",
+        "item3-1": "ASHUIS",
+        "item4": "Account number",
+        "item4-1": "5031813390",
+        "item5": "Meaning of transaction",
+        "item5-1": "Type of study /doctor, master, cyber/, registration number, surname, phone number"
+      }
+    },
+    "tab3": {
+      "title": "Dates",
+      "subjectList": {
+        "subtitle": "Admission period",
+        "item1": "The fall admission registration period for master's and doctorate courses for the 2023-2024 academic year will run from August 22, 2023 to September 4, 2023 at 5:00 p.m.",
+        "item2": "The admission exam will be held online on September 7, 2023, and instructions for taking the exam, code, login name, and password will be released on the website the day before the exam, and registration will be confirmed.",
+        "item3": "Please keep in mind that if your personal information is incomplete or your material is not qualified, your registration will be canceled.",
+        "item4": "In accordance with the regulation of graduate studies, applicants for master's and doctoral studies will be subject to professional and English language tests.",
+        "item5": "On September 8, 2008, all qualified applicants' information will be posted to the Department of Graduate Education Policy and Regulation website. "
+      }
+    },
+    "tab4": {
+      "title": "REGISTER",
+      "subjectList": {
+        "subtitle": "Apply",
+        "item1-1": "",
+        "item1-2": "Click Here",
+        "item1-3": "to register.",
+        "item2": "Good luck!"
+      }
+    },
+    "tab5": {
+      "title": "TUITION FEE",
+      "internalApplier": {
+        "subjectList1-1": {
+          "subTab": "Mongolian entrant",
+          "subtitle": "Tuition fee",
+          "itemtitle1": "Course",
+          "item1-1": "Doctoral training course",
+          "item1-2": "Master's training course",
+          "item1-3": "Master's online course",
+          "itemtitle2": "I course",
+          "itemtitle3": "II, III course"
+        },
+        "subjectList1-3": {
+          "subtitle": "Account information",
+          "item1": "Bank name",
+          "item1-1": "Khan Bank",
+          "item2": "Beneficiary",
+          "item2-1": "ASHUIS",
+          "item3": "Account number",
+          "item3-1": "5031813390",
+          "item4": "Meaning of transaction",
+          "item4-1": "Type of study /doctor, master, cyber/, registration number, surname, phone number"
+        }
+      },
+      "subjectList2": {
+        "subtitle": "Payment instructions",
+        "item1-1": "Login to",
+        "item1-2": "and pay according to the instructions.",
+        "item2-1": "Students of the online master's program can",
+        "item2-2": "to get their e-mail address information with a student code.",
+        "item3": "Password: 8 digits of registration number"
+      },
+      "foriegnApplier": {
+        "subjectList1-1": {
+          "subTab": "Foreign entrant"
+        },
+        "subjectList1-3": {
+          "item3-1": "5107026885 /Bank account of Dollar/"
+        }
+      }
+    }
+  },
+  "greeting": {
+    "title": "Dean's Greeting",
+    "greeting1": "In this era of rapid advancement in science and technology, the vision of the Mongolian National University of Medical Sciences (MNUMS) is to become one of the world’s leading universities. Guided by our mission to be a premier institution in academic research, higher education, and healthcare services, the university is committed to graduate training, research, innovation, and professional activities.",
+    "greeting2": "The Graduate School, in collaboration with other constituent schools, implements 11 graduate programme’s and offers online master's program in 6 fields, providing advanced-level education to domestic and international physicians and healthcare professionals. One unique feature of the online master's program is its ability to allow professionals to continue their studies while working and living in their respective locations. Notably, the online master's program in medicine has achieved international accreditation for the first time through ACQUIN, a recognized accreditation body.",
+    "greeting3": "The Graduate School's faculty and staff are dedicated to supporting the academic and research activities of students, researchers, and faculty members. Our goal is to enrich medical science with new knowledge, transform these innovations into practical applications, and contribute to the development of Mongolia's knowledge-based economy.",
+    "greeting4": "In terms of professional activities and social responsibility, the school conducts a wide range of initiatives. Special attention is given to international students participating in graduate programme’s by providing guidance on research methodology, development, and processing, as well as offering support in learning the Mongolian language. Additionally, we are expanding collaborations with healthcare and higher education institutions in the fields of medical law and medical education.",
+    "greeting5": "The doors of the Graduate School are always open to anyone eager to delve into academia and enhance their education. Our skilled and experienced faculty members are ready to welcome you with respect and enthusiasm, collaborating with you in learning, developing, and creating together.",
+    "greeting6": "May your academic endeavors be fruitful and abundant!",
+    "name": "Shiirevnyamba Avirmed",
+    "role": "/MD., PhD., Associated Professor/",
+    "roleName": "Mongolian National University of Medical Sciences",
+    "footer": "Shiirevnyamba Avirmed",
+    "footer1": "MD., PhD., Associate Professor"
+  },
+  "aboutUs": {
+    "title": "About us",
+    "text1": "The Graduate school was established under order A/135 of the President of the Mongolian National University of Medical Sciences (MNUMS) in 2018. It comprises the Department of Graduate Education and the Department of International Cyber Education and Academic council of Graduate school, Subcommittee of Programme.",
+    "text2": "Graduate School of MNUMS",
+    "text3": "The Graduate School offers advanced professional training through 11 doctoral and on-campus master’s programmes, and 6 online master’s programmes.",
+    "text4": "The Department of International Cyber Education, originally established on October 15, 2015, as the International Cyber University, was the first institution in Mongolia to offer fully online master’s programmes in graduate education in the field of medical sciences.",
+    "text5": "The Graduate School operates with the following departments and unit:",
+    "departments": {
+      "health_research": "Department of Health Research",
+      "international_e_learning": "International Cyber Education Centre",
+      "medical_law_education": "Department of Medical Legislation and Education",
+      "graduate_academic_council": "Academic council of Graduate school",
+      "program_subcommittee": "Subcommittee of Graduate Programme",
+      "central_asian_journal": "Central Asian Journal of Medical Sciences"
+    },
+    "text9": "The Consulting Biostatistic 2024",
+    "text10": "We organize a variety of events for graduate students outside the classroom, such as day events for students, international online learning day events, scientific conferences, and journal clubs. In March of every year, we held an event titled \"GRADUATE STUDENT'S DAY\" for master's and doctoral students. This event aimed to help students choose research topics, master research methodologies, and explore opportunities for collaborative research. It was jointly organized by the faculty of the School of Graduate Studies, four institutes of MNUMS, the Clinical Molecular Diagnostics Centre, and the Health Sciences Library. Faculties of Graduate school, and the editorial team of the official CAJMS journal of MNUMS provided guidance and information on research methodology and biostatistics to students (including online master’s students). During the event, about students registered for library cards, had the Endnote program installed for free, and explored the dissertation repository."
+  },
+  "csge": {
+    "header": "The Academic Council of Graduate Education",
+    "establishment": "The Academic Council was first established by the order of the Mongolian National University of Medical Sciences President's No. A/156 dated October 29, 2018.",
+    "current_committee": "Academic Council for Graduate Education was established by the order of the Mongolian National University of Medical Sciences President's No. A/46 dated February 29, 2024. The current academic council is working with the following members.",
+    "committee_members": {
+      "chairperson": "Director of Academic Council: Shiirevnyamba. A (Assoc. Prof, Ph.D.)",
+      "deputy_chairperson": "Deputy director of Academic Council: Sumberzul.N  (Prof. Ph.D.)",
+      "secretary": "Secretary of Academic Council: Sarnai. Ts (Assoc. Prof, Ph.D.)",
+      "member1": "Member of Academic Council: Otgonbayar. O (Prof. Ph.D.)",
+      "member2": "Member of Academic Council: Jambaldorj.J (Assoc. Prof. Ph.D.)",
+      "member3": "Member of Academic Council: Bayasgalan. T (Assoc. Prof. Ph.D.)",
+      "member4": "Member of Academic Council: Uurtuya. Sh (Assoc. Prof. Ph.D.)",
+      "member5": "Member of Academic Council: Enkh-Amar (Assoc. Prof. Ph.D.)",
+      "member6": "Member of Academic Council: Ariunzaya.B (Ph.D.)",
+      "member7": "Member of Academic Council: Delgerdalai.Kh (Ph.D.)",
+      "member8": "Member of Academic Council: Tsendsuren.S (Ph.D.)"
+    },
+    "graduation_stats": "In the past 4 years, 196 master program's students were defended in 2020-2021, 138 in 2021-2022, and 110 in 2022-2023, and 78 in 2023-2024.",
+    "research_focus": {
+      "header": "Research priorities of the graduate school:",
+      "cancer_research": "Oncology",
+      "medical_education": "Medical education",
+      "neuroscience": "Neuroscience",
+      "traditional_medicine_innovation": "Traditional medicine and innovation"
+    },
+    "agenda_items": {
+      "header": "The Academic Council of Graduate Education debates the following issues:",
+      "item1": "Defense for master thesis and project",
+      "item2": "Discussion for Ph.D candidate's topic and method, processing review",
+      "item3": "Scientific project and program's method and performance reports",
+      "item4": "Nomination for academic and professional degree of MNUMS",
+      "item5": "Interdisciplinary research related issues"
+    }
+  },
+  "gepm": {
+    "header": "Division of Graduate Education Policy and Management",
+    "body": "The Division of Graduate Education Policy and Management was established in 1992 under the name of the Doctoral and Master’s Office of the Health Science University of Mongolia (as it was then called) and began its operations under the direct supervision of the Deputy Director for Research and External Relations, consisting of a director, a scientific secretary of the Academic Council, and a methodologist. In 2020, by Resolution No. 002 of the Board of Directors of the MNUMS dated September 23, 2020, in connection with the new approval of the University of Health Sciences structure, the Graduate Education Policy and Management was established by the Director’s Order No. A/228 dated October 16, 2020, with the responsibility of organizing and supervising the implementation of master’s, doctoral training, and post-doctoral research, and is implementing the following areas of activity.",
+    "header2": "Mission",
+    "body2": "To construct a research institution that combines teaching and academic research, and produces scientists and researchers who contribute to scientific information, knowledge, and innovation.",
+    "title": "Areas of activity",
+    "list": {
+      "value1": "28 master's and doctoral integrated programme’s",
+      "value2": "Entrance and graduation processes for master's and doctoral programme’s",
+      "value3": "Plan and curriculum for master's and doctoral degree programme’s",
+      "value4": "Program accreditation by international and Mongolian accreditation authorities",
+      "value5": "The international students programme’s",
+      "value6": "Post-doctoral research according to the research priorities of MNUMS",
+      "value7": "A tripartite agreement between a master's student/doctoral student/post-doctoral researcher and supervisor",
+      "value8": "The preliminary discussion of master's and doctoral research",
+      "value9": "Registration of students in MNUMS and HEMIS",
+      "value10": "Student mobility",
+      "value11": "The lecturer workload for graduate studies",
+      "value12": "Advanced learning technology"
+    },
+    "tableHeader": "Division of graduate education policy and management",
+    "table": {
+      "header1": "Department and position",
+      "header2": "Responsible roles",
+      "header3": "Name",
+      "header4": "Contacts",
+      "value11": "Vice President for Research and International Affairs",
+      "value12": "Graduate Education Policy and Management",
+      "value13": "Bilegtsaikhan.Ts <br> PhD, Assoc.Prof <br>#224, 1st building <br>77757575-#1001",
+      "value21": "Coordinator",
+      "value22": "Doctor's programme’s",
+      "value23": "Tsendsuren.S <br>PhD<br>#2, Graduate School<br>77757575-#1025",
+      "value31": "Coordinator",
+      "value32": "International students programme’s",
+      "value33": "Tuyajargal.I<br>PhD<br>#2, Graduate School<br>77757575-#1025",
+      "value41": "Coordinator",
+      "value42": "Online master's programme’s",
+      "value43": "Ganbayar.B<br>PhD<br>#2, Graduate School<br>77757575-#1025",
+      "value51": "Coordinator",
+      "value52": "Master's programme’s",
+      "value53": "Tsatsraltuya.G<br>#2, Graduate School<br>77757575-#1025",
+      "value61": "Coordinator",
+      "value62": "Master's programme’s",
+      "value63": "Binderiya.G<br>#224, 1st building<br>77757575-#1001"
+    },
+    "text1": "Within the framework of its mission to be a leading university in the fields of science, education, and health, MNUMS is implementing master’s and doctoral training in 11 professional fields to prepare highly knowledgeable and skilled professionals who create new knowledge",
+    "table2": {
+      "header1": "Profession",
+      "header2": "Phd course",
+      "header3": "On-Campus Master programme",
+      "header4": "Online Master programme",
+      "item1": "Medicine",
+      "item2": "Traditional medicine",
+      "item3": "Biomedicine",
+      "item4": "Dentistry",
+      "item5": "Pharmacy",
+      "item6": "Public health",
+      "item7": "Nursing",
+      "item8": "Obstetrics",
+      "item9": "Rehabilitation",
+      "item10": "Physical therapy",
+      "item11": "Medical education"
+    }
+  },
+  "academicCouncil": {
+    "title": "ACADEMIC COUNCIL",
+    "mainText": "The Academic Council of Graduate Program was first established by the order of the Mongolian National University of Medical Sciences President's No. A/156 dated October 29, 2018. In the past 3 years, 196 master program's students were defended in 2020-2021, 138 in 2021-2022, and 110 in 2022-2023.",
+    "research": "Research priorities of the academic school:",
+    "research1": "Oncology",
+    "research2": "Medical education",
+    "research3": "Neuroscience",
+    "research4": "Traditional medicine and innovation",
+    "issue": "The Academic Council of Graduate Studies debates the following issues:",
+    "issue1": "Defense for master thesis and proposal",
+    "issue2": "Discussion for PhD candidate's topic and method, processing report",
+    "issue3": "Scientific project and program's methodology and reports",
+    "issue4": "Nomination for academic and professional degree",
+    "issue5": "Issues such as interdisciplinary research are discussed.",
+    "members": "The current academic council is working with the following members.",
+    "member1": "Head of Academic council, doctor of philosophy, associate professor Shiirevnymba Avirmed ",
+    "member2": "Vice-chief of Academic council, doctor of philosophy, professor Sumberzul Nyamjav",
+    "member3": "Secretary of the academic council, doctor of philosophy, associate professor Sarnai Tsagaankhuu",
+    "member4": "Member of Academic council, doctor of philosophy, associate professor Bayasgalan Tumenbayar",
+    "member5": "Member of Academic council, doctor of philosophy, associate professor Avarzed Amagalanbaatar",
+    "member6": "Member of Academic council, doctor of philosophy, associate professor Enkh-Amar Ayush",
+    "member7": "Member of Academic council, doctor of philosophy, associate professor Uurtuya Shuumarjav",
+    "member8": "Member of Academic Council, doctor of philosophy Delgerdalai Khasbat",
+    "member9": "Member of Academic Council, doctor of philosophy Dugarmaa Ulzii",
+    "member10": "Member of Academic Council, doctor of philosophy Ariunzaya Bat-Erdene",
+    "member11": "Member of Academic Council, doctor of public health Ariuntuya Tuvdendorj"
+  },
+  "partnership": {
+    "title": "Collaboration",
+    "cooperations": {
+      "subtitle": "Cooperations of Foreign relations",
+      "item1": "Joint projects with international organizations - 13",
+      "item2": "International academic papers were published with foreign scientists and researchers – 85, Academic articles – 92",
+      "item3": "Organized international academic conference, training, seminar – 10",
+      "item4": "From the lecturers at Graduate School PhD defended abroad - 8, study for Ph.D candidate – 2, Working as a visiting professor in Japan - 1"
+    },
+    "relations": {
+      "subtitle": "Foreign relations of the Graduate School",
+      "2018": {
+        "subtitle": "2018",
+        "item1": "Graduate School was signed a memorandum of understanding on student exchange cooperation at Inner Mongolia National University in April of 2018. 33 students studies at MNUMS.",
+        "item2": "Graduate School was signed a memorandum of understanding in the field of academic research and student exchange cooperations with the Mongolian-Chinese Hospital of Bugat, Inner Mongolia on the 1st of December, 2018. Nowadays 8 9 students studies at MNUMS."
+      },
+      "2019": {
+        "subtitle": "2019",
+        "item1": "Graduate School was signed with International Mongolian Hospital of Inner Mongolia  on student exchange and academic research cooperations in June of 2018. 16 students studies at MNUMS.",
+        "item2": "'Multidisciplinary brain science -2019' international conference was jointly organized with Mongolian academy of sciences brain and mind research Institute in September, 2019."
+      },
+      "2020": {
+        "subtitle": "2020",
+        "item1": "'Multidisciplinary brain science -2020' international conference was jointly organized with Mongolian academy of sciences brain and mind research Institute in September, 2020."
+      },
+      "2021": {
+        "subtitle": "2021",
+        "item1": "Professor Chae Young Moon of Yonsei University in Korea have worked as visiting professors since September, 2022."
+      },
+      "2022": {
+        "subtitle": "2022",
+        "item1": "Professor Lee Won Hee of Yonsei University in Korea have worked as visiting professors since September, 2022.",
+        "item2": "Samuel Toney worked as the English editor of the CAJMS at Graduate School in 2022-2023."
+      },
+      "2023": {
+        "subtitle": "2023",
+        "item1": "Professor Davison M Colleen of Queens University in Korea have worked as visiting professors since September 2023.",
+        "item2": "A cooperation agreement was signed with the University of Birmingham, UK in May, 2023.",
+        "item3": "Graduate School was signed with Chifeng University  on student exchange and academic research cooperations in August of 2023.",
+        "item4": "Dr. Nomin Amgalan (International Cyber Education Center) was invited as a visiting lecturer at the short-term course 'Dr.LEE Jong-wook Fellowship program for Health Professions Education' which is jointly organized by the Seoul University College of Medicine and the Korean Foundation for International Healthcare (KOFIH). The lecture topic was the “Curriculum development”."
+      }
+    },
+    "partnerships": {
+      "subtitle": "PARTNERSHIPS OF THE GRADUATE SCHOOL",
+      "descText": "Since 2018, the Graduate School has been cooperating with 4 institutes of MNUMS and the central state hospital for research, training and research work.",
+      "institutes": {
+        "subtitle": "Institutes",
+        "item1": "Institute of Public Health",
+        "item2": "Institute of Mongolian traditional medicine",
+        "item3": "Institute of Biomedical sciences",
+        "item4": "Institute of Medical sciences"
+      },
+      "hospitals": {
+        "subtitle": "Hospitals",
+        "item1": "The First Central Hospital of Mongolia",
+        "item2": "State Secondary Central Hospital",
+        "item3": "The Third Central Hospital of Mongolia /Shastin Hospital/",
+        "item4": "National Center for communicable diseases",
+        "item5": "National Cancer center of Mongolia "
+      }
+    }
+  },
+  "partnershipKyushu": {
+    "title": "Kyushu University",
+    "body": "Mongolian National University of Medical Sciences was signed with National University Corporation Kyushu University, Japan on student exchange and academic cooperations for exchange of academic staff, administrative staff and students; plan for joint research; exchange of academic information and publications; and other academic exchanges to which both Universities agree in August 1, 2024."
+  },
+  "partnershipOita": {
+    "title": "Oita University",
+    "body": "Starting in the 2024-2025 academic year, the collaboration between the Mongolian National University of Medical Sciences (MNUMS) and Oita University, Japan, has expanded with the launch of a joint doctoral program. Graduates of this double degree program will receive doctorates from both institutions.",
+    "text2": "March 29, 2024",
+    "body2": "Professor Seigo Kitano, Director of Oita University, Japan, and Professor Shomei Ryozawa from the Department of Gastroenterology at Saitama University, met with MNUMS Deputy Director for Education Policy and Regulation at MNUMS, Ts. Bilegtsaikhan. The meeting included Director of the Department of Foreign Affairs, D. Ulziimaa; the Director of Graduate School, A. Shiirevnyamba; faculty from the Department of Gastroenterology; Oita University alumni; and representatives from the Department of Health Research. Discussions focused on the doctoral Double Degree Program (DDP), with the School of Medicine at Oita University and the Graduate School of MNUMS, agreeing to implement the program.",
+    "text3": "August 1, 2024",
+    "body3": "A MOU and agreement was signed to initiate the Double Degree Program (DDP) as part of the expanded partnership between MNUMS and Oita University. The signing ceremony was attended by key officials, including Rector of MNUMS, Professor  Damdindorj B.; the Deputy Director of Education Policy and Regulation at MNUMS, Ts. Bilegtsaikhan; the Director of the Department of Foreign Affairs, D. Ulziimaa; and the Director of Graduate School, Dr. A. Shiyrevnyamba. Representatives from Oita University, including President Dr. Seigo Kitano, Vice Director Dr. Yoshiyo Yamaoka, and Dr. Naohisa Yahagi from Keio University, also participated. Prior to the signing, discussions explored further collaboration between MNUMS and Oita University.",
+    "body4": "The Double Degree Program will admit up to five doctoral students per year, offering them the unique opportunity to graduate with diplomas from both universities. This program is the first of its kind in the field of medicine in Mongolia, providing a distinctive double-degree pathway for advanced medical studies."
+  },
+  "partnershipLumiere": {
+    "title": "Lumiere, Lyon University",
+    "body": "Clauses 30.1.2 and 31.1.3 of the Law on Higher Education, Objective 2.4 of Mongolia's long-term development policy \"Vision-2050\", and Objective 3 of \"Development Policy-2030\" of the Mongolian National University of Medical Sciences, respectively based on this, a joint project between the Mongolian National University of Medical Sciences and the \"Lumiere Lyon 2\" University of France aims to increase international cooperation and improve information technology in the field of medical science education in Mongolia. The working group for the introduction of the master's (1+1) international curriculum has been established. The collaboration is a continuation of the European Union's Erasmus+ DiGiHealth-Asia project, \"Strengthening the capacity of digital health monitoring and care systems in Asia\". According to the working group, the Head of the Department of Health Research, Academic School, J. Jambaldorj, MD, Associate Professor, MD, Associate Professor Sh. Dr. E. Sarantuya and others are working.",
+    "body2": "As part of the introduction of the joint curriculum, professor Aicha Sekhari, professor Yacine Ouzrout, and associate professor Nathalie Auvergnon from \"Lumiere Lyon 2\" school came to MNUMS from October 12 to 15, 2024, and a meeting was held successfully and further work is proceeding according to plan."
+  },
+  "partnershipNew": {
+    "title": "Collaboration and Joint Programmes",
+    "body": "The Graduate School has established an extensive network of partnerships, bridging academic and research initiatives with prominent institutions worldwide and enhancing healthcare and training opportunities within Mongolia. These collaborations provide invaluable global perspectives and contribute to the Graduate School's commitment to excellence in research, education, and clinical practice.",
+    "body2": "International Collaborations",
+    "row1": {
+      "title": "Global Research and Publishing Initiatives:",
+      "item1": "The Graduate School has undertaken 13 joint projects with international organizations, reflecting a commitment to collaborative research.",
+      "item2": "To date, faculty and researchers have published 85 international academic papers and 92 articles alongside foreign scientists, contributing significantly to global academic discourse."
+    },
+    "row2": {
+      "title": "International Conferences, Seminars, and Training:",
+      "item1": "Hosted 10 international conferences, seminars, and training programme’s, offering a platform for cross-border knowledge sharing and academic exchange.",
+      "item2": "Jointly organized the 'Multidisciplinary Brain Science' conference with the Mongolian Academy of Sciences in 2019 and 2020, spotlighting brain and mind research and bringing together experts from various disciplines."
+    },
+    "row3": {
+      "title": "Faculty Development and Global Engagement:",
+      "item1": "Eight faculty members have successfully defended their PhDs abroad, while two are currently PhD candidates internationally.",
+      "item2": "A lecturer from the Graduate School has served as a visiting professor in Japan, furthering academic collaboration.",
+      "item3": "Dr. Nomin Amgalan from the International Cyber Education Center was invited as a lecturer for the Dr. LEE Jong-wook Fellowship program (Seoul University College of Medicine and the Korean Foundation for International Healthcare), where she delivered an insightful lecture on 'Curriculum Development.'"
+    },
+    "row4": {
+      "title": "Student Exchange and Research Agreements:",
+      "item1": "2018: Signed a memorandum with Inner Mongolia National University to establish a student exchange program, resulting in 33 students studying at MNUMS.",
+      "item2": "2018: Partnered with the Mongolian-Chinese Hospital of Bugat (Inner Mongolia) to advance academic research and student exchange, welcoming 89 students to MNUMS.",
+      "item3": "2019: Established a student exchange and research partnership with the International Mongolian Hospital (Inner Mongolia), resulting in 16 students joining MNUMS.",
+      "item4": "2023: Initiated cooperative agreements with the University of Birmingham (UK) and Chifeng University (Inner Mongolia) to foster student exchanges and collaborative research."
+    },
+    "row5": {
+      "title": "Visiting Professors and Academic Editors:",
+      "item1": "Esteemed professors from Yonsei University (Korea), including Professors Chae Young Moon and Lee Won Hee, served as visiting professors in 2022.",
+      "item2": "Professor Davison M. Colleen of Queen’s University (Canada) joined as a visiting professor in 2023.",
+      "item3": "Samuel Toney contributed as the English editor for CAJMS from 2022 to 2023, ensuring the Graduate School’s publications reached a broader international audience."
+    },
+    "body3": "Domestic Partnerships/ National Partnership",
+    "body4": "To foster innovation in medical education, research, and healthcare services, the Graduate School has developed partnerships with four institutes at MNUMS and five national hospitals in Mongolia. These collaborations provide a robust foundation for training, clinical research, and public health improvement:",
+    "row21": {
+      "title": "Academic and Research Institutes:",
+      "item1": "Institute of Public Health",
+      "item2": "Institute of Mongolian Traditional Medicine",
+      "item3": "Institute of Biomedical Sciences",
+      "item4": "Institute of Medical Sciences"
+    },
+    "row22": {
+      "title": "Partner Hospitals:",
+      "item1": "First Central Hospital of Mongolia",
+      "item2": "State Secondary Central Hospital",
+      "item3": "Third Central Hospital of Mongolia (Shastin Hospital)",
+      "item4": "National Center for Communicable Diseases",
+      "item5": "National Cancer Center of Mongolia"
+    },
+    "body5": "Through these strategic alliances, the Graduate School demonstrates its commitment to advancing healthcare education, providing invaluable research opportunities, and fostering a globally connected academic environment. These partnerships ensure that students, faculty, and professionals are continually engaged in innovative learning and contribute actively to the global medical and scientific community."
+  },
+  "healthResearch": {
+    "title": "DEPARTMENT OF HEALTH RESEARCH",
+    "header1": "VISION",
+    "header2": "MISSION",
+    "body1": "To be a leading center of excellence in health research education, training, and innovation in Mongolia, fostering advanced methodologies and ethical standards to address national and global health challenges.",
+    "text1": "Equip graduate students and researchers with comprehensive skills in research methodology, epidemiology, biostatistics, and research ethics to produce high-quality, evidence-based research.",
+    "text2": "Advance scientific knowledge and innovation through rigorous training and research that address pressing health issues, improving public health outcomes locally and globally.",
+    "text3": "Uphold ethical principles in research, fostering a responsible, accountable, and transparent research culture that respects the rights and dignity of all communities.",
+    "text4": "AIMS",
+    "objective1": "Educational Excellence",
+    "objective1_detail1": "Offer a curriculum in research methodology, epidemiology, biostatistics, and ethics to prepare students for health research.",
+    "objective1_detail2": "Develop programme’s that meet evolving public health, medical, and policy needs in Mongolia and beyond.",
+    "objective2": "Research Development",
+    "objective2_detail1": "Foster innovative research that addresses Mongolia-specific health issues and contributes to global health knowledge.",
+    "objective2_detail2": "Support students and researchers through all stages of the research process.",
+    "objective3": "Ethics and Professionalism",
+    "objective3_detail1": "Uphold high ethical standards, ensuring integrity and transparency in all research.",
+    "objective3_detail2": "Promote ethical practices to protect human rights, data confidentiality, and cultural respect.",
+    "objective4": "Community Engagement",
+    "objective4_detail1": "Collaborate with public health entities to ensure research findings lead to actionable health solutions.",
+    "objective4_detail2": "Support community health initiatives to improve population health and reduce disparities.",
+    "objective5": "Global Collaboration",
+    "objective5_detail1": "Partner with international institutions to improve research training quality.",
+    "objective5_detail2": "Facilitate exchange programme’s for knowledge-sharing and global perspectives in health research.",
+    "faculty": "STAFF INFORMATION",
+    "faculty_head_name": "Jambaldorj Jamiyansuren",
+    "faculty_head_title": "M.D, Ph.D., Associate Professor, Head",
+    "faculty_head_specialization": "Specialization: Molecular Biology, Genomics, Neurodegenerative Diseases",
+    "faculty_1_name": "Altantuya Idkhuu",
+    "faculty_1_title": "M.D  Ph.D, Lecturer",
+    "faculty_1_specialization": "Epidemiology, Research Methodology, Editor in Diagnosis journal",
+    "faculty_2_name": "Myadagmaa Jaalkhorol",
+    "faculty_2_title": "M.D  Ph.D, Postdoctoral researcher",
+    "faculty_2_specialization": "Epidemiology, Public Health, Neurodegenerative Diseases",
+    "faculty_3_name": "Seded Baatar",
+    "faculty_3_title": "M.D  Ph.D, Postdoctoral researcher",
+    "faculty_3_specialization": "Traditional Medical Doctor, Quality assurance management",
+    "course": "SUBJECTS",
+    "course1_title": "Research Methodology",
+    "course1_description": "This subject introduces students to designing and conducting high-quality research, covering qualitative and quantitative methods, hypothesis formulation, study design, and data analysis. Students gain critical skills for evaluating research literature and creating robust studies that address health challenges.",
+    "course2_title": "Epidemiology",
+    "course2_description": "The Epidemiology course examines disease patterns and causes within populations. Students learn key concepts such as incidence, prevalence, and risk factors, equipping them to analyze health trends and develop preventive strategies. Practical applications include outbreak investigation and chronic disease epidemiology, essential for impactful public health research.",
+    "course3_title": "Biostatistics",
+    "course3_description": "Biostatistics provides students with the statistical tools necessary to analyze health data. Topics include probability, hypothesis testing, and regression analysis, with a focus on hands-on experience using statistical software. This course builds proficiency in data interpretation, crucial for evidence-based health research.",
+    "course4_title": "Research Ethics",
+    "course4_description": "Research Ethics focuses on ethical principles in health research, such as informed consent, confidentiality, and data privacy. Students explore case studies to understand ethical dilemmas and apply principles that protect participant welfare, fostering a research culture grounded in integrity and respect for human dignity.",
+    "collaboration": "INTERNATIONAL COLLABORATIONS:",
+    "collaboration1_institution": "Oita University, Double Degree Program",
+    "collaboration2_institution": "Chiang Mai University (CMU) and University of Lyon (ULL), Joint Master Degree",
+    "collaboration3_institution": "Centre for Metabolic Bone Diseases, University of Sheffield, Sheffield, UK",
+    "collaboration4_institution": "Research Unit in Public Health, Epidemiology and Health Economics, University of Liege, Liege, Belgium",
+    "collaboration5_institution": "Mongolian Naran Society of Osteoarthritis and Musculoskeletal Health"
+  },
+  "mlae": {
+    "header": "DEPARTMENT OF MEDICAL LEGISLATIONS AND EDUCATION",
+    "current_status": "Present status of the department",
+    "description": "Academic lecturers at the Department of Medical Legislations and Education teach such as Academic skills, Medical Legislation, Medical Education and Research Mongolian language courses for Master's and Doctoral and foreign students at Graduate School. The department has 5 lecturers:",
+    "staff": {
+      "member1": "Uurtuya.Sh, MD., PhD, Associate professor, Head of Department.",
+      "member2": "Sumberzul. N, MD., PhD, Professor",
+      "member3": "Sarantuya. E, MD., PhD, Faculty",
+      "member4": "Ganbat.E, MA of Law, Faculty",
+      "member5": "Munkhtuya.Ts, MA, Faculty"
+    },
+    "course_goals_title": "LEARNING OBJECTIVES",
+    "academic_skills_goal": "“Academic Skills” subject objectives:",
+    "academic_skills": {
+      "item1": "To read and analyze research and analysis publications in Mongolian and English.",
+      "item2": "Planning and carrying out research.",
+      "item3": "Summarize the results and present them at the academic conference.",
+      "item4": "Create full-length articles and single-theme works.",
+      "item5": "Developing proposals for international joint research projects and working together.",
+      "item6": "It is to acquire the comprehensive competence of knowledge, skills, and attitude.",
+      "item7": "This course will be organized with a total of 16 hours of lectures and 32 hours of practical lessons. Assessment of learning will be through multiple-choice tests and self-paced learning performance."
+    },
+    "medical_law_title1": "\"Medical Legislation\" course",
+    "medical_law1": {
+      "item1": "Fundamental problems of legal theory",
+      "item2": "Human rights and medical care and services",
+      "item3": "Trends in the development of medical law",
+      "item4": "Certain tort and criminal law issues",
+      "item5": "Application of tort and criminal laws"
+    },
+    "medical_law_title": "“After successfully completing the \"Medical Education\" course, the student",
+    "medical_law": {
+      "item1": "To develop, implement, evaluate, evaluate, and feedback a training program to provide doctors and medical professionals with knowledge and skills that meet the demands of the health labor market.",
+      "item2": "Carrying out research work in the field of medical education and research, will be able to manage and direct project work. This course is a blended form of classroom and online learning, and the graduate training will be organized with a total of 8 hours of lectures and 16 hours of practical lessons. Assessment of learning will be through multiple-choice tests and self-paced learning performance."
+    },
+    "foreign_students_title": "Contents of Academic Mongolian language as a special program for foreign students:",
+    "foreign_student_skill1": "Methods of Mongolian language writing, reading, and speaking skills.",
+    "foreign_student_skill2": "Grammatic changes in grammar, vocabulary, and sentence structure in Medical research works.",
+    "foreign_student_skill3": "Types and genre of Medical research works.",
+    "foreign_student_skill4": "Features of the language and composition of Medical research works.",
+    "foreign_student_skill5": "Analyzing medical expressions, terms, and terminology in research papers.",
+    "foreign_student_skill6": "To acquire the writing, reading, and speaking skills for Medical research works.",
+    "achievements_title": "Research works of lecturers",
+    "achievements": {
+      "articles": {
+        "header": "Research articles:",
+        "item1": "In the journals of Scopus, Web of Science, IF - 28",
+        "item2": "In international journals - 31",
+        "item3": "In domestic journals - 100"
+      },
+      "reports": {
+        "header": "Research papers:",
+        "item1": "International conference - 55",
+        "item2": "Mongolian conference - 134"
+      },
+      "books": "Textbook and handbook - 36",
+      "guidelines": "Guidelines and instructions - 6",
+      "intellectual_property": {
+        "header": "Intellectual property:",
+        "item1": "Copyright - 9",
+        "item2": "Implemented project – 16",
+        "item3": "Ongoing project - 6"
+      }
+    }
+  },
+  "elearn": {
+    "title": "INTERNATIONAL CYBER EDUCATION CENTRE",
+    "body1": "The International Cyber Education Centre aims to provide healthcare professionals with the opportunity to improve educational degree through equal access to learning, regardless of location or time constraints.",
+    "body2": "On December 9, 1996, by Order No. A/81 of the Rector of MNUMS, the Centre for Continuing Medical Education established the Doctoral and Master's Office, initiating graduate training domestically. Building on 28 years of experience in implementing graduate training, the International Cyber University of Medical Sciences (ICUMS) was established by Order No. B/35 of the Rector of MNUMS on September 7, 2015. When introducing the first Master of Science (online) Programme in Mongolia, the content, technology, and methodology were developed in collaboration with visiting professors Professor Young Moon Chae of Yonsei University in South Korea, an honorary professor at MNUMS, and Professor Meredith Praamsma of Johns Hopkins University, Maryland, USA. The programme was designed to align with international trends in higher education and was initially launched with two public health programmes. By 2016, it had expanded to six programmes.",
+    "body3": "",
+    "text0": "ONLINE MASTER’S PROGRAMME NAME:",
+    "list1": "Medicine",
+    "list2": "Traditional medicine",
+    "list3": "Dentistry",
+    "list4": "Pharmacy",
+    "list5": "Nursing",
+    "list6": "Public Health",
+    "list7": "The Graduate School (GS) at MNUMS is responsible for graduate education, supported by 493 faculty members with doctoral degrees or higher. The International Cyber Education Centre (ICEC) ensures student-Centered, feedback-driven education. To elevate the master of science (online) programme to an international level, all course materials have been made available in both English and Mongolian to accommodate international students. The programme is delivered through the Moodle 3.11 platform, and continues to attract students from both abroad and all 21 provinces of Mongolia.",
+    "list8": "Master of science (online) programmes are fully delivered through the Moodle 3.11 platform, in accordance with the rules and regulations governing graduate courses at MNUMS. The programmes are continuously updated to reflect current trends in higher education, as well as feedback and needs from stakeholders.",
+    "list9": "",
+    "table2": {
+      "header": "STUDENT SUPPORT ACTIVITIES OF ICEC",
+      "name": "ACTIVITY",
+      "purpose": "PURPOSE",
+      "timing": "TIMING",
+      "activity1": {
+        "name": "Orientation Training 1",
+        "purpose": "Provide guidance and information on the training process and how to use the system.",
+        "timing": "Within the first month after enrollment"
+      },
+      "activity2": {
+        "name": "Orientation Training 2",
+        "purpose": "Before starting the research project, provide information on how to defend the project, the requirements for the project, and relevant regulations.",
+        "timing": "After completing foundational and specialized courses."
+      },
+      "activity3": {
+        "name": "Remedial Sessions",
+        "purpose": "For those who did not pass the comprehensive exam, provide an opportunity to ask questions and learn about research methodologies for project writing.",
+        "timing": "Within 14 days after the comprehensive exam."
+      },
+      "activity4": {
+        "name": "Approve Calendar Plan",
+        "purpose": "Help students successfully defend on time and assist faculties in planning their work appropriately.",
+        "timing": "After passing the comprehensive exam and after the supervisors have been assigned."
+      },
+      "activity5": {
+        "name": "Progress Discussions",
+        "purpose": "Ensure proper project writing, prepare for defense, and monitor if faculties are effectively working with students.",
+        "timing": "After completing the project writing and before the preliminary defense."
+      },
+      "activity6": {
+        "name": "Journal Club",
+        "purpose": "Enhance progress, choose appropriate topics, methods, and models, and improve presentation skills.",
+        "timing": "Throughout the entire period leading up to the official defense."
+      }
+    },
+    "text10": "TRAINING SESSIONS AND MEETINGS FOR STUDENTS IN 2024",
+    "text11": "When selecting the topic for their research project, Master's students are encouraged to base it on their personal experience as a professional, research interests, and needs for their growth. For example, they can develop a hypothesis and investigate issues or problems relevant to the area where they live or any specific topic of interest to them. These ensure the academic freedom over their research interests.",
+    "text12": "After the annual admissions process, new students participate in an orientation training that combines in-person and online sessions. This training provides information on the course structure, usage of the learning system, project writing, and the defense process. For the Spring 2024 admissions, an additional session on research methodology was included in the orientation training.",
+    "text13": "Courses at ICEC employ variety of digital learning and teaching methods as appropriate to engage students to the fullest extent.",
+    "table3": {
+      "header": "List of faculty and officials associated with the program",
+      "position": "Department and position",
+      "direction": "Responsible roles",
+      "name": "Name",
+      "email": "Contacts",
+      "row1": {
+        "position": "Head of International Cyber Education Centre",
+        "direction": "- Training implementation and activities,<br>- Academic Board of Graduate Studies Final Defense",
+        "name": "Sarnai.Ts, PhD, Associate Professor",
+        "email": "sarnai@mnums.edu.mn"
+      },
+      "row2": {
+        "position": "Coordinator of International Cyber Education Centre",
+        "direction": "- Coordinator of Medicine Curriculum,<br>- Coordinator of Dentistry Pharmacy Curriculum,<br>- Training organization,<br>- Preliminary defense",
+        "name": "Odonchimeg.P, PhD",
+        "email": "odonchimeg.p@mnums.edu.mn"
+      },
+      "row3": {
+        "position": "Coordinator of International Cyber Education Centre",
+        "direction": "- Coordinator of Public Health Curriculum,<br>- Coordinator of Nursing Curriculum,<br>- Training organization,<br>- Progress review meeting",
+        "name": "Munkhzul.Yo, MPH",
+        "email": "munkhzul.e@mnums.edu.mn"
+      },
+      "row4": {
+        "position": "Coordinator of International Cyber Education Centre",
+        "direction": "- Coordinator of Dentistry Curriculum,<br>- Training organization,<br>- Coordinator of Bachelor-Master integrated program",
+        "name": "Amirlan.B, MSc",
+        "email": "amirlan@mnums.edu.mn"
+      },
+      "row5": {
+        "position": "Coordinator of International Cyber Education Center",
+        "direction": "- Coordinator of Traditional Medicine Curriculum,<br>- Training organization,<br>- Requests and suggestions",
+        "name": "Naigal.Kh, MD",
+        "email": "naigal@mnums.edu.mn"
+      },
+      "row6": {
+        "position": "IT assistant of International Cyber Education Centre",
+        "direction": "- Operation of the training system,<br>- Requests and suggestions",
+        "name": "Ulemjargal.G, MD",
+        "email": "ulemjjargal@mnums.edu.mn"
+      },
+      "row7": {
+        "position": "Coordinator of Division for Graduate Education Policy and Management",
+        "direction": "- Foreign student,<br>- Responsible for graduation documents,<br>- Requests and suggestions",
+        "name": "Ganbayar.B, MSc",
+        "email": "ganbayar.b@mnums.edu.mn"
+      }
+    }
+  },
+  "masterNew": {
+    "heading": "MASTER",
+    "title": "ON-CAMPUS MASTER'S PROGRAMMES",
+    "mainText": "The Graduate school of MNUMS offers 11 programmes approved by the order of the Minister of Education and Science of Mongolia No.A/146 \"Approval of name and indexes of programmes\".",
+    "mainText2": "On-Campus master’s programme - The programme spans for 2 years (each academic year consists of 2 semesters).",
+    "group1": "Basic professional courses <br>(12 credits)",
+    "group2": "Professional courses <br>(12 credits)",
+    "group3": "Elective courses <br>(6 credits)",
+    "group4": "Thesis Writing <br>(5 credits)",
+    "group21": "1st – 2nd semester",
+    "group22": "3rd – 4th semester",
+    "group31": "Graduate school",
+    "group32": "Professional departments of school",
+    "group41": "Take all courses",
+    "group51": "A module for the Thesis Writing",
+    "listHeader": "Regulation of the Programme:",
+    "index": "Index",
+    "field": "Field",
+    "list": {
+      "item1": "The academic year of master and doctoral studies consists of 2 semesters, spanning 16 weeks.",
+      "item2": "Upon the request of the student who did not graduate on time due to the pre-approved reasons, the student can be considered for a one-year extension of graduation (one time) by the professional department, with the decision of the Division of graduate education policy and management.",
+      "item3": "If students are transferred from other accredited programmes, it is possible to transfer the previously earned credits.",
+      "item4": "The research topic and thesis must not be duplicated with other Master's or Doctoral thesis.",
+      "item5": "During the study period, the students must achieve a score of 70% or higher to be considered as complete.",
+      "item6": "The research topic, methods, a supervisor and an advisor, should be approved by the professional department.",
+      "item7": "On-Campus master's students should be assigned with a supervisor and an advisor by the professional department.",
+      "item8": "Ethics approval for the research must be obtained by submitting a request to the Research Ethics and Control Committee of MNUMS.",
+      "item9": "Progressive review of research proposal: Organize discussion with professional experts to review the research proposal.",
+      "item10": "Publish 2 research papers: Students must publish at least 2 research papers at the official Journal of MNUMS Health Sciences or other journals.",
+      "item11": "Participate in a scientific conference (2 times): Students will present the research findings at academic conferences.",
+      "item12": "Thesis will be written based on the research findings.",
+      "item13": "Preliminary Defense: Organize a preliminary oral defense with at least 7 professional experts to review the research results.",
+      "item14": "Final Defense: The thesis will be presented at the final oral defense consisting of the 11 members of the academic council approved by the Rector of MNUMS. Over 75% of the council members should approve to pass the final defense, according to the blind vote."
+    }
+  },
+  "masterOnlineNew": {
+    "title": "ONLINE MASTER'S PROGRAMMES",
+    "subjectList": {
+      "subtitle": "ONLINE MASTER'S PROGRAMMES",
+      "tag": "Online",
+      "item1": "The International Cyber Education Centre of the Graduate School is the founder in Mongolia to initiate an online master's degree programme in the medical field. Our programme's implementation was an initiative that developed the first online master's programme in the medical field in Asia. Online master's programme provide a valuable opportunity for healthcare professionals living and working in Mongolian rural areas who can’t achieve on-campus master programme and over workloads to improve their educational degree and careers through flexible, accessible learning options.",
+      "item2": "The Graduate school of MNUMS offers the 6 online master’s programmes in accordance with the order No. A/147 of the Minister of Education and Science of Mongolia.",
+      "item3": "Online master’s programme - The programme spans for 2 years (each academic year consists of 2 semesters).",
+      "item4": "For more information about the Online Master's programme, please visit icec@mnum.edu.mn"
+    },
+    "list": {
+      "field1": "Medicine",
+      "field2": "Traditional Medicine",
+      "field3": "Dentistry",
+      "field4": "Public Health",
+      "field5": "Pharmacy",
+      "field6": "Nursing",
+      "item1": "The academic year of master and doctoral studies consists of 4 semesters with each spanning 16 weeks.",
+      "item2": "Upon the request of a student who did not graduate on time due to the pre-approved reasons, the student will be considered for a one-year extension of graduation (one time) by the professional department, with the decision of the Division of graduate education policy and management.",
+      "item3": "If students are transferred from other accredited programmes, it is possible to transfer the previously earned credits.",
+      "item4": "The research topic and thesis must not be duplicated with other Master's or Doctoral thesis.",
+      "item5": "During the study period, the students must achieve a score of 70% or higher to be considered as complete.",
+      "item6": "The research topic, methods, and a supervisor must be approved by the professional department.",
+      "item7": "Progressive review: Organize discussion with professional experts to review the research proposal.",
+      "item8": "Preliminary Defense: Organize a preliminary defense with at least 7 professional experts to review the research results.",
+      "item9": "Final Defense: The project should be presented to the 11 members of the academic council approved by the Rector of MNUMS. If over 75% of the council members should approve to pass the final defense, according to the blind vote."
+    },
+    "group": "Regulation of the Programme: ",
+    "group1": "Basic professional courses <br>(12 credits)",
+    "group2": "Professional courses <br>(12 credits)",
+    "group3": "Elective courses <br>(6 credits)",
+    "group4": "Thesis Writing <br>(5 credits)",
+    "group21": "1st – 2nd semester",
+    "group22": "3rd – 4th semester",
+    "group31": "Graduate school",
+    "group32": "Professional department of School and Graduate school",
+    "group41": "Take all courses",
+    "group51": "A module for Writing on Project",
+    "teacher": "Teaching staff:",
+    "teacherSub": "According to the relevant orders, the programme employs a professional teaching staff holding a doctorate or higher degree.",
+    "teacher1": "22.2% of the faculty members are professors with a Doctor of Medicine (PhD) degree",
+    "teacher2": "50% of the faculty members are associate professors with a Doctor of Medicine (PhD) degree",
+    "teacher3": "27.8% of the faculty members are doctors with a Doctor of Medicine (PhD) degree.",
+    "other": {
+      "subject": "Following table illustrates the differences between on-campus and online master's programme.",
+      "item11": "Criteria",
+      "item12": "Online Master",
+      "item13": "On-Campus Master",
+      "item21": "Index",
+      "item22": "091201",
+      "item23": "091201",
+      "item31": "Training type",
+      "item32": "Online",
+      "item33": "On-Campus",
+      "item41": "Curriculum Structure",
+      "item51": "Basic professional course",
+      "item52": "12 credits/similar",
+      "item53": "12 credits/similar",
+      "item61": "Professional course",
+      "item62": "12 credits/similar",
+      "item63": "12 credits/similar",
+      "item71": "Elective course",
+      "item72": "11 out of 6 credits/similar",
+      "item73": "11 out of 6 credits/similar",
+      "item81": "Examination",
+      "item82": "Thesis/Project Structure",
+      "item83": "Proposal writing with method",
+      "item84": "Literature review of thesis",
+      "item85": "Expecting outcomes",
+      "item86": "Result",
+      "item87": "Paper",
+      "item88": "Discussion and Defense",
+      "item89": "Proposal discussion",
+      "item90": "Progressive discussion",
+      "item91": "Ethics committee permission and conclusion",
+      "item92": "Preliminary defense by the department (open vote)",
+      "item93": "Final defense by the academic council (blind vote)",
+      "item94": "Diploma",
+      "item95": "The note of diploma (meaning)",
+      "item96": "The Master of Science in the Field of Medicine by Research Project",
+      "item97": "The Master of Science in the Field of Medicine by Thesis"
+    }
+  },
+  "doctorNew": {
+    "title": "DOCTORAL PROGRAMME",
+    "mainText": "The Mongolian National University of Medical Sciences (MNUMS) offers 11 doctoral programmes, which consist of basic professional, professional, and research courses.",
+    "mainText2": "The doctoral programme spans 3 years, with a total of 60 credit hours under the curriculum.",
+    "mainText20": "This includes:",
+    "list": {
+      "item11": "Basic Professional Courses – ",
+      "item12": "12 credit hours, including 6 credit hours on research methodology, ethics, and intellectual property",
+      "item21": "Professional Courses – ",
+      "item22": "12 credit hours",
+      "item31": "Research and Practice Courses - ",
+      "item32": "12 credit hours",
+      "item41": "Dissertation and Research Work - ",
+      "item42": "24 credit hours"
+    },
+    "mainText3": "In the doctoral programme, research topics and methods are reviewed and approved by the Professional Department of School and Academic Council. The ethical approval for research, which must prove that the ethical standards have been met in the process of conducting the research, will be reviewed by the Research Ethics and Control Committee of MNUMS.",
+    "mainText4": "Upon the completion of the research, doctoral candidates are required to publish two papers in peer-reviewed journals indexed in Web of Science and Scopus as the  first author or corresponding author. The thesis will undergo a peer-review process, with the evaluation conducted by an expert approved by the Rector of MNUMS, and will proceed to both preliminary and final defenses."
+  },
+  "postdoctoralNew": {
+    "title": "POSTDOCTORAL PROGRAM",
+    "subtitle": "MNUMS POSTDOCTORAL RESEARCH  SCHOLARSHIP",
+    "mainText": "In 2024, postdoctoral students who are doing research based on the institute and laboratory of MNUMS will be paid as full-time employees at the salary scale of a senior faculty member and will supervise the performance of research work.",
+    "list": {
+      "header": "Eligible criteria for post-doctoral applicants:",
+      "item1": "It must not have been more than 5 years since the doctorate.",
+      "item2": "Postdoctoral studies are up to 2 years.",
+      "item3": "Academic researchers from foreign and domestic universities, academic and research institutions in cooperation with MUNUMS can participate.",
+      "item4": "It will be based on departments, laboratories, institutes and university hospitals in MNUMS.",
+      "item5": "The post-doctoral researcher and supervisor will work under a tripartite agreement with the Division of Graduate Education Policy and Management of MNUMS.",
+      "item6": "The post-doctoral researcher will publish at least 1 article as the first or responsible author in a journal registered in the Web of Science, Scopus, and Pubmed databases.",
+      "item7": "A post-doctoral researcher will earn 2.6 million MNT per month and 31 million MNT per year at the teaching level.",
+      "item8": "A postdoctoral researcher is not allowed to engage in dual employment outside the university."
+    },
+    "list2": {
+      "header": "Registration materials:",
+      "item1": "Application;",
+      "item2": "Civil servant resume;",
+      "item3": "Copy of doctoral thesis;",
+      "item4": "List of scientific publications;",
+      "item5": "Preliminary research plan;",
+      "item6": "The decision of the meeting to discuss and support the post-doctoral research project by the academic council of the constituent school and institute;",
+      "item7": "A description supported by the project leader;"
+    },
+    "list3": {
+      "header": "Postdoctoral researchers",
+      "item1": "Dr. Seded Baatar, a faculty and researcher at the Department of Health Research, Graduate School of MNUMS, carried out the research project \"Localization of the method of measuring gastrointestinal motility in experimental animals in Mongolia\" for the first time in the basic research of drugs in the complex composition of traditional medicine. In the future, we are working with the goal of preventing digestive tract disorders among the population and introducing a methodology that can become a research standard for scientists in Mongolia.",
+      "item2": "Dr. Seded Baatar has published 12 domestic articles, 8 reports, and 6 foreign articles.",
+      "item3": "Dr.Myadagmaa Jaalkhorol, a faculty and researcher at the Department of Health Research, Graduate School of MNUMS, is currently working on a research project on the topic of \"Researching the risk of osteoporosis-related fractures in the population over 40 years of age in Mongolia in relation to the quality of life.\" This research work is characterized by the fact that it has a high significance in detecting and preventing osteoporosis in the elderly in the Mongolian population, as well as diagnosing and treating it at an early stage before the complications of chronic diseases worsen.",
+      "item4": "J. Myadagmaa, MD, has published 16 domestic articles, 15 reports, and 8 foreign articles."
+    }
+  },
+  "admissionNew": {
+    "tab1": {
+      "title": "THE INFORMATION ABOUT ADMISSION",
+      "mainText": "The admission activities will be regulated by the \"Regulation for Graduate Education Activities at the Mongolian National University of Medical Sciences,\" approved by Rector’s Order A/28, dated February 9, 2021. You can view the full regulation by ",
+      "mainText1": "",
+      "mainText2": " Click here.",
+      "mainText3": "",
+      "subjectHeader": "Requirements for applicants",
+      "subjectList": {
+        "subtitle": "For master’s programme:",
+        "item1": "Undergraduate diploma - Grade point average must be at least 2.5 (75%)."
+      },
+      "subjectList2": {
+        "subtitle": "For doctoral programme:",
+        "item1": "Master's diploma- Grade point average must be at least 3.0 (80%)."
+      },
+      "subjectChoose": {
+        "header": "9"
+      },
+      "question": {
+        "text1": "Frequently asked questions about admission",
+        "text2": "1. What should I do if I entered my registration information incorrectly or incompletely?",
+        "text3": "Please contact MNUMS at 77757575 – extension 1025 for assistance.",
+        "text4": "2. How can I check if I passed the entrance exam?",
+        "text5": "Information about passing or failing the entrance exam will be posted on the ",
+        "text51": "https://graduate.mnums.edu.mn/",
+        "text52": "",
+        "text6": "3. Are scholarships available for students?",
+        "text7": "Yes, the following stipends are available:",
+        "text8": "Research Scholarship named after the Rector of MNUMS",
+        "text9": "Postdoctoral Research Fellowship",
+        "text10": "Government Grants for Students with Disabilities",
+        "text11": "Student Development Loans and Grants: ",
+        "text12": "https://elf.gov.mn",
+        "text13": "4. How many credits can I take in one year?",
+        "text14": "You can complete 8-12 credit hours per year, according to the academic plan.",
+        "text15": "5. What is the difference between online and classroom-based learning?",
+        "text16": "In the online program, master's students work on research projects but do not conduct actual research. In contrast, the classroom-based program involves one-topic research or real-world research that culminates in the defense of findings.",
+        "text17": "6. How do I study online?",
+        "text18": "Online classes are conducted via the platform at ",
+        "text19": "http://icec.mnums.edu.mn/",
+        "text20": "",
+        "text21": "7. Where can I get more information about the Graduate School?",
+        "text22": "You can get more detailed information from the Graduate School website at ",
+        "text23": "https://graduate.mnums.edu.mn/",
+        "text24": "",
+        "text25": "8. Can I change my field of study after admission?",
+        "text26": "Yes, you may change your field of study within the first semester by submitting a written request to the Division of Graduate Educational Policy and Management for approval.",
+        "text27": "The Master’s Program in Nursing (091301) at the School of Nursing, Mongolian National University of Medical Sciences, was accredited for a period of five years, in accordance with Resolution No. 2024/091-12 issued by the Accreditation Commission, dated June 18, 2024.",
+        "text28": "The Master's Program in Traditional Medicine (EO9170101) of the International School of Traditional Medicine at the University of Medical Sciences of Mongolia was accredited for a period of five years, as per the resolution No. 2 of the Higher Education Accreditation Commission, dated April 15, 2021."
+      }
+    },
+    "tab2": {
+      "title": "ADMISSION",
+      "subjectHeader": "Enrollment period",
+      "subject": {
+        "text1": "Autumn session: ",
+        "text2": "From August 25 to September 10",
+        "text3": "Spring session: ",
+        "text4": "From February 1 to 15",
+        "text5": "Registration will be available on the following website: ",
+        "text6": "/graduate.burtgel.mnums.edu.mn/",
+        "text7": "",
+        "text8": "Enrollment Examination",
+        "text9": "The entrance examination consists of a professional and English language test. The examination will be conducted online, and the login credentials, including the user code, username, and password, will be posted on the website the day before the examination to confirm registration.",
+        "text10": "Please ",
+        "text11": "click here ",
+        "text12": "to view the instructions for the entrance examination.",
+        "text21": "Exam link: ",
+        "text22": "http://mdl.mnums.edu.mn/gpm ",
+        "text31": "The exam results will be announced on ",
+        "text32": "https://graduate.mnums.edu.mn/",
+        "text33": "",
+        "text40": "Required Documents for Entrants",
+        "text41": "Entrants who have passed the examination must submit the following documents within the specified deadline:",
+        "text42": "For Master of Science Programme:",
+        "text43": "Official transcript of Bachelor's degree",
+        "text44": "Passport size photo 2 copy",
+        "text45": "For Doctoral Programme:",
+        "text46": "Official transcript of Master's degree",
+        "text47": "Passport size photo 2 copy",
+        "text50": "For International Applicants:",
+        "text51": "Master's Degree:",
+        "text52": "The Bachelor's diploma must be notarized and translated into Mongolian with a certified translation.",
+        "text53": "For Doctoral Degree:",
+        "text54": "The Master's diploma must be notarized and translated into Mongolian with a certified translation.",
+        "text55": "Passport size photo 2 copy"
+      },
+      "subjectList": {
+        "subtitle": "Элсэгчдэд тавигдах шаардлага: (Журмын 2.3)",
+        "item1": "2.3.1 Магистр, докторын хөтөлбөрт элсэгч нь тухай нарийвчилсан судлагдахууны хүрээнд Эрдмийн сургуулиас боловсруулсан элсэлтийн шалгалтын шаардлагыг хангасан байна.",
+        "item2": "2.3.2 Магистрын хөтөлбөрт элсэгч нь бакалаврын боловсрол, эсвэл түүнтэй дүйцэх боловсролын зэрэгтэй, бакалаврын голч дүн 2.5(75%)-аас багагүй байна.",
+        "item3": "2.3.3 Докторын хөтөлбөрт элсэгч нь шинжлэх ухааны магистрын боловсрол, эсвэл түүнтэй дүйцэх боловсролын зэрэгтэй, магистрын голч дүн нь 3.0 (80%)-аас багагүй байна.",
+        "item4": "2.3.4 Элсэгч нь өмнө нь эзэмшсэнээс өөр чиглэлээр (нарийвчилсан судлагдахуун) магистр, докторын хөтөлбөрт хамрагдах бол сургалтын агуулгын залгамж чанарыг хангахад шаардлагатай хичээлийн зөрүүг нөхөж судална. Нөхөж судалсан хичээлийг хөтөлбөрийн үндсэн цагт тооцохгүй.",
+        "item5": "2.3.5 Монгол хэлээр суралцах хөтөлбөр сонгосон гадаадын суралцагч монгол хэлний шаардлагын төвшинг хангасан байна. Засгийн газар хоорондын хэлэлцээрийн дагуу суралцагсад хэлэлцээрт заасан нөхцөлийг баримтална.",
+        "item6": "2.3.6 Англи хэлээр суралцах хөтөлбөр сонгосон гадаадын суралцагч гадаад хэлний төв ба Эрдмийн сургуулиас хамтран боловсруулсан агуулга бүхий элсэлтийн шалгалтын шаардлагыг хангасан байна.Тухайн нарийвчилсан судлагдахууны хөтөлбөрийн агуулга, онцлогоос хамааран бүрэлдэхүүн сургууль, мэргэжлийн тэнхим, нэгжийн саналыг үндэслэн элсэгчдэд тусгай шаардлага тавьж болно."
+      },
+      "subjectList2": {
+        "subtitle": "Төлбөрийн мэдээлэл",
+        "item1": "Бүртгэлийн хураамж",
+        "item1-1": "20,000₮",
+        "item2": "Банкны нэр",
+        "item2-1": "Хаан банк",
+        "item3": "Хүлээн авагч",
+        "item3-1": "АШУҮИС",
+        "item4": "Дансны дугаар",
+        "item4-1": "5031813390",
+        "item5": "Гүйлгээний утга",
+        "item5-1": "Сургалтын төрөл /доктор, магистр, сайбер/, регистрийн дугаар, овог нэр, утасны дугаар"
+      }
+    },
+    "tab5": {
+      "title": "TUITION FEES",
+      "subheader": "Tuition fee",
+      "table": {
+        "list": {
+          "itemPay": "Master’s Programme Tuition Fees",
+          "itemFor": "Tuition Fee for International Students",
+          "itemFee": "Entrance exam Fee",
+          "itemDoc": "PhD Programme Tuition Fees",
+          "itemInfo": "Payment account information",
+          "itemInfo2": "Payment Instructions",
+          "item1": "1st course",
+          "item2": "2nd course",
+          "item3": "3rd course",
+          "item4": "Bank Name",
+          "item5": "Khan Bank",
+          "item6": "Account Holder",
+          "item7": "MNUMS",
+          "item8": "Account numbers",
+          "item9": "Payment Details: (Please include the following information in your payment transaction)",
+          "item10": "- Type of program (e.g., Doctoral, Master’s, Online Master’s) <br> - Registration ID, First name, Last Name, Phone Number",
+          "item11": "oyutan.unicus.mn/",
+          "item12": " you can access the payment portal and pay the tuition fee following the instructions.",
+          "item13": "Contact Information (For any inquiries, please contact): 7775-7575-1025"
+        }
+      }
+    }
+  },
+  "scholarshipNew": {
+    "title": "Post-Doctoral Scholarship of MNUMS",
+    "description": "The Post-Doctoral Scholarship of MNUMS supports researchers in leadership roles and the implementation of academic projects aligned with the MNUMS Academic Council. Ph.D. researchers selected for this scholarship will receive funding for 1-2 years, with the possibility of a one-year extension.",
+    "research": {
+      "header": "Key Features of the Post-Doctoral Scholarship:",
+      "framework1": "Research Duration & Funding: Research funding is available for up to 1 year, with a possible extension of one additional year.",
+      "framework2": "Collaboration: The scholarship supports both domestic and international research collaborations, including partnerships with universities and research organizations.",
+      "framework3": "Research Location: The project must be conducted at MNUMS, utilizing its departments, laboratories, or hospitals.",
+      "framework4": "Contract: A tripartite agreement between the researcher, their supervisor, and MNUMS will be signed, with progress reports submitted to the Graduate Education Policy and Management every six months.",
+      "framework5": "Publication Requirement: Researchers must publish at least one article as the first author in a recognized journal (Web of Science, Scopus, or PubMed indexed).",
+      "framework6": "Supervision: The researcher will supervise Master's and Doctoral students in their research and training.",
+      "framework7": "Salary: The researcher will be compensated based on their academic rank.",
+      "framework8": "Contract Violations: Any breach of the research contract will result in the reimbursement of all scholarship funds."
+    },
+    "guidelines": {
+      "header": "Eligibility Requirements for Post-Doctoral Researchers:",
+      "details": {
+        "guideline_1": "Applicants must be full-time faculty members at MNUMS with an academic rank of Associate Professor or higher.",
+        "guideline_2": "Applicants must have prior experience leading research projects funded by MNUMS or other research organizations."
+      }
+    },
+    "eligibility": {
+      "header": "Application Materials:",
+      "requirements": {
+        "requirement_1": "Application Form (State Office Form 1)",
+        "requirement_2": "Ph.D. Certificate (must be awarded within the last 5 years)",
+        "requirement_3": "Letter of Support from the Academic Council of MNUMS, confirming the research project's approval.",
+        "requirement_4": "Research Proposal (outlining the project topic, objectives, and supporting documentation)."
+      }
+    },
+    "stipend_details": {
+      "header": "Ministry of Education’s Post-Doctoral Research Scholarship",
+      "description": "The Post-Doctoral Research Scholarship, awarded by the Ministry of Education and Science, is designed to support Ph.D. graduates conducting research and innovation in science and technology. This scholarship aims to foster the next generation of scientists and researchers who are engaged in groundbreaking projects.",
+      "additional_info": "Successful applicants will be awarded the Innovation Scholarship in the name of the Minister of Science and Technology.",
+      "application_procedure": "The Ministry of Education, Culture, and Science oversees the management of the scholarship, and applicants must follow the procedures outlined in Minister's Order No. 222 (2011).",
+      "more_info1": "For further details, visit the Ministry’s website:",
+      "more_info2": "",
+      "more_info_link": "https://www.meds.gov.mn/post/130887"
+    }
+  },
+  "scholarshipStudent": {
+    "title": "MNUMS Rector’s Research Scholarship",
+    "description": "The MNUMS Rector’s Research Scholarship provides funding for Master's and Doctoral students conducting research at MNUMS’s institutes, laboratories, and hospitals. Master's students can receive up to 3 million MNT, while Doctoral students can receive up to 5 million MNT. This funding is intended for research expenses such as purchasing reagents, equipment, software, and publishing costs. Up to 50 scholarships will be awarded to eligible students.",
+    "requirement": {
+      "header": "Eligibility Requirements for Scholarship Applicants:",
+      "framework1": "Applicants must be citizens of Mongolia.",
+      "framework2": "Applicants must be enrolled in a Master's or Doctoral programme at MNUMS, with a minimum GPA of 3.2.",
+      "framework3": "The research topic and methodology should be well-defined and discussed.",
+      "framework4": "The applicant must not have transferred between departments, schools, or programmes.",
+      "framework5": "Research must be conducted within a research institute, laboratory, or hospital at MNUMS.",
+      "framework6": "The department or supervising professor must support the scholarship application."
+    },
+    "requirement1": {
+      "header": "Required Application Documents:",
+      "headerBody": "The student applying for the scholarship must submit the following documents to the Division of Graduate Education Policy and Management.",
+      "document1": "Completed application form ",
+      "document1_link": "(available here) ",
+      "document11": "",
+      "document2": "Copy of Civil ID Card",
+      "document3": "GPA Transcript",
+      "document4": "Letter of Recommendation from the Supervisor",
+      "document5": "Research Proposal (1,000 words, including the research introduction, innovative aspects, importance, and progress)",
+      "document6": "Letter of Support from the Department and Professors",
+      "document7": "Approval Letter from the Director of the Institute, Laboratory Manager, or Hospital Chief at MNUMS",
+      "document8": "If applicable, a letter confirming the acceptance of an article for publication in a peer-reviewed journal (indexed in Web of Science, Scopus, or PubMed)"
+    }
+  },
+  "scholarshipTeacher": {
+    "title": "Research Grants of Science and Technology Support Fund for faculties, staffs, and researchers of MNUMS",
+    "description": "The research projects are granted to the faculties, staffs and researchers of the current university, according to the order No. A/30 dated February 14, 2024 of the Rector of MNUMS.",
+    "text1": "Purpose:",
+    "text2": "Within the framework of MNUMS's Development Policy-2030, research and development priorities, the university will bring the results of its research and development work to the level of the world’s best schools, and will cooperate with domestic and foreign academic institutions, expansion, establishment, and development of international-level research institutes and laboratories, and aims to increase the number of works published in international journals based on the results of research and development and to support the development of a research university through the creation and localization of new technologies, patents, and innovative products.",
+    "requirement": {
+      "header": "Common project requirements:",
+      "psl1": "The project must be in accordance with the development policy of MNUMS and the priorities of academic work.",
+      "psl2": "The research project should leverage the resources of MNUMS, including its research laboratories, centers, and institutes. The project should be aimed at strengthening clinical and basic research, foster innovation, training opportunities, and building external collaborations. Joint research projects are particularly advantageous.",
+      "psl3": "The project leader should be a full-time teacher and researcher of MNUMS and have published works in international journals registered on the SCOPUS platform in the last 5 years, registered and protected intellectual property.",
+      "psl4": "The project implementation team should include the participation of academicians of MNUMS, representatives of universities, and research institutes with foreign cooperation.",
+      "psl5": "Model and statistical processing should be planned in accordance with the rules of research ethics and scientific methods.",
+      "psl6": "Project budget and financial calculations should be realistic.",
+      "psl7": "Completing market research and calculations needed for the economic circulation of new technologies, patents, and innovative works created because of the project is a must.",
+      "psl8": "The project requires publishing an article in an international journal indexed in the SCOPUS platform under the name of MNUMS (responsible or 1st author).",
+      "psl9": "The research project must be discussed and supported at the meeting of the Academic Council of constituent Schools."
+    },
+    "research_project_budget": {
+      "header": {
+        "title": "Budget of research project funding",
+        "col1": "Project type and format",
+        "col2": "Duration of the project",
+        "col3": "Unit project financing (MNT)",
+        "col4": "Number of projects",
+        "col5": "Total amount (MNT)"
+      },
+      "row1": {
+        "number": 1,
+        "project_type": "An interdisciplinary research project to support the operations of research institutes, centers, and laboratories",
+        "duration": "Up to 1 year",
+        "funding_per_project": "Up to 70,000,000 MNT",
+        "number_of_projects": 5,
+        "total_amount": "Up to 350,000,000 MNT"
+      },
+      "row2": {
+        "number": 2,
+        "project_type": "Advanced research project",
+        "duration": "Up to 3 years",
+        "funding_per_project": "Up to 40,000,000 MNT",
+        "number_of_projects": 5,
+        "total_amount": "Up to 200,000,000 MNT"
+      },
+      "row3": {
+        "number": 3,
+        "project_type": "Innovation and Technology Transfer Project",
+        "duration": "Up to 1 year",
+        "funding_per_project": "Up to 40,000,000 MNT",
+        "number_of_projects": 5,
+        "total_amount": "Up to 200,000,000 MNT"
+      },
+      "total_summary": {
+        "header": "TOTAL AMOUNT",
+        "total_projects": 15,
+        "total_funding": "Up to 750,000,000 MNT"
+      }
+    }
+  },
+  "units": {
+    "title": "Departments and Academic Council of Graduate School"
+  }
+}

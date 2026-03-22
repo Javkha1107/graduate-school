@@ -58,12 +58,12 @@ export default async function MasterPage({
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
-              <thead className="bg-muted/50 border-b border-border/40">
+              <thead className="bg-primary border-b border-border/40">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-muted-foreground uppercase tracking-wider w-16">
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-white uppercase tracking-wider w-16">
                     #
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-white uppercase tracking-wider">
                     {t(section, "field") || "Field"}
                   </th>
                 </tr>

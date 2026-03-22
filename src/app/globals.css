@@ -192,3 +192,58 @@ body {
   color: var(--muted-foreground);
   font-style: italic;
 }
+/* ── Global table styles (public site) ── */
+/* Base table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+table th,
+table td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+/* Public site: auto-style header rows with primary color */
+main table thead th {
+  background-color: var(--primary);
+  font-weight: 600;
+  color: #ffffff;
+}
+/* Quill outputs <td> not <th> — style first row as header when no thead */
+main table:not(:has(thead)) tr:first-child td {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+main table tbody tr:nth-child(even) td {
+  background: var(--surface);
+}
+
+.prose table {
+  margin: 1.5rem 0;
+}
+@media (max-width: 640px) {
+  table {
+    font-size: 0.85rem;
+  }
+  table th,
+  table td {
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+/* Quill editor table styles */
+.ql-editor table {
+  margin: 1rem 0;
+}
+.ql-editor table td {
+  min-width: 60px;
+}
+.ql-editor table tr:first-child td {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}

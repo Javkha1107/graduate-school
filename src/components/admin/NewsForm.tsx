@@ -28,6 +28,7 @@ import { NEWS_CATEGORIES, type NewsItem } from "@/lib/supabase";
 
 const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
 import "react-quill-new/dist/quill.snow.css";
+import TableToolbar from "@/components/admin/TableToolbar";
 
 const quillModules = {
   toolbar: [
@@ -367,6 +368,10 @@ export default function NewsForm({ initialData, mode }: NewsFormProps) {
             <FileText className="h-4 w-4 text-muted-foreground" />
             <h2 className="text-sm font-semibold">Агуулга (Монгол)</h2>
           </div>
+          <TableToolbar
+            contentHtml={form.content_mn}
+            onChange={(v) => update("content_mn", v)}
+          />
           <ReactQuill
             theme="snow"
             value={form.content_mn}
@@ -387,6 +392,10 @@ export default function NewsForm({ initialData, mode }: NewsFormProps) {
             <Globe className="h-4 w-4 text-muted-foreground" />
             <h2 className="text-sm font-semibold">Агуулга (Англи)</h2>
           </div>
+          <TableToolbar
+            contentHtml={form.content_en}
+            onChange={(v) => update("content_en", v)}
+          />
           <ReactQuill
             theme="snow"
             value={form.content_en}

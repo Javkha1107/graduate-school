@@ -71,7 +71,7 @@ export default function Hero({ locale, dict }: HeroProps) {
               <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/70 backdrop-blur-sm">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
                 {locale === "mn"
-                  ? "АШҮҮИС Эрдмийн Сургууль"
+                  ? "АШҮҮИС Ахисан Түвшний Сургууль"
                   : "MNUMS Graduate School"}
               </span>
             </motion.div>

@@ -7,35 +7,35 @@ export interface NavItem {
 
 export const navigation: NavItem[] = [
   {
-    labelKey: "menu.about",
+    labelKey: "menu.news",
     children: [
-      { labelKey: "menu.deansGreeting", href: "/about/greeting" },
-      { labelKey: "menu.aboutUsPage", href: "/about" },
-      { labelKey: "menu.gepm", href: "/about/graduate-policy" },
+      { labelKey: "menu.newsInfo", href: "/news" },
+      { labelKey: "menu.formsRegulations", href: "/news/forms" },
+    ],
+  },
+  {
+    labelKey: "menu.introduction",
+    children: [
+      { labelKey: "menu.greeting", href: "/introduction/greeting" },
+      { labelKey: "menu.history", href: "/introduction/history" },
       {
-        labelKey: "menu.units",
+        labelKey: "menu.structure",
         children: [
-          { labelKey: "menu.eLearning", href: "/about/e-learning" },
-          { labelKey: "menu.healthResearch", href: "/about/health-research" },
-          { labelKey: "menu.medicalLaw", href: "/about/medical-law" },
-          { labelKey: "menu.academicCouncil", href: "/about/academic-council" },
+          { labelKey: "menu.structureOrganization", href: "/introduction/structure#organization" },
+          { labelKey: "menu.facultyLeaders", href: "/introduction/structure#faculty-leaders" },
         ],
       },
-      { labelKey: "menu.teachingStaff", href: "/about" },
-      {
-        labelKey: "menu.collaborationJoint",
-        children: [
-          { labelKey: "menu.collaboration", href: "/about/collaboration" },
-          { labelKey: "menu.kyushu", href: "/about/kyushu" },
-          { labelKey: "menu.oita", href: "/about/oita" },
-          { labelKey: "menu.lumiere", href: "/about/lumiere" },
-        ],
-      },
-      {
-        labelKey: "menu.cajms",
-        href: "https://www.mongoliajol.info/index.php/CAJMS",
-        external: true,
-      },
+      { labelKey: "menu.academicCouncil", href: "/introduction/academic-council" },
+      { labelKey: "menu.programCommittee", href: "/introduction/program-committee" },
+    ],
+  },
+  {
+    labelKey: "menu.trainingCenters",
+    children: [
+      { labelKey: "menu.academicCenter", href: "/training-centers/academic" },
+      { labelKey: "menu.onlineCenter", href: "/training-centers/online" },
+      { labelKey: "menu.interdisciplinaryCenter", href: "/training-centers/interdisciplinary" },
+      { labelKey: "menu.postgraduateCenter", href: "/training-centers/postgraduate" },
     ],
   },
   {

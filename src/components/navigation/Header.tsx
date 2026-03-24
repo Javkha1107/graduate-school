@@ -67,7 +67,7 @@ export default function Header({ locale, dict }: HeaderProps) {
         hidden ? "-translate-y-full" : "translate-y-0",
         isTransparent
           ? "bg-black/10 backdrop-blur-sm border-b border-white/10"
-          : "glass border-b border-border/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)]",
+          : "bg-white border-b border-border/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)]",
       )}
     >
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">

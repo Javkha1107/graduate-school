@@ -47,14 +47,14 @@ export default function Logo({
   return (
     <div
       className={`relative shrink-0 ${className}`}
-      style={{ height, width: height * 4.5 }}
+      style={{ height, width: height * 3 }}
     >
       <Image
-        src="/logo.png"
+        src="/newLogo.png"
         alt="MNUMS Graduate School"
         fill
         className={`object-contain object-left transition-all duration-300 ${variant === "white" ? "brightness-0 invert" : ""}`}
-        sizes={`${Math.round(height * 4.5)}px`}
+        sizes={`${Math.round(height * 3)}px`}
         onError={() => setError(true)}
       />
     </div>

@@ -22,8 +22,9 @@ export async function POST(request: Request) {
         { status: 503 },
       );
     }
+    const folder = (formData.get("folder") as string) || "news";
     const ext = file.name.split(".").pop();
-    const fileName = `news/${Date.now()}-${Math.random().toString(36).substring(7)}.${ext}`;
+    const fileName = `${folder}/${Date.now()}-${Math.random().toString(36).substring(7)}.${ext}`;
 
     const { error } = await supabase.storage
       .from("news-images")

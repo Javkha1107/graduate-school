@@ -102,7 +102,7 @@ export default function Footer({ locale, dict }: FooterProps) {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-white/50 hover:text-white transition-colors group"
                   >
-                    <ExternalLink className="h-3 w-3 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-accent/70" />
+                    <ExternalLink className="h-3 w-3 shrink-0 opacity-100 group-hover:text-accent/70 transition-opacity" />
                     <span className="leading-snug">{school.name[lang]}</span>
                   </a>
                 </li>
@@ -124,7 +124,7 @@ export default function Footer({ locale, dict }: FooterProps) {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-white/50 hover:text-white transition-colors group"
                   >
-                    <ExternalLink className="h-3 w-3 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-accent/70" />
+                    <ExternalLink className="h-3 w-3 shrink-0 opacity-100 group-hover:text-accent/70 transition-opacity" />
                     <span className="leading-snug">{school.name[lang]}</span>
                   </a>
                 </li>

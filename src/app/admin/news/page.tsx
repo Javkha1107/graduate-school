@@ -4,14 +4,13 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import Logo from "@/components/ui/Logo";
+import AdminHeader from "@/components/admin/AdminHeader";
 import {
   Plus,
   Search,
   RefreshCw,
   Pencil,
   Trash2,
-  LogOut,
   Newspaper,
   Eye,
   EyeOff,
@@ -164,10 +163,6 @@ export default function AdminNewsPage() {
     });
     fetchNews();
   }
-  async function handleLogout() {
-    await fetch("/api/admin/logout", { method: "POST" });
-    router.push("/admin/login");
-  }
   async function handleRefresh() {
     setRefreshing(true);
     await fetchNews();
@@ -176,18 +171,7 @@ export default function AdminNewsPage() {
 
   return (
     <div className="min-h-screen bg-surface">
-      {/* Top bar */}
-      <header className="sticky top-0 z-20 flex h-16 items-center justify-between border-b border-border bg-white/80 px-4 backdrop-blur-xl sm:px-8">
-        <div className="flex items-center gap-3">
-          <Logo height={36} />
-        </div>
-        <button
-          onClick={handleLogout}
-          className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted cursor-pointer"
-        >
-          <LogOut className="h-4 w-4" /> Гарах
-        </button>
-      </header>
+      <AdminHeader />
 
       <div className="p-4 sm:p-8">
         {/* Stats */}

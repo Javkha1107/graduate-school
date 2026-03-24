@@ -1854,5 +1854,72 @@
   },
   "units": {
     "title": "Departments and Academic Council of Graduate School"
+  },
+  "scheme": {
+    "title": "GRADUATE SCHOOL",
+    "subtitle": "(Graduate School of Medical Science)",
+    "centers": {
+      "c1": "Academic Training Center",
+      "c1sub": "(Center of Academic Education)",
+      "c2line1": "International Online",
+      "c2line2": "Education Center",
+      "c2sub": "(International Cyber Education Center)",
+      "c3line1": "Interdisciplinary",
+      "c3line2": "Training Center",
+      "c3sub": "(Center of Interdisciplinary Education)",
+      "c4line1": "Postgraduate",
+      "c4line2": "Training Center",
+      "c4sub": "(Center of Postgraduate Education)"
+    },
+    "listHeader": "TRAINING FIELDS",
+    "list1": [
+      "Medicine",
+      "Biomedicine",
+      "Traditional Medicine",
+      "Public Health Sciences",
+      "Pharmaceutical Sciences",
+      "Dentistry",
+      "Nursing Sciences"
+    ],
+    "list2": [
+      "Medicine",
+      "Biomedicine",
+      "Traditional Medicine",
+      "Public Health Sciences",
+      "Dentistry",
+      "Nursing Sciences"
+    ],
+    "list3": [
+      "Medicine",
+      "Traditional Medicine",
+      "Biomedicine",
+      "Public Health Sciences",
+      "Pharmacy, Dentistry",
+      "Nursing Sciences"
+    ],
+    "ldept": [
+      "Internal Medicine Division",
+      "Obstetrics & Gynecology Division",
+      "Pediatrics Division",
+      "Trauma, Surgery & Oncology Division",
+      "Neurology, Psychiatry, ENT & Ophthalmology Division",
+      "Anesthesiology, Intensive Care & Emergency Medicine Division",
+      "Dermatology, Family Medicine & Infectious Disease Division"
+    ],
+    "rdept": [
+      "Dentistry Division",
+      "Traditional Medicine Division",
+      "Biomedical Sciences Division",
+      "Pharmaceutical Sciences Division",
+      "Public Health Division",
+      "Diagnostic Imaging & Clinical Pathology Division",
+      "Nursing Sciences Division"
+    ],
+    "bottomBar1": "Program Implementation Faculty Team Leaders and Instructors",
+    "bottomBar2": "Professional Professorial Team Leaders, Coordinators and Instructors",
+    "hintDesktop": "🔍 Click to enlarge",
+    "hintMobile": "🔍 Tap to enlarge",
+    "ariaLabel": "Enlarge the organizational structure diagram",
+    "ariaClose": "Close"
   }
 }

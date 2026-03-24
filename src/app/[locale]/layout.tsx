@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { locales, getDictionary, type Locale } from "@/lib/i18n";
 import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 import "../globals.css";
 
 const inter = Inter({
@@ -62,6 +63,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={inter.variable}>
       <body className="min-h-screen flex flex-col antialiased font-sans">
+        <ScrollToTop />
         <Header locale={locale as Locale} dict={dict} />
         <main className="flex-1 relative">{children}</main>
         <Footer locale={locale as Locale} dict={dict} />

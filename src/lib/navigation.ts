@@ -21,12 +21,24 @@ export const navigation: NavItem[] = [
       {
         labelKey: "menu.structure",
         children: [
-          { labelKey: "menu.structureOrganization", href: "/introduction/structure#organization" },
-          { labelKey: "menu.facultyLeaders", href: "/introduction/structure#faculty-leaders" },
+          {
+            labelKey: "menu.structureOrganization",
+            href: "/introduction/structure",
+          },
+          {
+            labelKey: "menu.facultyLeaders",
+            href: "/introduction/structure#faculty-leaders",
+          },
         ],
       },
-      { labelKey: "menu.academicCouncil", href: "/introduction/academic-council" },
-      { labelKey: "menu.programCommittee", href: "/introduction/program-committee" },
+      {
+        labelKey: "menu.academicCouncil",
+        href: "/introduction/academic-council",
+      },
+      {
+        labelKey: "menu.programCommittee",
+        href: "/introduction/program-committee",
+      },
     ],
   },
   {
@@ -34,8 +46,14 @@ export const navigation: NavItem[] = [
     children: [
       { labelKey: "menu.academicCenter", href: "/training-centers/academic" },
       { labelKey: "menu.onlineCenter", href: "/training-centers/online" },
-      { labelKey: "menu.interdisciplinaryCenter", href: "/training-centers/interdisciplinary" },
-      { labelKey: "menu.postgraduateCenter", href: "/training-centers/postgraduate" },
+      {
+        labelKey: "menu.interdisciplinaryCenter",
+        href: "/training-centers/interdisciplinary",
+      },
+      {
+        labelKey: "menu.postgraduateCenter",
+        href: "/training-centers/postgraduate",
+      },
     ],
   },
   {

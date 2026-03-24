@@ -26,14 +26,33 @@ export default function Header({ locale, dict }: HeaderProps) {
 
   const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
   const [scrollPastHero, setScrollPastHero] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const prevY = useRef(0);
 
   useEffect(() => {
-    if (!isHome) return;
+    let ticking = false;
+
     const onScroll = () => {
-      const heroHeight = window.innerHeight;
-      setScrollPastHero(window.scrollY > heroHeight - 80);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        if (y <= 80) {
+          setHidden(false);
+        } else if (y > prevY.current) {
+          setHidden(true);
+        } else {
+          setHidden(false);
+        }
+        prevY.current = y;
+        ticking = false;
+
+        if (isHome) {
+          setScrollPastHero(y > window.innerHeight - 80);
+        }
+      });
     };
-    onScroll();
+
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
@@ -44,7 +63,8 @@ export default function Header({ locale, dict }: HeaderProps) {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500",
+        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300",
+        hidden ? "-translate-y-full" : "translate-y-0",
         isTransparent
           ? "bg-black/10 backdrop-blur-sm border-b border-white/10"
           : "glass border-b border-border/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)]",
@@ -60,7 +80,7 @@ export default function Header({ locale, dict }: HeaderProps) {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-0.5">
+        <nav className="hidden lg:flex items-center gap-0">
           {navigation.map((item) => (
             <DesktopNavItem
               key={item.labelKey}
@@ -80,7 +100,7 @@ export default function Header({ locale, dict }: HeaderProps) {
                 key={action.labelKey}
                 onClick={() => setContactOpen(true)}
                 className={cn(
-                  "hidden lg:inline-flex items-center rounded-lg px-4 py-2 text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer",
+                  "hidden lg:inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer",
                   isTransparent
                     ? "bg-white/15 text-white hover:bg-white/25 border border-white/20"
                     : "bg-primary text-white hover:bg-primary-dark shadow-sm",
@@ -99,7 +119,7 @@ export default function Header({ locale, dict }: HeaderProps) {
                 target={action.external ? "_blank" : undefined}
                 rel={action.external ? "noopener noreferrer" : undefined}
                 className={cn(
-                  "hidden lg:inline-flex items-center rounded-lg px-4 py-2 text-xs font-semibold tracking-wide transition-all duration-200",
+                  "hidden lg:inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold tracking-wide transition-all duration-200",
                   isTransparent
                     ? "bg-white/15 text-white hover:bg-white/25 border border-white/20"
                     : action.external
@@ -115,7 +135,7 @@ export default function Header({ locale, dict }: HeaderProps) {
           <Link
             href={switchPath}
             className={cn(
-              "inline-flex items-center rounded-lg border px-3 py-2 text-xs font-bold tracking-wider transition-all duration-200 uppercase",
+              "inline-flex items-center rounded-lg border px-2.5 py-2 text-xs font-bold tracking-wider transition-all duration-200 uppercase",
               isTransparent
                 ? "border-white/20 text-white/80 hover:bg-white/15 hover:text-white"
                 : "border-border/60 text-muted-foreground hover:bg-muted hover:text-foreground",
@@ -257,7 +277,7 @@ function DesktopNavItem({
         target={item.external ? "_blank" : undefined}
         rel={item.external ? "noopener noreferrer" : undefined}
         className={cn(
-          "rounded-lg px-3 py-2 text-[13px] font-medium transition-all duration-200",
+          "rounded-lg px-2.5 py-2 text-[13px] font-medium transition-all duration-200",
           isTransparent
             ? "text-white/80 hover:text-white hover:bg-white/10"
             : "text-foreground/70 hover:text-foreground hover:bg-muted/60",
@@ -277,7 +297,7 @@ function DesktopNavItem({
     >
       <button
         className={cn(
-          "flex items-center gap-1 rounded-lg px-3 py-2 text-[13px] font-medium transition-all duration-200 cursor-pointer outline-none",
+          "flex items-center gap-1 rounded-lg px-2.5 py-2 text-[13px] font-medium transition-all duration-200 cursor-pointer outline-none",
           isTransparent
             ? "text-white/80 hover:text-white hover:bg-white/10"
             : "text-foreground/70 hover:text-foreground hover:bg-muted/60",

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 import { t, type Locale } from "@/lib/i18n";
 import {

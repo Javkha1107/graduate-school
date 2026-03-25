@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Lock, User, ArrowRight, GraduationCap } from "lucide-react";
+import { Lock, User, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export default function AdminLoginPage() {

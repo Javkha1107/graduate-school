@@ -44,7 +44,27 @@ export const navigation: NavItem[] = [
   {
     labelKey: "menu.trainingCenters",
     children: [
-      { labelKey: "menu.academicCenter", href: "/training-centers/academic" },
+      {
+        labelKey: "menu.academicCenter",
+        children: [
+          {
+            labelKey: "menu.centerIntroduction",
+            href: "/training-centers/academic#introduction",
+          },
+          {
+            labelKey: "menu.trainingProgram",
+            href: "/training-centers/academic#programs",
+          },
+          {
+            labelKey: "menu.doctoralTraining",
+            href: "/training-centers/academic#doctoral",
+          },
+          {
+            labelKey: "menu.masterTraining",
+            href: "/training-centers/academic#masters",
+          },
+        ],
+      },
       { labelKey: "menu.onlineCenter", href: "/training-centers/online" },
       {
         labelKey: "menu.interdisciplinaryCenter",
@@ -52,7 +72,32 @@ export const navigation: NavItem[] = [
       },
       {
         labelKey: "menu.postgraduateCenter",
-        href: "/training-centers/postgraduate",
+        children: [
+          {
+            labelKey: "menu.postgraduateAdmission",
+            href: "/training-centers/postgraduate#admission",
+          },
+          {
+            labelKey: "menu.postgraduateGraduation",
+            href: "/training-centers/postgraduate#graduation",
+          },
+          {
+            labelKey: "menu.postgraduateBasic",
+            href: "/training-centers/postgraduate#basic",
+          },
+          {
+            labelKey: "menu.postgraduateSubspec",
+            href: "/training-centers/postgraduate#subspecialization",
+          },
+          {
+            labelKey: "menu.postgraduatePrograms",
+            href: "/training-centers/postgraduate#programs",
+          },
+          {
+            labelKey: "menu.postgraduateHospitals",
+            href: "/training-centers/postgraduate#hospitals",
+          },
+        ],
       },
     ],
   },

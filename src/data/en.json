@@ -35,15 +35,19 @@
     "academicCouncil": "Academic Council",
     "programCommittee": "Program Sub-committee",
     "onThisPage": "On this page",
+    "centerIntroduction": "Introduction",
+    "trainingProgram": "Training Programs",
     "doctoralTraining": "Doctoral Training (PhD)",
     "masterTraining": "Master's Training",
     "onlineMasterTraining": "Online Master's Training",
-    "centerIntroduction": "Center Introduction",
+    "doctoralTraining": "Doctoral Training (PhD)",
+    "masterTraining": "Master's Training",
     "jointPrograms": "Joint Programs",
     "postgraduateAdmission": "Admission",
     "postgraduateGraduation": "Graduation",
-    "postgraduateSpecialization": "Specialization",
-    "postgraduateBasic": "Basic",
+    "postgraduateBasic": "Specialization Fields",
+    "postgraduatePrograms": "Training Programs",
+    "postgraduateSubspec": "Sub-specialization Training",
     "postgraduateHospitals": "Base Hospitals",
     "trainingCenters": "Training Centers",
     "education": "Programmes",
@@ -1921,5 +1925,197 @@
     "hintMobile": "🔍 Tap to enlarge",
     "ariaLabel": "Enlarge the organizational structure diagram",
     "ariaClose": "Close"
+  },
+  "academicCenterPage": {
+    "mission": "Mission",
+    "missionText": "To combine education, research, and scientific inquiry to create new knowledge, nurture scholars, and develop university-level research education.",
+    "description": "MNUMS Graduate School's Academic Training Center implements master's and doctoral classroom training programs in Clinical Medicine, Traditional Medicine, Public Health, Dentistry, Biomedical Sciences, Nursing, and Pharmacy.",
+    "activities": "Activities",
+    "activityList": [
+      "Organize and provide training through 20 master's and doctoral programs under unified guidance",
+      "Organize master's and doctoral admissions, enrollment, and graduation",
+      "Develop and approve master's and doctoral training plans, schedules, and program updates",
+      "Organize program accreditation through domestic and international accreditation bodies",
+      "Organize training for international students",
+      "Conduct tripartite agreements between master's/doctoral students and supervisors",
+      "Provide preliminary consultation for master's and doctoral thesis work",
+      "Resolve student transfer issues",
+      "Calculate graduation training credit hours",
+      "Introduce advanced training technologies"
+    ],
+    "staff": "Staff",
+    "manager": "Center Director",
+    "specialist": "Specialist",
+    "address": "Address",
+    "tableTitle": "Master's and Doctoral Training Programs",
+    "colNo": "#",
+    "colProgram": "Training Program",
+    "colCode": "Professional Code",
+    "colLevel": "Education Level",
+    "colDuration": "Duration",
+    "colCredits": "Total Credits",
+    "colSchool": "School",
+    "levelMasters": "Master's classroom training",
+    "levelDoctoral": "Doctoral training",
+    "durationMasters": "2 years",
+    "durationDoctoral": "3 years",
+    "doctoralIntro": "MNUMS Graduate School activities are regulated by Order A/28 dated February 9, 2021, of the MNUMS Director, Appendix 1: <a href='http://gp.mnums.edu.mn/wp-content/uploads/2021/03/juram.pdf' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline font-semibold'>REGULATIONS ON GRADUATE EDUCATION ACTIVITIES OF THE NATIONAL UNIVERSITY OF MEDICAL SCIENCES</a>. Master's and doctoral admissions are held twice a year.",
+    "doctoralProcess": "Doctoral students conduct research work in accordance with Article 7.12 of the Regulations on Graduate Education Activities. This includes:",
+    "doctoralSteps": [
+      {
+        "text": "Department meeting:",
+        "sub": [
+          "Approve research topic,",
+          "Research methodology,",
+          "Appoint supervisor and advisor"
+        ]
+      },
+      {
+        "text": "School Academic Council:",
+        "sub": [
+          "Approve research topic,",
+          "Research methodology,",
+          "APPROVE supervisor and advisor"
+        ]
+      },
+      {
+        "text": "Research Ethics Committee meeting: Obtain PERMISSION to start research:",
+        "sub": [
+          "7.12.8 Publish 2 or more articles as first author under MNUMS name in peer-reviewed international journals. One of these must be published in a journal indexed in Web of Science, Scopus, PubMed OR Central Asian Journal of Medical Sciences.",
+          "7.12.9 Publish 2 or more articles in domestic journals. One of these must be published in the Health Science journal."
+        ]
+      },
+      {
+        "text": "Professional JOURNAL CLUB, department meeting:",
+        "sub": ["Discuss research progress"]
+      },
+      {
+        "text": "School Academic Council:",
+        "sub": ["APPROVE research progress results"]
+      },
+      {
+        "text": "Research Ethics Committee meeting: CONCLUSION that research ethics standards were not violated:"
+      },
+      { "text": "Research nomenclature council meeting:" },
+      {
+        "text": "Expert commission evaluation:",
+        "sub": [
+          "Materials to submit (list 1-14) <a href='http://gp.mnums.edu.mn/wp-content/uploads/2022/10/Burduuleh-material-2022-2023-NEW.pdf' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline font-semibold'>CLICK HERE</a>"
+        ]
+      },
+      { "text": "Preliminary defense for Doctor of Medical Sciences degree" },
+      {
+        "text": "Final defense for Doctor of Medical Sciences degree",
+        "sub": [
+          "Materials to submit after final defense (list 17-24) <a href='http://gp.mnums.edu.mn/wp-content/uploads/2022/10/Burduuleh-material-2022-2023-NEW.pdf' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline font-semibold'>CLICK HERE</a>"
+        ]
+      }
+    ],
+    "doctoralFooter": [
+      "Download presentation template by <a href='http://gp.mnums.edu.mn/wp-content/uploads/2022/12/Iltgeh-huudsas-1-3.docx' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline font-semibold'>CLICKING HERE</a>.",
+      "Students who successfully defended their doctoral degree <a href='https://docs.google.com/forms/d/e/1FAIpQLScN4yb0RDPyKHOTYlXxECc9Uquz-4_ySAiRgckWHHYU6NLMmw/viewform' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline font-semibold'>CLICK HERE</a> to complete post-defense registration"
+    ],
+    "mastersIntro": "MNUMS Graduate School activities are regulated by Order A/28 dated February 9, 2021, of the MNUMS Director, Appendix 1: <a href='http://gp.mnums.edu.mn/wp-content/uploads/2021/03/juram.pdf' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline font-semibold'>REGULATIONS ON GRADUATE EDUCATION ACTIVITIES OF THE NATIONAL UNIVERSITY OF MEDICAL SCIENCES</a>. Master's and doctoral admissions are held twice a year (Spring: February 1-15, Fall: August 25 - September 10).",
+    "mastersProcess": "Students write and defend their master's thesis in the following sequence:",
+    "mastersSteps": [
+      { "text": "Complete 12 credits of professional core courses" },
+      {
+        "text": "Department meeting: (Department announces the meeting)",
+        "sub": [
+          "Approve research topic",
+          "Approve research methodology",
+          "Appoint supervisor and advisor"
+        ]
+      },
+      { "text": "Obtain ethics approval from Ethics Committee meeting" },
+      { "text": "Complete 9 credits of specialization courses" },
+      { "text": "Start research (Publish scientific articles)" },
+      { "text": "Present at department meeting progress review once" },
+      { "text": "Obtain ethics conclusion from Ethics Committee meeting" },
+      {
+        "text": "Preliminary defense: (As specified in Article 4.2 of REGULATIONS ON GRADUATE EDUCATION ACTIVITIES)",
+        "sub": [
+          "Materials to submit for preliminary defense <a href='http://gp.mnums.edu.mn/?page_id=195' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline font-semibold'>CLICK HERE</a>"
+        ]
+      },
+      {
+        "text": "Final defense: (As specified in Article 4.2 of REGULATIONS ON GRADUATE EDUCATION ACTIVITIES)",
+        "sub": [
+          "List of materials for graduates who passed final defense <a href='http://gp.mnums.edu.mn/?page_id=205' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline font-semibold'>CLICK HERE</a>",
+          "Students who successfully defended their master's degree <a href='https://docs.google.com/forms/d/e/1FAIpQLScOwTMb4f7Isdt3EaPa7jcNFWfVhgY_1YbqaWZumSGCJH16yg/viewform' target='_blank' rel='noopener noreferrer' class='text-primary hover:underline font-semibold'>CLICK HERE</a> to complete post-defense registration"
+        ]
+      }
+    ]
+  },
+  "postgraduateCenterPage": {
+    "admissionTitle": "ADMISSION",
+    "admissionIntro": "MNUMS Postgraduate Training Center accepts admissions in the following main fields to continuously improve the knowledge and skills of physicians and medical professionals.",
+    "admissionType1Title": "1. Basic Specialization Training (Residency)",
+    "admissionType1Text": "The postgraduate basic specialization residency training is designed for graduates with medical education and prepares trainees in specific specialization fields. Admission registration and related information are announced according to the designated program schedule.",
+    "admissionType2Title": "2. Sub-specialization and Professional Development Training (Physicians and other medical professionals)",
+    "admissionType2Text": "This level of training encompasses professionals from the following fields:",
+    "admissionType2Scope": "Scope:",
+    "admissionType2ScopeText": "Medical Doctors, Dental Doctors, Traditional Medicine Doctors, Pharmacists, Biomedical specialists, Public Health researchers.",
+    "admissionType2TrainingType": "Training type:",
+    "admissionType2TrainingTypeText": "Sub-specialization and professional development training courses.",
+    "admissionType3Title": "3. Sub-specialization and Professional Development Training (Nursing and other medical professionals)",
+    "admissionType3Text": "The training package for nursing and mid-level professionals includes the following specializations:",
+    "admissionType3Scope": "Scope:",
+    "admissionType3ScopeText": "Nurses, Midwives, Pharmacist assistants, Lab technicians, Imaging technicians, Paramedics and related professionals.",
+    "admissionType3TrainingType": "Training type:",
+    "admissionType3TrainingTypeText": "Nursing sub-specialization and professional development training courses.",
+    "admissionOrgTitle": "General Admission Organization",
+    "admissionScheduleLabel": "Schedule:",
+    "admissionScheduleText": "Admissions are organized in spring and fall semesters annually. Spring semester registration is held in the 1st-3rd weeks of February, with training starting from March 1st.",
+    "admissionRegLabel": "Registration:",
+    "admissionRegText": "Applicants register through the online system (https://admission.mnums.edu.mn).",
+    "admissionBaseLabel": "Training base:",
+    "admissionBaseText": "Training is conducted at MNUMS-affiliated and 74 base hospitals.",
+    "admissionContactTitle": "Contact information:",
+    "admissionContactAddress": "MNUMS Central Library, Room 401.",
+    "admissionContactPhone": "77757575 (ext. 1 -> 3).",
+    "admissionContactEmail": "grad.post@mnums.edu.mn",
+    "graduationTitle": "GRADUATION",
+    "graduationIntro": "MNUMS Postgraduate Training Center organizes the issuance of professional certificates and diplomas to trainees who have successfully completed basic and sub-specialization training programs.",
+    "graduationType1Title": "1. Basic Specialization Training (Residency) Graduation",
+    "graduationType1Text": "Resident physicians enrolled in basic specialization training participate in the following graduation activities according to the training program:",
+    "graduationType1Steps": [
+      {
+        "text": "<strong>Report defense:</strong> Trainees conduct report defense according to the established schedule and have their training progress evaluated."
+      },
+      {
+        "text": "<strong>Grade advancement exam:</strong> Every 2 semesters, trainees take grade advancement exams according to the Postgraduate Activities Regulation. Those who fail may take academic leave and continue in the next academic year."
+      },
+      {
+        "text": "<strong>Research work:</strong> Resident physicians must present at MNUMS or international scientific conferences, discuss clinical cases, or publish articles in MNUMS or international scientific journals during their training."
+      },
+      {
+        "text": "<strong>Graduation exam:</strong> Trainees who have completed the curriculum and met all requirements are authorized to take the graduation exam by the MNUMS Rector's order. The exam includes theoretical and clinical skills components. A score of 80 or above is considered passing."
+      },
+      {
+        "text": "<strong>Graduation documents:</strong> Trainees who successfully pass the report defense and graduation exam receive a basic specialization diploma."
+      }
+    ],
+    "graduationType2Title": "2. Physician and Medical Professional Sub-specialization and Professional Development Training Graduation",
+    "graduationType2Text": "Medical Doctors, Dental Doctors, Traditional Medicine Doctors, Pharmacists, Biomedical specialists, and Public Health researchers' graduation information is covered in this section.",
+    "graduationType2Detail": "Upon completing the planned training period, fulfilling graduation requirements, and passing theoretical and clinical skills examinations, professionals receive sub-specialization certificates and professional development training certificates.",
+    "graduationType3Title": "3. Nursing and Medical Professional Sub-specialization and Professional Development Training Graduation",
+    "graduationType3Text": "Nurses, Midwives, Pharmacist assistants, Lab technicians, Imaging technicians, Paramedics and related nursing professionals' graduation information is covered in this section.",
+    "graduationType3Detail": "Upon completing the planned training period, fulfilling graduation requirements, and passing theoretical and clinical skills examinations, professionals receive sub-specialization certificates and professional development training certificates.",
+    "basicTitle": "BASIC SPECIALIZATION TRAINING FIELDS & DURATION",
+    "programsTitle": "BASIC SPECIALIZATION TRAINING PROGRAMS",
+    "programsNote": "Training Programs",
+    "contactAddressLabel": "Address:",
+    "contactPhoneLabel": "Phone:",
+    "contactEmailLabel": "Email:",
+    "subspecTitle": "SUB-SPECIALIZATION TRAINING FIELDS",
+    "subspecNote": "MNUMS Sub-specialization training fields per Ministry of Health Order A/445 dated 2021.07.07:",
+    "subspecColName": "Sub-specialization",
+    "subspecColNameEn": "English Name",
+    "subspecColEligibility": "Eligible Specialization",
+    "subspecColDuration": "Duration",
+    "subspecColTuition": "Tuition (₮)",
+    "hospitalsTitle": "BASE HOSPITALS",
+    "hospitalsIntro": "Postgraduate training activities are organized not only at MNUMS-affiliated hospitals but also at contracted state and private hospitals. The training fields and number of trainees at each contracted hospital are regulated according to agreements between MNUMS and the contracted hospitals, depending on the resources and capacity of each hospital. The MNUMS Vice-Rector for Hospital Affairs signs cooperation agreements with contracted hospitals annually."
   }
 }

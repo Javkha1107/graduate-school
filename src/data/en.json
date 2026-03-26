@@ -69,7 +69,7 @@
     "project": "Project",
     "publication": "Publication",
     "regulations": "Regulations",
-    "conferences": "Conferences and Student Day",
+    "conferences": "Academic Conference",
     "orientation": "Orientation and Remedy Lesson",
     "library": "Library",
     "journalClub": "Journal Club",
@@ -91,7 +91,13 @@
     "eLearning": "International Cyber Education Centre",
     "healthResearch": "Department of Health Research",
     "medicalLaw": "Department of Medical Legislation and Education",
-    "academicCouncil": "The Academic Council of Graduate Education"
+    "academicCouncil": "The Academic Council of Graduate Education",
+    "studentCouncil": "Student Council",
+    "studentSupport": "Student Support & Counseling",
+    "transferRequest": "Transfer Request",
+    "ethicsCommittee": "Research Ethics Committee",
+    "internationalRelations": "International Relations",
+    "tokushima": "Tokushima University"
   },
   "footer": {
     "address": "Address",
@@ -664,7 +670,7 @@
     "institute4": "Institute of Medical sciences"
   },
   "researchDay": {
-    "title": "CONFERENCES",
+    "title": "ACADEMIC CONFERENCE",
     "body1": "MNUMS hosts an annual Academic Conference every April, providing a platform for graduate students, faculty, and researchers to present and discuss their research results. The 66th conference is scheduled for 2024. The event showcases a wide range of research projects, with the highest-rated projects selected for oral presentations. The conference not only encourages academic exchange but also recognizes excellence through the Master's Award, which is presented to the best research project. This conference offers valuable opportunities for networking, feedback, and collaboration within the academic community.",
     "body2": "In 2024, the 66th conference was held, and in the graduate studies session, 15 online master's students submitted research projects and abstracts. The top 3 projects were selected for oral presentation, and ICEC master's student Sossorbarm was awarded the BEST ONLINE MASTER'S STUDENT award for the project \"Analysis of Innovation Policy in the Pharmaceutical Sector of Mongolia.\"",
     "body3": "Examining the Results of Mesenchymal Stem Cell Therapy for Shoulder Ligament Tears by Ganbolor, a Master's Student at the Online Master, Presents the Research Project and answering Researchers' Questions.",
@@ -2117,5 +2123,26 @@
     "subspecColTuition": "Tuition (₮)",
     "hospitalsTitle": "BASE HOSPITALS",
     "hospitalsIntro": "Postgraduate training activities are organized not only at MNUMS-affiliated hospitals but also at contracted state and private hospitals. The training fields and number of trainees at each contracted hospital are regulated according to agreements between MNUMS and the contracted hospitals, depending on the resources and capacity of each hospital. The MNUMS Vice-Rector for Hospital Affairs signs cooperation agreements with contracted hospitals annually."
+  },
+  "studentCouncil": {
+    "title": "Student Council"
+  },
+  "studentSupport": {
+    "title": "Student Support & Counseling"
+  },
+  "studentTransfer": {
+    "title": "Transfer Request"
+  },
+  "cajms": {
+    "title": "CAJMS Journal"
+  },
+  "ethicsCommittee": {
+    "title": "Research Ethics Committee"
+  },
+  "collaborationOita": {
+    "title": "Oita University"
+  },
+  "collaborationTokushima": {
+    "title": "Tokushima University"
   }
 }

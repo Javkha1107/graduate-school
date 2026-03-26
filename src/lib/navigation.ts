@@ -102,47 +102,35 @@ export const navigation: NavItem[] = [
     ],
   },
   {
-    labelKey: "menu.admission",
+    labelKey: "menu.student",
     children: [
-      { labelKey: "menu.admissionInfo", href: "/admission" },
-      { labelKey: "menu.registration", href: "/admission/registration" },
-      { labelKey: "menu.tuitionFee", href: "/admission/tuition" },
-    ],
-  },
-  {
-    labelKey: "menu.education",
-    children: [
-      { labelKey: "menu.masterOnCampus", href: "/education/master" },
-      { labelKey: "menu.masterOnline", href: "/education/master-online" },
-      { labelKey: "menu.doctoral", href: "/education/doctoral" },
-      { labelKey: "menu.postDoctoral", href: "/education/postdoctoral" },
+      { labelKey: "menu.studentCouncil", href: "/student/council" },
+      {
+        labelKey: "menu.studentSupport",
+        href: "/student/support",
+      },
+      {
+        labelKey: "menu.transferRequest",
+        href: "/student/transfer",
+      },
     ],
   },
   {
     labelKey: "menu.research",
     children: [
-      { labelKey: "menu.project", href: "/research/projects" },
-      { labelKey: "menu.publication", href: "/research/publications" },
-    ],
-  },
-  {
-    labelKey: "menu.activity",
-    children: [
-      { labelKey: "menu.regulations", href: "/student/regulations" },
       { labelKey: "menu.conferences", href: "/research/conferences" },
-      { labelKey: "menu.orientation", href: "/student/training" },
-      { labelKey: "menu.library", href: "/student/library" },
-      { labelKey: "menu.journalClub", href: "/research/journal-club" },
-      { labelKey: "menu.dormitory", href: "/student/dormitory" },
-      { labelKey: "menu.sportEvents", href: "/student/events" },
+      { labelKey: "menu.cajms", href: "/research/cajms" },
+      {
+        labelKey: "menu.ethicsCommittee",
+        href: "/research/ethics-committee",
+      },
     ],
   },
   {
-    labelKey: "menu.scholarships",
+    labelKey: "menu.internationalRelations",
     children: [
-      { labelKey: "menu.scholarshipStudent", href: "/student/scholarship" },
-      { labelKey: "menu.scholarshipTeacher", href: "/student/scholarship" },
-      { labelKey: "menu.scholarshipPostdoc", href: "/student/scholarship" },
+      { labelKey: "menu.oita", href: "/collaboration/oita" },
+      { labelKey: "menu.tokushima", href: "/collaboration/tokushima" },
     ],
   },
 ];

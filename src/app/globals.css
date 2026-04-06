@@ -46,7 +46,8 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(180deg, #ffffff 0%, #e8f0f8 30%, #f0f4f8 50%, #e8f0f8 70%, #ffffff 100%);
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -273,4 +274,26 @@ main table tbody tr:nth-child(even) td {
 @theme inline {
   --animate-slideDown: slideDown 200ms ease-out;
   --animate-slideUp: slideUp 150ms ease-in;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 4s ease-in-out infinite;
+}
+
+/* Background logo floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Background logo glow/pulse animation */
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(26, 58, 122, 0.3)) brightness(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 40px rgba(26, 58, 122, 0.5)) brightness(1.1);
+  }
 }

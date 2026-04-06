@@ -70,7 +70,7 @@ export default async function StructurePage({
   return (
     <>
       <PageHero title={t(dict, "menu.structure")} />
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 relative">
         <div className="lg:grid lg:grid-cols-[240px_1fr] lg:gap-12">
           <PageSidebar
             sections={sections}
@@ -85,9 +85,35 @@ export default async function StructurePage({
               <div className="mb-8">
                 <GraduateSchoolScheme texts={schemeTexts} />
               </div>
-              <p className="text-foreground/75 leading-[1.85] text-base indent-5 text-justify">
-                {organizationText}
-              </p>
+              <div className="text-foreground/75 leading-[1.85] text-base text-justify space-y-4">
+                {locale === "mn" ? (
+                  <>
+                    <p className="indent-5">
+                      Ахисан түвшний сургууль нь төгсөлтийн болон төгсөлтийн дараах сургалтын хөтөлбөрийг хэрэгжүүлдэг 4 сургалтын төвтэй үйл ажиллагаа явуулж байна. Үүнд: <strong className="text-foreground">Академик сургалтын төв</strong>, <strong className="text-foreground">Олон улсын цахим сургалтын төв</strong>, <strong className="text-foreground">Салбар дундын сургалтын төв</strong>, <strong className="text-foreground">Төгсөлтийн дараах сургалтын төв</strong>.
+                    </p>
+                    <div className="space-y-1">
+                      <p><strong className="text-foreground">Ахисан түвшний сургуулийн захирлаар</strong> АУ-ы доктор, дэд профессор Ш.Үүртуяа,</p>
+                      <p><strong className="text-foreground">Академик сургалтын төвийн эрхлэгчээр</strong> АУ-ы доктор Э.Сарантуяа,</p>
+                      <p><strong className="text-foreground">Олон улсын цахим сургалтын төвийн эрхлэгчээр</strong> АУ-ы доктор, дэд профессор Ц.Сарнай,</p>
+                      <p><strong className="text-foreground">Салбар дундын сургалтын төвийн эрхлэгчээр</strong> АУ-ы доктор, дэд профессор Ц.Алтансүх,</p>
+                      <p><strong className="text-foreground">Төгсөлтийн дараах сургалтын төвийн эрхлэгчээр</strong> АУ-ы доктор Г.Алимаа нар ажиллаж байна.</p>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <p className="indent-5">
+                      The Graduate School operates through 4 training centers that implement graduate and postgraduate training programs: <strong className="text-foreground">Academic Training Center</strong>, <strong className="text-foreground">International Online Education Center</strong>, <strong className="text-foreground">Interdisciplinary Training Center</strong>, and <strong className="text-foreground">Postgraduate Training Center</strong>.
+                    </p>
+                    <div className="space-y-1">
+                      <p><strong className="text-foreground">Graduate School Dean:</strong> Sh.Uurtuyaa (MD, PhD, Associate Professor),</p>
+                      <p><strong className="text-foreground">Academic Training Center Head:</strong> E.Sarantuya (MD, PhD),</p>
+                      <p><strong className="text-foreground">International Online Education Center Head:</strong> Ts.Sarnai (MD, PhD, Associate Professor),</p>
+                      <p><strong className="text-foreground">Interdisciplinary Training Center Head:</strong> Ts.Altansukh (MD, PhD, Associate Professor),</p>
+                      <p><strong className="text-foreground">Postgraduate Training Center Head:</strong> G.Alimaa (MD, PhD).</p>
+                    </div>
+                  </>
+                )}
+              </div>
             </section>
 
             <section id="faculty-leaders" className="scroll-mt-24">

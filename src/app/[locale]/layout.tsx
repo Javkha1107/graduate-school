@@ -5,6 +5,9 @@ import { locales, getDictionary, type Locale } from "@/lib/i18n";
 import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import BackgroundLogo from "@/components/ui/BackgroundLogo";
+import BackToTop from "@/components/ui/BackToTop";
+import PageTransition from "@/components/ui/PageTransition";
 import "../globals.css";
 
 const inter = Inter({
@@ -64,8 +67,12 @@ export default async function LocaleLayout({
     <html lang={locale} className={inter.variable}>
       <body className="min-h-screen flex flex-col antialiased font-sans">
         <ScrollToTop />
+        <BackgroundLogo position="center" opacity={0.12} size={600} fixed={true} />
+        <BackToTop />
         <Header locale={locale as Locale} dict={dict} />
-        <main className="flex-1 relative">{children}</main>
+        <main className="flex-1 relative">
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer locale={locale as Locale} dict={dict} />
       </body>
     </html>

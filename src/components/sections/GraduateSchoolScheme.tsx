@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -69,7 +69,7 @@ const DRH = 50,
 const DLW = 280,
   DRW = 250,
   DMG = 14;
-const DBW = DLW + DMG + DRW; // 544
+const DBW = DLW + DMG + DRW;
 const SL = COL_CX[3] - DBW / 2 - 16;
 const SR = COL_CX[3] + DBW / 2 + 16;
 const DLX = SL + 14;
@@ -82,21 +82,6 @@ const BY = H - 54,
   BH = 44;
 
 // ─── SVG helpers ────────────────────────────────────────────────────────────
-function Rect({ x, y, w, h }: { x: number; y: number; w: number; h: number }) {
-  return (
-    <rect
-      x={x}
-      y={y}
-      width={w}
-      height={h}
-      rx={16}
-      fill="rgba(11,63,116,0.55)"
-      stroke="rgba(255,255,255,0.85)"
-      strokeWidth={1.5}
-    />
-  );
-}
-
 function Txt({
   x,
   y,
@@ -125,12 +110,55 @@ function Txt({
       fontWeight={weight}
       fontStyle={italic ? "italic" : "normal"}
       fontFamily="sans-serif"
+      style={{ pointerEvents: "none" }}
     >
       {children}
     </text>
   );
 }
 
+// Interactive rect with hover effect - simple color change only
+function InteractiveRect({
+  x,
+  y,
+  w,
+  h,
+  children,
+}: {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  children?: React.ReactNode;
+}) {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <g
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{ cursor: "pointer" }}
+    >
+      <rect
+        x={x}
+        y={y}
+        width={w}
+        height={h}
+        rx={16}
+        fill={hovered ? "rgba(20,80,140,0.9)" : "rgba(11,63,116,0.55)"}
+        stroke={hovered ? "rgba(255,255,255,1)" : "rgba(255,255,255,0.85)"}
+        strokeWidth={hovered ? 2.5 : 1.5}
+        style={{
+          transition: "all 0.2s ease-out",
+          filter: hovered ? "brightness(1.2)" : "none",
+        }}
+      />
+      {children}
+    </g>
+  );
+}
+
+// Interactive department card
 function DeptCard({
   x,
   y,
@@ -142,21 +170,31 @@ function DeptCard({
   w: number;
   text: string;
 }) {
+  const [hovered, setHovered] = useState(false);
   const words = text.split(" ");
   const mid = Math.ceil(words.length / 2);
   const l1 = words.slice(0, mid).join(" ");
   const l2 = words.slice(mid).join(" ");
+
   return (
-    <g>
+    <g
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{ cursor: "pointer" }}
+    >
       <rect
         x={x}
         y={y}
         width={w}
         height={DRH}
         rx={12}
-        fill="rgba(11,63,116,0.45)"
-        stroke="rgba(255,255,255,0.8)"
-        strokeWidth={1.2}
+        fill={hovered ? "rgba(20,80,140,0.85)" : "rgba(11,63,116,0.45)"}
+        stroke={hovered ? "rgba(255,255,255,1)" : "rgba(255,255,255,0.8)"}
+        strokeWidth={hovered ? 2 : 1.2}
+        style={{
+          transition: "all 0.2s ease-out",
+          filter: hovered ? "brightness(1.2)" : "none",
+        }}
       />
       {l2 ? (
         <>
@@ -172,6 +210,99 @@ function DeptCard({
           {l1}
         </Txt>
       )}
+    </g>
+  );
+}
+
+// Interactive list box
+function ListBox({
+  cx,
+  header,
+  items,
+}: {
+  cx: number;
+  header: string;
+  items: string[];
+}) {
+  const [hovered, setHovered] = useState(false);
+  const bx = cx - LW / 2;
+
+  return (
+    <g
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{ cursor: "pointer" }}
+    >
+      <rect
+        x={bx}
+        y={LY}
+        width={LW}
+        height={LH}
+        rx={16}
+        fill={hovered ? "rgba(20,80,140,0.9)" : "rgba(11,63,116,0.55)"}
+        stroke={hovered ? "rgba(255,255,255,1)" : "rgba(255,255,255,0.85)"}
+        strokeWidth={hovered ? 2.5 : 1.5}
+        style={{
+          transition: "all 0.2s ease-out",
+          filter: hovered ? "brightness(1.2)" : "none",
+        }}
+      />
+      <Txt x={cx} y={LY + 22} size={15} weight={700}>
+        {header}
+      </Txt>
+      {items.map((item, j) => (
+        <text
+          key={j}
+          x={bx + 16}
+          y={LY + 50 + j * 34}
+          fill="white"
+          fontSize={14}
+          fontFamily="sans-serif"
+          dominantBaseline="central"
+          style={{ pointerEvents: "none" }}
+        >
+          • {item}
+        </text>
+      ))}
+    </g>
+  );
+}
+
+// Interactive bottom bar
+function BottomBar({
+  x,
+  w,
+  text,
+}: {
+  x: number;
+  w: number;
+  text: string;
+}) {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <g
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{ cursor: "pointer" }}
+    >
+      <rect
+        x={x}
+        y={BY}
+        width={w}
+        height={BH}
+        rx={16}
+        fill={hovered ? "rgba(20,80,140,0.9)" : "rgba(11,63,116,0.55)"}
+        stroke={hovered ? "rgba(255,255,255,1)" : "rgba(255,255,255,0.85)"}
+        strokeWidth={hovered ? 2.5 : 1.5}
+        style={{
+          transition: "all 0.2s ease-out",
+          filter: hovered ? "brightness(1.2)" : "none",
+        }}
+      />
+      <Txt x={x + w / 2} y={BY + BH / 2} size={15} weight={600}>
+        {text}
+      </Txt>
     </g>
   );
 }
@@ -225,21 +356,21 @@ function SchemeContent({ t }: { t: SchemeTexts }) {
       })}
 
       {/* ── Title ── */}
-      <Rect x={TX} y={TY} w={TW} h={TH} />
-      <Txt x={TCX} y={TY + 24} size={18} weight={700}>
-        {t.title}
-      </Txt>
-      <Txt x={TCX} y={TY + 48} size={15} italic opacity={0.92}>
-        {t.subtitle}
-      </Txt>
+      <InteractiveRect x={TX} y={TY} w={TW} h={TH}>
+        <Txt x={TCX} y={TY + 24} size={18} weight={700}>
+          {t.title}
+        </Txt>
+        <Txt x={TCX} y={TY + 48} size={15} italic opacity={0.92}>
+          {t.subtitle}
+        </Txt>
+      </InteractiveRect>
 
       {/* ── 4 Centers ── */}
       {COL_CX.map((cx, i) => {
         const c = centers[i],
           bx = cx - CW / 2;
         return (
-          <g key={i}>
-            <Rect x={bx} y={CY} w={CW} h={CH} />
+          <InteractiveRect key={i} x={bx} y={CY} w={CW} h={CH}>
             {c.t2 ? (
               <>
                 <Txt x={cx} y={CY + 18} size={16} weight={600}>
@@ -262,36 +393,19 @@ function SchemeContent({ t }: { t: SchemeTexts }) {
                 </Txt>
               </>
             )}
-          </g>
+          </InteractiveRect>
         );
       })}
 
       {/* ── 3 List boxes ── */}
-      {[0, 1, 2].map((i) => {
-        const cx = COL_CX[i],
-          bx = cx - LW / 2;
-        return (
-          <g key={i}>
-            <Rect x={bx} y={LY} w={LW} h={LH} />
-            <Txt x={cx} y={LY + 22} size={15} weight={700}>
-              {t.listHeader}
-            </Txt>
-            {lists[i].map((item, j) => (
-              <text
-                key={j}
-                x={bx + 16}
-                y={LY + 50 + j * 34}
-                fill="white"
-                fontSize={14}
-                fontFamily="sans-serif"
-                dominantBaseline="central"
-              >
-                • {item}
-              </text>
-            ))}
-          </g>
-        );
-      })}
+      {[0, 1, 2].map((i) => (
+        <ListBox
+          key={i}
+          cx={COL_CX[i]}
+          header={t.listHeader}
+          items={lists[i]}
+        />
+      ))}
 
       {/* ── Dept cards ── */}
       {t.ldept.map((text, i) => (
@@ -314,14 +428,8 @@ function SchemeContent({ t }: { t: SchemeTexts }) {
       ))}
 
       {/* ── Bottom bars ── */}
-      <Rect x={20} y={BY} w={700} h={BH} />
-      <Txt x={370} y={BY + BH / 2} size={15} weight={600}>
-        {t.bottomBar1}
-      </Txt>
-      <Rect x={740} y={BY} w={840} h={BH} />
-      <Txt x={1160} y={BY + BH / 2} size={15} weight={600}>
-        {t.bottomBar2}
-      </Txt>
+      <BottomBar x={20} w={700} text={t.bottomBar1} />
+      <BottomBar x={740} w={840} text={t.bottomBar2} />
     </svg>
   );
 }
@@ -358,13 +466,13 @@ export default function GraduateSchoolScheme({
           <SchemeContent t={texts} />
         </div>
         {/* Hover/tap hint */}
-        <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition-colors">
+        <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition-colors pointer-events-none">
           <span className="text-white text-lg font-medium bg-black/60 px-5 py-2.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity sm:text-base">
             {texts.hintDesktop}
           </span>
         </div>
         {/* Mobile always-visible hint */}
-        <div className="absolute bottom-3 right-3 z-20 sm:hidden">
+        <div className="absolute bottom-3 right-3 z-20 sm:hidden pointer-events-none">
           <span className="text-white text-xs bg-black/50 px-3 py-1.5 rounded-full">
             {texts.hintMobile}
           </span>

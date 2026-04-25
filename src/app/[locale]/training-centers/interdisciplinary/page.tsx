@@ -367,7 +367,7 @@ export default async function InterdisciplinaryCenterPage({
                               <p className="text-foreground/80 leading-relaxed">
                                 {researcher.topic[lang]}
                               </p>
-                              {researcher.topicNote && (
+                              {"topicNote" in researcher && researcher.topicNote && (
                                 <p className="text-foreground/60 text-sm mt-1 italic">
                                   ({researcher.topicNote[lang]})
                                 </p>

@@ -18,11 +18,12 @@ export default async function OnlineCenterPage({
 }) {
   const { locale } = await params;
   const dict = getDictionary(locale as Locale);
-  const comingSoon = locale === "mn" ? "Удахгүй..." : "Coming soon...";
 
   const sections = [
     { id: "online-master", label: t(dict, "menu.onlineMasterTraining") },
   ];
+
+  const clickHere = locale === "mn" ? "ЭНД ДАРЖ" : "CLICK HERE";
 
   return (
     <>
@@ -39,7 +40,26 @@ export default async function OnlineCenterPage({
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 {t(dict, "menu.onlineMasterTraining")}
               </h2>
-              <p className="text-foreground/75 leading-[1.85] text-base">{comingSoon}</p>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-lg font-semibold text-primary mb-3">
+                    {t(dict, "menu.programIntroduction")}
+                  </h3>
+                  <p className="text-foreground/80 leading-[1.85]">
+                    <a
+                      href="https://icec.mnums.edu.mn/local/staticpage/view.php?page=aboutus20241025mongol"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-primary font-semibold hover:underline"
+                    >
+                      {clickHere}
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </p>
+                </div>
+              </div>
             </section>
           </main>
         </div>

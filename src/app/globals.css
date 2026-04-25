@@ -177,6 +177,20 @@ body {
 .prose li {
   margin-bottom: 0.25rem;
 }
+
+/* List styles for main content */
+main ul.list-disc {
+  list-style-type: disc !important;
+}
+main ul.list-disc > li {
+  display: list-item !important;
+}
+main ul.list-disc ul {
+  list-style-type: circle !important;
+}
+main ul.list-disc ul > li {
+  display: list-item !important;
+}
 .prose a {
   color: var(--primary);
   text-decoration: underline;

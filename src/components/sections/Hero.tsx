@@ -99,14 +99,14 @@ export default function Hero({ locale, dict }: HeroProps) {
               className="mt-10 flex flex-wrap gap-4"
             >
               <Link
-                href={`/${locale}/admission`}
+                href={`/${locale}/training-centers/postgraduate#admission`}
                 className="inline-flex items-center gap-2 rounded-xl bg-white px-7 py-3.5 text-sm font-semibold text-primary-dark shadow-lg shadow-white/10 hover:bg-white/90 transition-all duration-300 hover:shadow-white/20 hover:shadow-xl group"
               >
                 {t(dict, "menu.admission")}
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
               </Link>
               <Link
-                href={`/${locale}/about`}
+                href={`/${locale}/introduction/structure`}
                 className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/30 transition-all duration-300"
               >
                 {t(dict, "menu.about")}

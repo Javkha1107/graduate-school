@@ -13,20 +13,16 @@ interface ProgramsProps {
 
 const programs = [
   {
-    labelKey: "home.education.master",
-    href: "/education/master",
+    labelKey: "home.education.graduate",
+    href: "#",
   },
   {
-    labelKey: "home.education.masterOnline",
-    href: "/education/master-online",
-  },
-  {
-    labelKey: "home.education.doctor",
-    href: "/education/doctoral",
+    labelKey: "home.education.postgraduate",
+    href: "#",
   },
   {
     labelKey: "home.education.postDoctor",
-    href: "/education/postdoctoral",
+    href: "#",
   },
 ];
 
@@ -49,7 +45,7 @@ export default function Programs({ locale, dict }: ProgramsProps) {
             </div>
             {/* Floating stat card */}
             <div className="absolute -bottom-6 -right-4 sm:right-8 bg-white rounded-2xl shadow-xl p-5 border border-border/40">
-              <p className="text-3xl font-bold text-primary">4</p>
+              <p className="text-3xl font-bold text-primary">3</p>
               <p className="text-xs text-muted-foreground mt-0.5">
                 {locale === "mn" ? "Хөтөлбөр" : "Programs"}
               </p>

@@ -10,7 +10,6 @@ export const navigation: NavItem[] = [
     labelKey: "menu.news",
     children: [
       { labelKey: "menu.newsInfo", href: "/news" },
-      { labelKey: "menu.formsRegulations", href: "/news/forms" },
     ],
   },
   {
@@ -63,12 +62,46 @@ export const navigation: NavItem[] = [
             labelKey: "menu.masterTraining",
             href: "/training-centers/academic#masters",
           },
+          {
+            labelKey: "menu.academicAdmission",
+            href: "/training-centers/academic#admission",
+          },
+          {
+            labelKey: "menu.academicStudent",
+            href: "/training-centers/academic#student",
+          },
         ],
       },
-      { labelKey: "menu.onlineCenter", href: "/training-centers/online" },
+      {
+        labelKey: "menu.onlineCenter",
+        children: [
+          {
+            labelKey: "menu.onlineMasterTraining",
+            href: "/training-centers/online#online-master",
+          },
+          {
+            labelKey: "menu.programIntroduction",
+            href: "https://icec.mnums.edu.mn/local/staticpage/view.php?page=aboutus20241025mongol",
+            external: true,
+          },
+        ],
+      },
       {
         labelKey: "menu.interdisciplinaryCenter",
-        href: "/training-centers/interdisciplinary",
+        children: [
+          {
+            labelKey: "menu.centerIntroduction",
+            href: "/training-centers/interdisciplinary#introduction",
+          },
+          {
+            labelKey: "menu.jointPrograms",
+            href: "/training-centers/interdisciplinary#joint-programs",
+          },
+          {
+            labelKey: "menu.postdocResearch",
+            href: "/training-centers/interdisciplinary#postdoc-research",
+          },
+        ],
       },
       {
         labelKey: "menu.postgraduateCenter",
@@ -132,6 +165,10 @@ export const navigation: NavItem[] = [
       { labelKey: "menu.oita", href: "/collaboration/oita" },
       { labelKey: "menu.tokushima", href: "/collaboration/tokushima" },
     ],
+  },
+  {
+    labelKey: "menu.rulesRegulations",
+    href: "/rules",
   },
 ];
 

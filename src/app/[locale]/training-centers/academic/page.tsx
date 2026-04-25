@@ -54,12 +54,19 @@ export default async function AcademicCenterPage({
     { id: "programs", label: t(dict, "menu.trainingProgram") },
     { id: "doctoral", label: t(dict, "menu.doctoralTraining") },
     { id: "masters", label: t(dict, "menu.masterTraining") },
+    { id: "admission", label: t(dict, "menu.academicAdmission") },
+    { id: "student", label: t(dict, "menu.academicStudent") },
   ];
 
   const activities = (p.activityList ?? []) as string[];
   const doctoralSteps = (p.doctoralSteps ?? []) as Step[];
   const doctoralFooter = (p.doctoralFooter ?? []) as string[];
   const mastersSteps = (p.mastersSteps ?? []) as Step[];
+  const admissionRequirements = (p.admissionRequirements ?? []) as string[];
+  const studentApplicationForms = (p.studentApplicationForms ?? []) as { label: string; url: string }[];
+  const scholarshipAmounts = (p.scholarshipAmounts ?? []) as string[];
+  const scholarshipRequirements = (p.scholarshipRequirements ?? []) as string[];
+  const scholarshipMaterials = (p.scholarshipMaterials ?? []) as string[];
 
   return (
     <>
@@ -165,6 +172,9 @@ export default async function AcademicCenterPage({
               </div>
             </section>
 
+            {/* Separator */}
+            <hr className="border-t-2 border-primary/30" />
+
             {/* Section 2: Training Programs Table */}
             <section id="programs" className="scroll-mt-24">
               <h2 className="text-2xl font-bold text-foreground mb-6">
@@ -223,6 +233,9 @@ export default async function AcademicCenterPage({
               </div>
             </section>
 
+            {/* Separator */}
+            <hr className="border-t-2 border-primary/30" />
+
             {/* Section 3: Doctoral Training */}
             <section id="doctoral" className="scroll-mt-24">
               <h2 className="text-2xl font-bold text-foreground mb-6">
@@ -247,6 +260,9 @@ export default async function AcademicCenterPage({
               </div>
             </section>
 
+            {/* Separator */}
+            <hr className="border-t-2 border-primary/30" />
+
             {/* Section 4: Master's Training */}
             <section id="masters" className="scroll-mt-24">
               <h2 className="text-2xl font-bold text-foreground mb-6">
@@ -261,6 +277,190 @@ export default async function AcademicCenterPage({
                   {t(p, "mastersProcess")}
                 </p>
                 <StepList steps={mastersSteps} />
+              </div>
+            </section>
+
+            {/* Separator */}
+            <hr className="border-t-2 border-primary/30" />
+
+            {/* Section 5: Admission */}
+            <section id="admission" className="scroll-mt-24">
+              <h2 className="text-2xl font-bold text-foreground mb-6">
+                {t(p, "admissionTitle")}
+              </h2>
+              <div className="space-y-8">
+                {/* Announcement */}
+                <div className="rounded-xl border border-primary/20 bg-primary/5 p-6">
+                  <h3 className="text-lg font-semibold text-primary mb-3">
+                    {t(p, "admissionAnnouncementTitle")}
+                  </h3>
+                  <p className="font-medium text-foreground mb-3">
+                    {t(p, "admissionAnnouncementText")}
+                  </p>
+                  <div className="space-y-2 text-foreground/80 leading-[1.85]">
+                    <p>{t(p, "admissionRegistrationPeriod")}</p>
+                    <p>{t(p, "admissionExamInfo")}</p>
+                    <p>{t(p, "admissionExamSubjects")}</p>
+                    <p>{t(p, "admissionResultsInfo")}</p>
+                    <p dangerouslySetInnerHTML={{ __html: t(p, "admissionRegisterLink") }} />
+                  </div>
+                </div>
+
+                {/* Process */}
+                <div>
+                  <h3 className="text-lg font-semibold text-primary mb-3">
+                    {t(p, "admissionProcessTitle")}
+                  </h3>
+                  <div className="space-y-3 text-foreground/80 leading-[1.85]">
+                    <p dangerouslySetInnerHTML={{ __html: t(p, "admissionProcessIntro") }} />
+                    <p dangerouslySetInnerHTML={{ __html: t(p, "admissionOnlineReg") }} />
+                    <p>{t(p, "admissionInPersonReg")}</p>
+                  </div>
+                </div>
+
+                {/* Requirements */}
+                <div>
+                  <h3 className="text-lg font-semibold text-primary mb-3">
+                    {t(p, "admissionRequirementsTitle")}
+                  </h3>
+                  <p className="text-foreground/80 mb-3 font-medium">
+                    {t(p, "admissionRequirementsSubtitle")}
+                  </p>
+                  <ul className="list-disc pl-5 space-y-2 text-foreground/80 leading-[1.85]">
+                    {admissionRequirements.map((req, i) => (
+                      <li key={i}>{req}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Tuition Fees & Bank Info */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {/* Mongolian Students - Highlighted */}
+                  <div className="rounded-xl border-l-4 border-l-primary border border-primary/20 bg-gradient-to-r from-primary/5 to-transparent p-5">
+                    <h4 className="text-base font-bold text-primary mb-3">
+                      {t(p, "admissionMongolianTitle")}
+                    </h4>
+                    <p className="font-medium text-foreground/80 mb-2">{t(p, "admissionMongolianTuition")}</p>
+                    <div className="space-y-1.5 text-foreground/80 text-sm">
+                      <p>{t(p, "admissionMongolianDoctoral")}</p>
+                      <p>{t(p, "admissionMongolianMasters")}</p>
+                      <p className="mt-2" dangerouslySetInnerHTML={{ __html: t(p, "admissionPaymentGuide") }} />
+                    </div>
+                  </div>
+
+                  {/* International Students - Highlighted */}
+                  <div className="rounded-xl border-l-4 border-l-primary border border-primary/20 bg-gradient-to-r from-primary/5 to-transparent p-5">
+                    <h4 className="text-base font-bold text-primary mb-3">
+                      {t(p, "admissionInternationalTitle")}
+                    </h4>
+                    <p className="font-medium text-foreground/80 mb-2">{t(p, "admissionInternationalTuition")}</p>
+                    <div className="space-y-1.5 text-foreground/80 text-sm">
+                      <p>{t(p, "admissionInternationalDoctoral")}</p>
+                      <p>{t(p, "admissionInternationalMasters")}</p>
+                    </div>
+                    <div className="space-y-1.5 text-foreground/80 text-sm mt-3">
+                      <p>{t(p, "admissionInternationalBank")}</p>
+                      <p>{t(p, "admissionInternationalRecipient")}</p>
+                      <p>{t(p, "admissionInternationalAccount")}</p>
+                      <p className="text-xs text-foreground/60">{t(p, "admissionInternationalNote")}</p>
+                    </div>
+                  </div>
+
+                  {/* Bank Info - Bottom full width */}
+                  <div className="rounded-xl border border-border bg-muted/30 p-5 lg:col-span-2">
+                    <h4 className="text-base font-semibold text-primary mb-3">
+                      {t(p, "admissionFeeTitle")}
+                    </h4>
+                    <div className="space-y-1.5 text-foreground/80 text-sm">
+                      <p className="font-medium">{t(p, "admissionRegFee")}</p>
+                      <p>{t(p, "admissionBankName")}</p>
+                      <p>{t(p, "admissionBankRecipient")}</p>
+                      <p>{t(p, "admissionBankAccount")}</p>
+                      <p className="text-xs text-foreground/60 mt-2">{t(p, "admissionBankNote")}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Separator */}
+            <hr className="border-t-2 border-primary/30" />
+
+            {/* Section 6: Student */}
+            <section id="student" className="scroll-mt-24">
+              <h2 className="text-2xl font-bold text-foreground mb-6">
+                {t(p, "studentTitle")}
+              </h2>
+              <div className="space-y-8">
+                {/* Student Form */}
+                <div>
+                  <h3 className="text-lg font-semibold text-primary mb-3">
+                    {t(p, "studentFormTitle")}
+                  </h3>
+                  <p className="text-foreground/80" dangerouslySetInnerHTML={{ __html: t(p, "studentFormLink") }} />
+                </div>
+
+                {/* Application Forms */}
+                <div>
+                  <h3 className="text-lg font-semibold text-primary mb-3">
+                    {t(p, "studentApplicationTitle")}
+                  </h3>
+                  <p className="text-foreground/80 mb-2">{t(p, "studentApplicationIntro")}</p>
+                  <p className="text-primary mb-4">{t(p, "studentApplicationNote")}</p>
+                  <div className="space-y-3">
+                    {studentApplicationForms.map((form, i) => (
+                      <a
+                        key={i}
+                        href={form.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 rounded-lg border border-border bg-muted/30 p-3 hover:bg-primary/5 hover:border-primary/30 transition-colors"
+                      >
+                        <span className="text-primary">📄</span>
+                        <span className="text-foreground/80 text-sm">{form.label}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Training Contract */}
+                <div>
+                  <h3 className="text-lg font-semibold text-primary mb-3">
+                    {t(p, "studentContractTitle")}
+                  </h3>
+                  <p className="text-foreground/80" dangerouslySetInnerHTML={{ __html: t(p, "studentContractLink") }} />
+                </div>
+
+                {/* Research Scholarship */}
+                <div className="rounded-xl border border-primary/20 bg-primary/5 p-6">
+                  <h3 className="text-lg font-semibold text-primary mb-3">
+                    {t(p, "scholarshipTitle")}
+                  </h3>
+                  <p className="text-foreground/80 mb-3" dangerouslySetInnerHTML={{ __html: t(p, "scholarshipRegulationLink") }} />
+                  
+                  <h4 className="font-semibold text-foreground mb-2">{t(p, "scholarshipMainTitle")}</h4>
+                  <p className="text-foreground/80 mb-4">{t(p, "scholarshipDescription")}</p>
+                  
+                  <ul className="list-disc pl-5 space-y-1 text-foreground/80 mb-6">
+                    {scholarshipAmounts.map((amount, i) => (
+                      <li key={i}>{amount}</li>
+                    ))}
+                  </ul>
+
+                  <h4 className="font-semibold text-foreground mb-2">{t(p, "scholarshipRequirementsTitle")}</h4>
+                  <ul className="list-disc pl-5 space-y-1.5 text-foreground/80 mb-6">
+                    {scholarshipRequirements.map((req, i) => (
+                      <li key={i}>{req}</li>
+                    ))}
+                  </ul>
+
+                  <h4 className="font-semibold text-foreground mb-2">{t(p, "scholarshipMaterialsTitle")}</h4>
+                  <ol className="list-decimal pl-5 space-y-1.5 text-foreground/80">
+                    {scholarshipMaterials.map((mat, i) => (
+                      <li key={i}>{mat}</li>
+                    ))}
+                  </ol>
+                </div>
               </div>
             </section>
           </main>

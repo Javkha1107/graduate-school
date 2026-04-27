@@ -7,6 +7,7 @@ import {
   subspecializations,
   baseHospitals,
 } from "@/data/postgraduate-center";
+import { getHospitals } from "@/lib/site-content";
 
 export async function generateMetadata({
   params,
@@ -52,6 +53,7 @@ export default async function PostgraduateCenterPage({
   const lang = locale as Locale;
   const dict = getDictionary(lang);
   const p = getObj(dict, "postgraduateCenterPage");
+  const dbHospitals = await getHospitals();
 
   const sections = [
     { id: "admission", label: t(dict, "menu.postgraduateAdmission") },
@@ -427,17 +429,19 @@ export default async function PostgraduateCenterPage({
                 {t(p, "hospitalsIntro")}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {baseHospitals.map((h, i) => (
-                  <div
-                    key={i}
-                    className="flex items-start gap-2 rounded-lg border border-border bg-muted/30 px-4 py-3 text-sm"
-                  >
-                    <span className="text-muted-foreground shrink-0">
-                      {i + 1}.
-                    </span>
-                    <span className="text-foreground/80">{h[lang]}</span>
-                  </div>
-                ))}
+                {(dbHospitals.length > 0 ? dbHospitals : baseHospitals).map(
+                  (h, i) => (
+                    <div
+                      key={i}
+                      className="flex items-start gap-2 rounded-lg border border-border bg-muted/30 px-4 py-3 text-sm"
+                    >
+                      <span className="text-muted-foreground shrink-0">
+                        {i + 1}.
+                      </span>
+                      <span className="text-foreground/80">{h[lang]}</span>
+                    </div>
+                  ),
+                )}
               </div>
             </section>
           </main>

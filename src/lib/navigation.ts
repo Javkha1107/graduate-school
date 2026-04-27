@@ -8,9 +8,7 @@ export interface NavItem {
 export const navigation: NavItem[] = [
   {
     labelKey: "menu.news",
-    children: [
-      { labelKey: "menu.newsInfo", href: "/news" },
-    ],
+    children: [{ labelKey: "menu.newsInfo", href: "/news" }],
   },
   {
     labelKey: "menu.introduction",
@@ -151,11 +149,22 @@ export const navigation: NavItem[] = [
   {
     labelKey: "menu.research",
     children: [
-      { labelKey: "menu.conferences", href: "/research/conferences" },
-      { labelKey: "menu.cajms", href: "/research/cajms" },
+      {
+        labelKey: "menu.conferences",
+        href: "/research/conferences#conferences",
+      },
+      {
+        labelKey: "menu.interdisciplinaryCouncil",
+        href: "/research/conferences#interdisciplinary-council",
+      },
+      { labelKey: "menu.cajms", href: "/research/conferences#cajms" },
+      {
+        labelKey: "menu.healthScienceJournal",
+        href: "/research/conferences#health-science-journal",
+      },
       {
         labelKey: "menu.ethicsCommittee",
-        href: "/research/ethics-committee",
+        href: "/research/conferences#ethics-committee",
       },
     ],
   },

@@ -29,11 +29,6 @@ export default async function StructurePage({
     { id: "faculty-leaders", label: t(dict, "menu.facultyLeaders") },
   ];
 
-  const organizationText =
-    locale === "mn"
-      ? "Ахисан түвшний сургууль нь төгсөлтийн болон төгсөлтийн дараах сургалтын хөтөлбөрийг хэрэгжүүлдэг 4 сургалтын төвтэй үйл ажиллагаа явуулж байна. Үүнд: Академик сургалтын төв, Олон улсын цахим сургалтын төв, Салбар дундын сургалтын төв, Төгсөлтийн дараах сургалтын төв. Ахисан түвшний сургуулийн захирлаар АУ-ы доктор, дэд профессор Ш.Үүртуяа, Академик сургалтын төвийн эрхлэгчээр АУ-ы доктор Э.Сарантуяа, Олон улсын цахим сургалтын төвийн эрхлэгчээр АУ-ы доктор, дэд профессор Ц.Сарнай, Салбар дундын сургалтын төвийн эрхлэгчээр АУ-ы доктор, дэд профессор Ц.Алтансүх, Төгсөлтийн дараах сургалтын төвийн эрхлэгчээр АУ-ы доктор Г.Алимаа нар ажиллаж байна."
-      : "The Graduate School operates through 4 training centers that implement graduate and postgraduate training programs: Academic Training Center, International Online Education Center, Interdisciplinary Training Center, and Postgraduate Training Center. The Graduate School is led by Dean Sh.Uurtuyaa (MD, PhD, Associate Professor), with center heads E.Sarantuya (MD, PhD) for Academic Training, Ts.Sarnai (MD, PhD, Associate Professor) for International Online Education, Ts.Altansukh (MD, PhD, Associate Professor) for Interdisciplinary Training, and G.Alimaa (MD, PhD) for Postgraduate Training.";
-
   const schemeObj = getObj(dict, "scheme");
   const { categories, members } = await getFacultyData();
   const centersObj = getObj(dict, "scheme.centers");
@@ -89,27 +84,113 @@ export default async function StructurePage({
                 {locale === "mn" ? (
                   <>
                     <p className="indent-5">
-                      Ахисан түвшний сургууль нь төгсөлтийн болон төгсөлтийн дараах сургалтын хөтөлбөрийг хэрэгжүүлдэг 4 сургалтын төвтэй үйл ажиллагаа явуулж байна. Үүнд: <strong className="text-foreground">Академик сургалтын төв</strong>, <strong className="text-foreground">Олон улсын цахим сургалтын төв</strong>, <strong className="text-foreground">Салбар дундын сургалтын төв</strong>, <strong className="text-foreground">Төгсөлтийн дараах сургалтын төв</strong>.
+                      Ахисан түвшний сургууль нь төгсөлтийн болон төгсөлтийн
+                      дараах сургалтын хөтөлбөрийг хэрэгжүүлдэг 4 сургалтын
+                      төвтэй үйл ажиллагаа явуулж байна. Үүнд:{" "}
+                      <strong className="text-foreground">
+                        Академик сургалтын төв
+                      </strong>
+                      ,{" "}
+                      <strong className="text-foreground">
+                        Олон улсын цахим сургалтын төв
+                      </strong>
+                      ,{" "}
+                      <strong className="text-foreground">
+                        Салбар дундын сургалтын төв
+                      </strong>
+                      ,{" "}
+                      <strong className="text-foreground">
+                        Төгсөлтийн дараах сургалтын төв
+                      </strong>
+                      .
                     </p>
                     <div className="space-y-1">
-                      <p><strong className="text-foreground">Ахисан түвшний сургуулийн захирлаар</strong> АУ-ы доктор, дэд профессор Ш.Үүртуяа,</p>
-                      <p><strong className="text-foreground">Академик сургалтын төвийн эрхлэгчээр</strong> АУ-ы доктор Э.Сарантуяа,</p>
-                      <p><strong className="text-foreground">Олон улсын цахим сургалтын төвийн эрхлэгчээр</strong> АУ-ы доктор, дэд профессор Ц.Сарнай,</p>
-                      <p><strong className="text-foreground">Салбар дундын сургалтын төвийн эрхлэгчээр</strong> АУ-ы доктор, дэд профессор Ц.Алтансүх,</p>
-                      <p><strong className="text-foreground">Төгсөлтийн дараах сургалтын төвийн эрхлэгчээр</strong> АУ-ы доктор Г.Алимаа нар ажиллаж байна.</p>
+                      <p>
+                        <strong className="text-foreground">
+                          Ахисан түвшний сургуулийн захирлаар
+                        </strong>{" "}
+                        АУ-ы доктор, дэд профессор Ш.Үүртуяа,
+                      </p>
+                      <p>
+                        <strong className="text-foreground">
+                          Академик сургалтын төвийн эрхлэгчээр
+                        </strong>{" "}
+                        АУ-ы доктор Э.Сарантуяа,
+                      </p>
+                      <p>
+                        <strong className="text-foreground">
+                          Олон улсын цахим сургалтын төвийн эрхлэгчээр
+                        </strong>{" "}
+                        АУ-ы доктор, дэд профессор Ц.Сарнай,
+                      </p>
+                      <p>
+                        <strong className="text-foreground">
+                          Салбар дундын сургалтын төвийн эрхлэгчээр
+                        </strong>{" "}
+                        АУ-ы доктор, дэд профессор Ц.Алтансүх,
+                      </p>
+                      <p>
+                        <strong className="text-foreground">
+                          Төгсөлтийн дараах сургалтын төвийн эрхлэгчээр
+                        </strong>{" "}
+                        АУ-ы доктор Г.Алимаа нар ажиллаж байна.
+                      </p>
                     </div>
                   </>
                 ) : (
                   <>
                     <p className="indent-5">
-                      The Graduate School operates through 4 training centers that implement graduate and postgraduate training programs: <strong className="text-foreground">Academic Training Center</strong>, <strong className="text-foreground">International Online Education Center</strong>, <strong className="text-foreground">Interdisciplinary Training Center</strong>, and <strong className="text-foreground">Postgraduate Training Center</strong>.
+                      The Graduate School operates through 4 training centers
+                      that implement graduate and postgraduate training
+                      programs:{" "}
+                      <strong className="text-foreground">
+                        Academic Training Center
+                      </strong>
+                      ,{" "}
+                      <strong className="text-foreground">
+                        International Online Education Center
+                      </strong>
+                      ,{" "}
+                      <strong className="text-foreground">
+                        Interdisciplinary Training Center
+                      </strong>
+                      , and{" "}
+                      <strong className="text-foreground">
+                        Postgraduate Training Center
+                      </strong>
+                      .
                     </p>
                     <div className="space-y-1">
-                      <p><strong className="text-foreground">Graduate School Dean:</strong> Sh.Uurtuyaa (MD, PhD, Associate Professor),</p>
-                      <p><strong className="text-foreground">Academic Training Center Head:</strong> E.Sarantuya (MD, PhD),</p>
-                      <p><strong className="text-foreground">International Online Education Center Head:</strong> Ts.Sarnai (MD, PhD, Associate Professor),</p>
-                      <p><strong className="text-foreground">Interdisciplinary Training Center Head:</strong> Ts.Altansukh (MD, PhD, Associate Professor),</p>
-                      <p><strong className="text-foreground">Postgraduate Training Center Head:</strong> G.Alimaa (MD, PhD).</p>
+                      <p>
+                        <strong className="text-foreground">
+                          Graduate School Dean:
+                        </strong>{" "}
+                        Sh.Uurtuyaa (MD, PhD, Associate Professor),
+                      </p>
+                      <p>
+                        <strong className="text-foreground">
+                          Academic Training Center Head:
+                        </strong>{" "}
+                        E.Sarantuya (MD, PhD),
+                      </p>
+                      <p>
+                        <strong className="text-foreground">
+                          International Online Education Center Head:
+                        </strong>{" "}
+                        Ts.Sarnai (MD, PhD, Associate Professor),
+                      </p>
+                      <p>
+                        <strong className="text-foreground">
+                          Interdisciplinary Training Center Head:
+                        </strong>{" "}
+                        Ts.Altansukh (MD, PhD, Associate Professor),
+                      </p>
+                      <p>
+                        <strong className="text-foreground">
+                          Postgraduate Training Center Head:
+                        </strong>{" "}
+                        G.Alimaa (MD, PhD).
+                      </p>
                     </div>
                   </>
                 )}

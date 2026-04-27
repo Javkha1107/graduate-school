@@ -179,7 +179,7 @@ export const academicCenterContacts = {
       mn: "АУ-ы доктор",
       en: "Doctor of Medical Sciences",
     },
-    name: "Энхзаяа САРАНТУЯА",
+    name: "Энхжаргал САРАНТУЯА",
     email: "sarantuya.en@mnums.edu.mn",
   },
   specialist: {

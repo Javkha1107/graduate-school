@@ -5,7 +5,7 @@ import { ArrowLeft, Calendar, ArrowRight } from "lucide-react";
 import { getDictionary, t, type Locale } from "@/lib/i18n";
 import { getCategoryName } from "@/lib/supabase";
 import { getNewsBySlug, getActiveNews } from "@/lib/news";
-import SafeHtml from "@/components/news/SafeHtml";
+import { sanitizeNewsHtml } from "@/lib/sanitize";
 import newsData from "@/data/news.json";
 
 interface StaticNews {
@@ -213,9 +213,9 @@ export default async function NewsDetailPage({
 
         {/* Content */}
         {content ? (
-          <SafeHtml
-            html={content}
+          <div
             className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-foreground/80 prose-a:text-primary prose-img:rounded-xl"
+            dangerouslySetInnerHTML={{ __html: sanitizeNewsHtml(content) }}
           />
         ) : (
           <p className="text-muted-foreground">{t(dict, "notFound")}</p>

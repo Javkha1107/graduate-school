@@ -20,15 +20,17 @@ interface StaticNewsItem {
 }
 
 export default async function NewsPreview({ locale, dict }: NewsPreviewProps) {
-  const formatDate = (d: string) =>
-    new Date(d.replace(" ", "T")).toLocaleDateString(
-      locale === "mn" ? "mn-MN" : "en-US",
-      {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      },
-    );
+  const formatDate = (d: string) => {
+    const date = new Date(d.replace(" ", "T"));
+    if (locale === "mn") {
+      return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, "0")}.${String(date.getDate()).padStart(2, "0")}`;
+    }
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  };
 
   let newsItems: {
     id: number;

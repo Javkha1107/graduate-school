@@ -384,13 +384,12 @@ export default function AdminNewsPage() {
                           </span>
                         </td>
                         <td className="px-5 py-4 text-muted-foreground hidden md:table-cell text-xs">
-                          {new Date(
-                            item.created_at.replace(" ", "T"),
-                          ).toLocaleDateString("mn-MN", {
-                            year: "numeric",
-                            month: "short",
-                            day: "numeric",
-                          })}
+                          {(() => {
+                            const date = new Date(
+                              item.created_at.replace(" ", "T"),
+                            );
+                            return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, "0")}.${String(date.getDate()).padStart(2, "0")}`;
+                          })()}
                         </td>
                         <td className="px-5 py-4 text-center">
                           <button

@@ -28,10 +28,15 @@ interface StaticNews {
 }
 
 function formatDate(d: string, locale: string) {
-  return new Date(d.replace(" ", "T")).toLocaleDateString(
-    locale === "mn" ? "mn-MN" : "en-US",
-    { year: "numeric", month: "short", day: "numeric" },
-  );
+  const date = new Date(d.replace(" ", "T"));
+  if (locale === "mn") {
+    return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, "0")}.${String(date.getDate()).padStart(2, "0")}`;
+  }
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
 }
 
 export default async function NewsPage({

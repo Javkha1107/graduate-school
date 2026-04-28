@@ -40,9 +40,9 @@ function NewsCard({
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
       ) : (
-        <div className="absolute inset-0 bg-muted flex items-center justify-center text-muted-foreground/30">
+        <div className="absolute inset-0 bg-linear-to-br from-primary/80 via-primary/60 to-primary/90 flex items-center justify-center">
           <svg
-            className="h-12 w-12"
+            className="h-12 w-12 text-white/30"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

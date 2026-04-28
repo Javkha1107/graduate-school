@@ -46,7 +46,14 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, #ffffff 0%, #e8f0f8 30%, #f0f4f8 50%, #e8f0f8 70%, #ffffff 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #e8f0f8 30%,
+    #f0f4f8 50%,
+    #e8f0f8 70%,
+    #ffffff 100%
+  );
   background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-sans);
@@ -114,19 +121,62 @@ body {
   animation: shimmer 8s ease-in-out infinite;
 }
 
-/* Rich text editor styles */
+/* ── Rich text editor (Quill) styles ── */
 .ql-editor {
-  min-height: 200px;
+  min-height: 280px;
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.8;
+  padding: 1.25rem;
+  color: var(--foreground);
+}
+.ql-editor:focus {
+  outline: none;
 }
 .ql-toolbar.ql-snow {
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 0.75rem 0.75rem 0 0;
   border-color: var(--border);
+  background: var(--surface);
+  padding: 0.5rem;
+}
+.ql-toolbar.ql-snow .ql-formats {
+  margin-right: 0.5rem;
 }
 .ql-container.ql-snow {
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 0 0 0.75rem 0.75rem;
   border-color: var(--border);
+  font-family: var(--font-sans);
+}
+/* Active toolbar button highlight */
+.ql-toolbar.ql-snow .ql-active,
+.ql-toolbar.ql-snow button:hover {
+  color: var(--primary) !important;
+}
+.ql-toolbar.ql-snow .ql-active .ql-stroke,
+.ql-toolbar.ql-snow button:hover .ql-stroke {
+  stroke: var(--primary) !important;
+}
+.ql-toolbar.ql-snow .ql-active .ql-fill,
+.ql-toolbar.ql-snow button:hover .ql-fill {
+  fill: var(--primary) !important;
+}
+/* Editor placeholder */
+.ql-editor.ql-blank::before {
+  color: var(--muted-foreground);
+  font-style: normal;
+  opacity: 0.6;
+}
+/* Editor images */
+.ql-editor img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 0.75rem 0;
+}
+/* Editor video embeds */
+.ql-editor .ql-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.5rem;
+  margin: 0.75rem 0;
 }
 
 /* Autocomplete transparent fix for glass login */
@@ -141,6 +191,10 @@ body {
 }
 
 /* Prose styles for news content */
+.prose {
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
 .prose h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -177,6 +231,37 @@ body {
 .prose li {
   margin-bottom: 0.25rem;
 }
+/* Quill indent classes — render indented items as nested sub-lists */
+.prose li.ql-indent-1,
+.prose li.ql-indent-2,
+.prose li.ql-indent-3 {
+  list-style-type: disc;
+}
+.prose li.ql-indent-1 {
+  margin-left: 1.5rem;
+}
+.prose li.ql-indent-2 {
+  margin-left: 3rem;
+}
+.prose li.ql-indent-3 {
+  margin-left: 4.5rem;
+}
+/* Indented items in an <ol> should show bullets and not advance the counter */
+.prose ol {
+  counter-reset: list-counter;
+}
+.prose ol > li:not([class*="ql-indent"]) {
+  counter-increment: list-counter;
+  list-style: none;
+}
+.prose ol > li:not([class*="ql-indent"])::before {
+  content: counter(list-counter) ". ";
+  font-weight: 500;
+}
+.prose ol > li[class*="ql-indent"] {
+  list-style-type: disc;
+  counter-increment: none;
+}
 
 /* List styles for main content */
 main ul.list-disc {
@@ -195,6 +280,10 @@ main ul.list-disc ul > li {
   color: var(--primary);
   text-decoration: underline;
   text-underline-offset: 2px;
+  transition: color 0.15s;
+}
+.prose a:hover {
+  color: var(--primary-dark);
 }
 .prose img {
   max-width: 100%;
@@ -206,6 +295,31 @@ main ul.list-disc ul > li {
   padding-left: 1.25rem;
   color: var(--muted-foreground);
   font-style: italic;
+}
+/* Quill alignment classes */
+.ql-align-center {
+  text-align: center;
+}
+.ql-align-right {
+  text-align: right;
+}
+.ql-align-justify {
+  text-align: justify;
+}
+/* Video embeds in prose */
+.prose iframe,
+.prose .ql-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.75rem;
+  margin: 1.5rem 0;
+  border: none;
+}
+/* Horizontal rule */
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
 }
 /* ── Global table styles (public site) ── */
 /* Base table styles */
@@ -230,8 +344,15 @@ main table thead th {
 /* Quill outputs <td> not <th> — style first row as header when no thead */
 main table:not(:has(thead)) tr:first-child td {
   background-color: var(--primary);
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 600;
+}
+/* Ensure text inside header cells is white (Quill wraps content in <p>) */
+main table:not(:has(thead)) tr:first-child td * {
+  color: #ffffff !important;
+}
+main table thead th * {
+  color: #ffffff !important;
 }
 main table tbody tr:nth-child(even) td {
   background: var(--surface);
@@ -239,6 +360,8 @@ main table tbody tr:nth-child(even) td {
 
 .prose table {
   margin: 1.5rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 @media (max-width: 640px) {
   table {
@@ -252,15 +375,28 @@ main table tbody tr:nth-child(even) td {
 
 /* Quill editor table styles */
 .ql-editor table {
+  display: table !important;
+  table-layout: fixed;
   margin: 1rem 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+.ql-editor table tbody {
+  display: table-row-group;
+}
+.ql-editor table tr {
+  display: table-row;
 }
 .ql-editor table td {
+  display: table-cell;
   min-width: 60px;
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  vertical-align: top;
 }
 .ql-editor table tr:first-child td {
-  background-color: var(--primary) !important;
-  color: #ffffff !important;
-  font-weight: 700;
+  background-color: var(--muted);
+  font-weight: 600;
 }
 
 /* Collapsible animations */
@@ -294,7 +430,8 @@ main table tbody tr:nth-child(even) td {
 
 /* Background logo floating animation */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -304,7 +441,8 @@ main table tbody tr:nth-child(even) td {
 
 /* Background logo glow/pulse animation */
 @keyframes glow {
-  0%, 100% {
+  0%,
+  100% {
     filter: drop-shadow(0 0 20px rgba(26, 58, 122, 0.3)) brightness(1);
   }
   50% {

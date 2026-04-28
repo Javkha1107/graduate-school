@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, ArrowRight } from "lucide-react";
 import { getDictionary, t, type Locale } from "@/lib/i18n";
 import { getCategoryName } from "@/lib/supabase";
 import { getNewsBySlug, getActiveNews } from "@/lib/news";
+import { sanitizeNewsHtml } from "@/lib/sanitize";
 import newsData from "@/data/news.json";
 
 interface StaticNews {
@@ -19,22 +20,27 @@ interface StaticNews {
 }
 
 function formatDate(d: string, locale: string) {
-  return new Date(d.replace(" ", "T")).toLocaleDateString(
-    locale === "mn" ? "mn-MN" : "en-US",
-    { year: "numeric", month: "long", day: "numeric" },
-  );
+  const date = new Date(d.replace(" ", "T"));
+  if (locale === "mn") {
+    return `${date.getFullYear()} оны ${date.getMonth() + 1} сарын ${date.getDate()}`;
+  }
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 }
 
 function formatDateShort(d: string, locale: string) {
-  return new Date(d.replace(" ", "T")).toLocaleDateString(
-    locale === "mn" ? "mn-MN" : "en-US",
-    { year: "numeric", month: "short", day: "numeric" },
-  );
-}
-
-// Fix links missing protocol (e.g. href="www.youtube.com" → href="https://www.youtube.com")
-function fixContentLinks(html: string): string {
-  return html.replace(/href="(www\.)/gi, 'href="https://$1');
+  const date = new Date(d.replace(" ", "T"));
+  if (locale === "mn") {
+    return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, "0")}.${String(date.getDate()).padStart(2, "0")}`;
+  }
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
 }
 
 export async function generateMetadata({
@@ -209,7 +215,7 @@ export default async function NewsDetailPage({
         {content ? (
           <div
             className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-foreground/80 prose-a:text-primary prose-img:rounded-xl"
-            dangerouslySetInnerHTML={{ __html: fixContentLinks(content) }}
+            dangerouslySetInnerHTML={{ __html: sanitizeNewsHtml(content) }}
           />
         ) : (
           <p className="text-muted-foreground">{t(dict, "notFound")}</p>
@@ -249,18 +255,18 @@ export default async function NewsDetailPage({
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   ) : (
-                    <div className="absolute inset-0 bg-muted flex items-center justify-center text-muted-foreground/20">
+                    <div className="absolute inset-0 bg-linear-to-br from-primary/80 via-primary/60 to-primary/90 flex flex-col items-center justify-center gap-3">
                       <svg
-                        className="h-10 w-10"
+                        className="h-12 w-12 text-white/30"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        strokeWidth={1}
+                        strokeWidth={1.2}
                       >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                          d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
                         />
                       </svg>
                     </div>
@@ -271,7 +277,7 @@ export default async function NewsDetailPage({
                       <Calendar className="h-3 w-3" />
                       {item.date}
                     </div>
-                    <h3 className="text-lg sm:text-xl font-bold text-white leading-snug drop-shadow-md overflow-hidden max-h-[3.5rem] group-hover:max-h-[20rem] transition-[max-height] duration-500 ease-in-out">
+                    <h3 className="text-lg sm:text-xl font-bold text-white leading-snug drop-shadow-md overflow-hidden max-h-14 group-hover:max-h-80 transition-[max-height] duration-500 ease-in-out">
                       {item.title}
                     </h3>
                   </div>

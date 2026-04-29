@@ -51,7 +51,7 @@ export async function PUT(
   if (error)
     return NextResponse.json({ error: error.message }, { status: 500 });
 
-  revalidateTag(FACULTY_CACHE_TAG);
+  revalidateTag(FACULTY_CACHE_TAG, "max");
   return NextResponse.json(data);
 }
 
@@ -75,6 +75,6 @@ export async function DELETE(
   if (error)
     return NextResponse.json({ error: error.message }, { status: 500 });
 
-  revalidateTag(FACULTY_CACHE_TAG);
+  revalidateTag(FACULTY_CACHE_TAG, "max");
   return NextResponse.json({ success: true });
 }

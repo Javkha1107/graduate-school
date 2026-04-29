@@ -51,6 +51,6 @@ export async function PUT(
   if (error)
     return NextResponse.json({ error: error.message }, { status: 500 });
 
-  revalidateTag(SITE_CONTENT_CACHE_TAG);
+  revalidateTag(SITE_CONTENT_CACHE_TAG, "max");
   return NextResponse.json({ success: true });
 }

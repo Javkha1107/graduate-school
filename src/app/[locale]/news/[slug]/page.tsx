@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, Calendar, ArrowRight } from "lucide-react";
 import { getDictionary, t, type Locale } from "@/lib/i18n";
 import { getCategoryName } from "@/lib/supabase";
-import { getNewsBySlug, getActiveNews } from "@/lib/news";
+import { getNewsBySlug, getRelatedNews } from "@/lib/news";
 import { sanitizeNewsHtml } from "@/lib/sanitize";
 import newsData from "@/data/news.json";
 
@@ -135,17 +135,14 @@ export default async function NewsDetailPage({
   }[] = [];
 
   try {
-    const allNews = await getActiveNews();
-    relatedNews = allNews
-      .filter((n) => n.id !== currentId)
-      .slice(0, 3)
-      .map((n) => ({
-        id: n.id,
-        title: locale === "mn" ? n.title_mn : n.title_en || n.title_mn,
-        image: n.news_img || n.banner_img,
-        date: formatDateShort(n.created_at, locale),
-        slug: n.slug,
-      }));
+    const related = await getRelatedNews(currentId, 3);
+    relatedNews = related.map((n) => ({
+      id: n.id,
+      title: locale === "mn" ? n.title_mn : n.title_en || n.title_mn,
+      image: n.news_img || n.banner_img,
+      date: formatDateShort(n.created_at, locale),
+      slug: n.slug,
+    }));
   } catch {
     /* ignore */
   }

@@ -1,5 +1,5 @@
 import { t, type Locale } from "@/lib/i18n";
-import { getActiveNews } from "@/lib/news";
+import { getLatestNews } from "@/lib/news";
 import newsData from "@/data/news.json";
 import { NewsPreviewClient } from "./NewsPreviewClient";
 
@@ -41,10 +41,9 @@ export default async function NewsPreview({ locale, dict }: NewsPreviewProps) {
   }[] = [];
 
   try {
-    const data = await getActiveNews();
-    console.log("[NewsPreview] getActiveNews returned", data.length, "items");
+    const data = await getLatestNews(4);
     if (data.length > 0) {
-      newsItems = data.slice(0, 4).map((item) => ({
+      newsItems = data.map((item) => ({
         id: item.id,
         title: locale === "mn" ? item.title_mn : item.title_en || item.title_mn,
         image: item.news_img || item.banner_img,
@@ -53,7 +52,7 @@ export default async function NewsPreview({ locale, dict }: NewsPreviewProps) {
       }));
     }
   } catch (err) {
-    console.error("[NewsPreview] getActiveNews failed:", err);
+    console.error("[NewsPreview] getLatestNews failed:", err);
   }
 
   if (newsItems.length === 0) {

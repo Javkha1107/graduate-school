@@ -8,7 +8,8 @@ export interface NavItem {
 export const navigation: NavItem[] = [
   {
     labelKey: "menu.news",
-    children: [{ labelKey: "menu.newsInfo", href: "/news" }],
+    href: "/news",
+    // children: [{ labelKey: "menu.newsInfo", href: "/news" }],
   },
   {
     labelKey: "menu.introduction",
@@ -27,14 +28,6 @@ export const navigation: NavItem[] = [
             href: "/introduction/structure#faculty-leaders",
           },
         ],
-      },
-      {
-        labelKey: "menu.academicCouncil",
-        href: "/introduction/academic-council",
-      },
-      {
-        labelKey: "menu.programCommittee",
-        href: "/introduction/program-committee",
       },
     ],
   },
@@ -72,17 +65,19 @@ export const navigation: NavItem[] = [
       },
       {
         labelKey: "menu.onlineCenter",
-        children: [
-          {
-            labelKey: "menu.onlineMasterTraining",
-            href: "/training-centers/online#online-master",
-          },
-          {
-            labelKey: "menu.programIntroduction",
-            href: "https://icec.mnums.edu.mn/local/staticpage/view.php?page=aboutus20241025mongol",
-            external: true,
-          },
-        ],
+        href: "/training-centers/online#online-master",
+
+        // children: [
+        //   {
+        //     labelKey: "menu.onlineMasterTraining",
+        //     href: "/training-centers/online#online-master",
+        //   },
+        //   {
+        //     labelKey: "menu.programIntroduction",
+        //     href: "https://icec.mnums.edu.mn/local/staticpage/view.php?page=aboutus20241025mongol",
+        //     external: true,
+        //   },
+        // ],
       },
       {
         labelKey: "menu.interdisciplinaryCenter",

@@ -113,25 +113,33 @@ export default async function OnlineCenterPage({
                 </ul>
               </div>
 
-              {/* Website link */}
-              <div>
-                <h3 className="text-lg font-semibold text-primary mb-3">
-                  {isMn ? "Дэлгэрэнгүй мэдээлэл" : "More Information"}
-                </h3>
-                <p className="text-foreground/80 leading-[1.85]">
-                  {isMn
-                    ? "Дэлгэрэнгүй мэдээллийг Олон улсын цахим сургалтын төвийн сайтаас авна уу:"
-                    : "For more details, please visit the ICEC website:"}
-                </p>
-                <a
-                  href="https://icec.mnums.edu.mn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-primary font-semibold hover:underline mt-2"
-                >
-                  https://icec.mnums.edu.mn/
+              {/* Website link — CTA banner */}
+              <a
+                href={
+                  isMn
+                    ? "https://icec.mnums.edu.mn/?lang=mn"
+                    : "https://icec.mnums.edu.mn/"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between gap-4 rounded-xl border border-primary/20 bg-linear-to-r from-primary/5 to-primary/10 p-6 transition-all hover:border-primary/40 hover:shadow-md"
+              >
+                <div className="min-w-0">
+                  <p className="text-sm font-medium text-primary/70 mb-1">
+                    {isMn ? "Дэлгэрэнгүй мэдээлэл" : "More Information"}
+                  </p>
+                  <p className="text-lg font-semibold text-foreground mb-1">
+                    {isMn
+                      ? "Олон улсын цахим сургалтын төвийн вэбсайт"
+                      : "International Center for e-Learning Website"}
+                  </p>
+                  <span className="text-sm text-primary/60">
+                    icec.mnums.edu.mn
+                  </span>
+                </div>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-transform group-hover:translate-x-1 group-hover:bg-primary/20">
                   <svg
-                    className="w-4 h-4"
+                    className="h-5 w-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -143,8 +151,8 @@ export default async function OnlineCenterPage({
                       d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                     />
                   </svg>
-                </a>
-              </div>
+                </span>
+              </a>
 
               {/* Contact info */}
               <div className="rounded-xl border border-border bg-muted/30 p-5">

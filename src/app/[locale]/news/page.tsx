@@ -1,6 +1,6 @@
 import { getDictionary, t, type Locale } from "@/lib/i18n";
 import { getCategoryName } from "@/lib/supabase";
-import { getActiveNews } from "@/lib/news";
+import { getActiveNewsList } from "@/lib/news";
 import PageHero from "@/components/sections/PageHero";
 import NewsListClient from "@/components/sections/NewsListClient";
 import newsData from "@/data/news.json";
@@ -58,7 +58,7 @@ export default async function NewsPage({
   }[] = [];
 
   try {
-    const data = await getActiveNews();
+    const data = await getActiveNewsList();
     if (data.length > 0) {
       items = data.map((n) => ({
         id: n.id,
@@ -71,7 +71,7 @@ export default async function NewsPage({
       }));
     }
   } catch (err) {
-    console.error("[news/page] getActiveNews failed:", err);
+    console.error("[news/page] getActiveNewsList failed:", err);
   }
 
   if (items.length === 0) {

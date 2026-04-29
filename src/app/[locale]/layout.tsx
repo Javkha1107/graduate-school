@@ -6,6 +6,7 @@ import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import BackToTop from "@/components/ui/BackToTop";
+import NavigationProgress from "@/components/ui/NavigationProgress";
 import PageTransition from "@/components/ui/PageTransition";
 import "../globals.css";
 
@@ -65,6 +66,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={inter.variable}>
       <body className="min-h-screen flex flex-col antialiased font-sans">
+        <NavigationProgress />
         <ScrollToTop />
         <BackToTop />
         <Header locale={locale as Locale} dict={dict} />

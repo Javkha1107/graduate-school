@@ -62,7 +62,7 @@ export async function PUT(
   if (error)
     return NextResponse.json({ error: error.message }, { status: 500 });
 
-  revalidateTag(NEWS_CACHE_TAG, "default");
+  revalidateTag(NEWS_CACHE_TAG);
   return NextResponse.json(data);
 }
 
@@ -87,6 +87,6 @@ export async function DELETE(
   if (error)
     return NextResponse.json({ error: error.message }, { status: 500 });
 
-  revalidateTag(NEWS_CACHE_TAG, "default");
+  revalidateTag(NEWS_CACHE_TAG);
   return NextResponse.json({ success: true });
 }

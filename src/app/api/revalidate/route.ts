@@ -11,6 +11,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid secret" }, { status: 401 });
   }
 
-  revalidateTag(NEWS_CACHE_TAG, "default");
+  revalidateTag(NEWS_CACHE_TAG);
   return NextResponse.json({ revalidated: true, now: Date.now() });
 }

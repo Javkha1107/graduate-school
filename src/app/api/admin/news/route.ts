@@ -66,7 +66,7 @@ export async function POST(request: Request) {
     }
 
     // Invalidate public news cache
-    revalidateTag(NEWS_CACHE_TAG, "default");
+    revalidateTag(NEWS_CACHE_TAG);
 
     return NextResponse.json(data);
   } catch {

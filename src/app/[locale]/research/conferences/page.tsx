@@ -50,7 +50,7 @@ export default async function ConferencesPage({
       : content.archive_title_en
     : t(dict, "researchDay.archiveTitle");
 
-  const links = content?.links ?? [];
+  const links = [...(content?.links ?? [])].reverse();
 
   const comingSoon = isMn ? "Удахгүй..." : "Coming soon...";
 

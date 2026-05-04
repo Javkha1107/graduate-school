@@ -1,12 +1,20 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import * as Tabs from "@radix-ui/react-tabs";
 import AdminHeader from "@/components/admin/AdminHeader";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { RefreshCw, Plus, Trash2, Save } from "lucide-react";
+import {
+  RefreshCw,
+  Plus,
+  Trash2,
+  Save,
+  Upload,
+  FileText,
+  X,
+} from "lucide-react";
 
 interface ConferenceLink {
   label_mn: string;
@@ -81,6 +89,8 @@ export default function AdminContentPage() {
   const [savingHosp, setSavingHosp] = useState(false);
   const [savedConf, setSavedConf] = useState(false);
   const [savedHosp, setSavedHosp] = useState(false);
+  const [uploadingIdx, setUploadingIdx] = useState<number | null>(null);
+  const fileInputRefs = useRef<(HTMLInputElement | null)[]>([]);
   const router = useRouter();
 
   useEffect(() => {
@@ -156,6 +166,43 @@ export default function AdminContentPage() {
   }
   function removeLink(i: number) {
     setConf((d) => ({ ...d, links: d.links.filter((_, j) => j !== i) }));
+  }
+
+  // PDF upload handler
+  async function handlePdfUpload(i: number, file: File) {
+    if (file.type !== "application/pdf") {
+      alert("Зөвхөн PDF файл оруулна уу");
+      return;
+    }
+    if (file.size > 20 * 1024 * 1024) {
+      alert("PDF файлын хэмжээ 20 MB-аас хэтрэхгүй байх ёстой");
+      return;
+    }
+    setUploadingIdx(i);
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("folder", "conferences");
+      const res = await fetch("/api/admin/upload", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        alert(data.error || "Upload амжилтгүй");
+        return;
+      }
+      // Set the public URL into the link's url field
+      setLink(i, "url", data.url);
+    } catch {
+      alert("Upload амжилтгүй");
+    } finally {
+      setUploadingIdx(null);
+      // Reset file input
+      if (fileInputRefs.current[i]) {
+        fileInputRefs.current[i]!.value = "";
+      }
+    }
   }
 
   // Hospital helpers
@@ -284,11 +331,65 @@ export default function AdminContentPage() {
                           </Field>
                         </div>
                         <Field label="URL">
-                          <Input
-                            value={link.url}
-                            onChange={(e) => setLink(i, "url", e.target.value)}
-                            placeholder="https://..."
-                          />
+                          <div className="flex items-center gap-2">
+                            <Input
+                              value={link.url}
+                              onChange={(e) =>
+                                setLink(i, "url", e.target.value)
+                              }
+                              placeholder="https://..."
+                              className="flex-1"
+                            />
+                            <input
+                              ref={(el) => {
+                                fileInputRefs.current[i] = el;
+                              }}
+                              type="file"
+                              accept=".pdf,application/pdf"
+                              className="hidden"
+                              onChange={(e) => {
+                                const file = e.target.files?.[0];
+                                if (file) handlePdfUpload(i, file);
+                              }}
+                            />
+                            <Button
+                              type="button"
+                              variant="outline"
+                              size="sm"
+                              disabled={uploadingIdx === i}
+                              onClick={() => fileInputRefs.current[i]?.click()}
+                              className="shrink-0"
+                            >
+                              {uploadingIdx === i ? (
+                                <RefreshCw className="h-4 w-4 animate-spin" />
+                              ) : (
+                                <Upload className="h-4 w-4" />
+                              )}
+                              <span className="ml-1 hidden sm:inline">
+                                {uploadingIdx === i ? "Uploading..." : "PDF"}
+                              </span>
+                            </Button>
+                          </div>
+                          {link.url && link.url.endsWith(".pdf") && (
+                            <div className="flex items-center gap-2 mt-2 text-xs text-muted-foreground bg-muted/50 rounded-lg px-3 py-2">
+                              <FileText className="h-3.5 w-3.5 text-primary shrink-0" />
+                              <a
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="truncate text-primary hover:underline"
+                              >
+                                {link.url.split("/").pop()}
+                              </a>
+                              <button
+                                type="button"
+                                onClick={() => setLink(i, "url", "")}
+                                className="ml-auto text-muted-foreground hover:text-destructive shrink-0"
+                              >
+                                <X className="h-3.5 w-3.5" />
+                              </button>
+                            </div>
+                          )}
                         </Field>
                       </div>
                     ))}

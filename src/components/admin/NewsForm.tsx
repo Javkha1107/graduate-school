@@ -20,6 +20,8 @@ import {
   Plus,
   Minus,
   Trash2,
+  FileUp,
+  X,
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -126,7 +128,8 @@ const QUILL_FORMATS = [
   "video",
   "table",
   "table-row",
-  "table-cell-line",
+  "table-body",
+  "table-container",
 ];
 
 /* ── Table controls using Quill's native table API + DOM merge ── */
@@ -394,6 +397,7 @@ export default function NewsForm({ initialData, mode }: NewsFormProps) {
   );
   const bannerRef = useRef<HTMLInputElement>(null);
   const newsImgRef = useRef<HTMLInputElement>(null);
+  const pdfRef = useRef<HTMLInputElement>(null);
 
   const [form, setForm] = useState({
     title_mn: initialData?.title_mn || "",
@@ -403,6 +407,7 @@ export default function NewsForm({ initialData, mode }: NewsFormProps) {
     category: initialData?.category || "CODE001",
     banner_img: initialData?.banner_img || "",
     news_img: initialData?.news_img || "",
+    pdf_url: initialData?.pdf_url || "",
     is_active: initialData?.is_active ?? true,
   });
 
@@ -423,6 +428,36 @@ export default function NewsForm({ initialData, mode }: NewsFormProps) {
       update(field, await uploadImage(file));
     } catch {
       setError("Зураг оруулахад алдаа гарлаа. Supabase тохиргоог шалгана уу.");
+    }
+  }
+
+  async function handlePdfUpload(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    if (file.type !== "application/pdf") {
+      setError("Зөвхөн PDF файл оруулах боломжтой.");
+      return;
+    }
+    try {
+      const fd = new FormData();
+      fd.append("file", file);
+      fd.append("folder", "pdfs");
+      const res = await fetch("/api/admin/upload", {
+        method: "POST",
+        body: fd,
+      });
+      if (!res.ok) {
+        const d = await res.json();
+        throw new Error(d.error || "Upload failed");
+      }
+      const { url } = await res.json();
+      update("pdf_url", url);
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "PDF оруулахад алдаа гарлаа. Supabase тохиргоог шалгана уу.",
+      );
     }
   }
 
@@ -671,6 +706,69 @@ export default function NewsForm({ initialData, mode }: NewsFormProps) {
               />
             </div>
           </div>
+        </motion.div>
+
+        {/* PDF */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.12 }}
+          className={SEC}
+        >
+          <div className="flex items-center gap-2 text-foreground">
+            <FileUp className="h-4 w-4 text-muted-foreground" />
+            <h2 className="text-sm font-semibold">PDF файл</h2>
+          </div>
+          <input
+            ref={pdfRef}
+            type="file"
+            accept="application/pdf"
+            className="hidden"
+            onChange={handlePdfUpload}
+          />
+          {form.pdf_url ? (
+            <div className="flex items-center gap-3 rounded-xl border border-border bg-muted/30 px-4 py-3">
+              <FileText className="h-5 w-5 text-red-500 shrink-0" />
+              <a
+                href={form.pdf_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-primary hover:underline truncate flex-1"
+              >
+                {form.pdf_url.split("/").pop()}
+              </a>
+              <button
+                type="button"
+                onClick={() => pdfRef.current?.click()}
+                className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Солих
+              </button>
+              <button
+                type="button"
+                onClick={() => update("pdf_url", "")}
+                className="p-1 rounded-lg hover:bg-red-50 text-muted-foreground hover:text-red-600 transition-colors"
+                title="Устгах"
+              >
+                <X className="h-3.5 w-3.5" />
+              </button>
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={() => pdfRef.current?.click()}
+              className="w-full h-24 rounded-xl border-2 border-dashed border-border flex flex-col items-center justify-center gap-2 text-muted-foreground hover:border-primary hover:text-primary transition-all cursor-pointer"
+            >
+              <FileUp className="h-5 w-5" />
+              <span className="text-xs">PDF файл оруулах (20MB хүртэл)</span>
+            </button>
+          )}
+          <Input
+            placeholder="Эсвэл PDF URL оруулах"
+            value={form.pdf_url}
+            onChange={(e) => update("pdf_url", e.target.value)}
+            className="mt-2"
+          />
         </motion.div>
 
         {/* Titles */}

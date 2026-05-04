@@ -2,14 +2,17 @@ import { NextResponse } from "next/server";
 import { verifySession } from "@/lib/auth";
 import { getServiceSupabase } from "@/lib/supabase";
 
-const ALLOWED_TYPES = [
+const ALLOWED_IMAGE_TYPES = [
   "image/jpeg",
   "image/png",
   "image/webp",
   "image/gif",
   "image/svg+xml",
 ];
-const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 MB
+const ALLOWED_PDF_TYPES = ["application/pdf"];
+const ALLOWED_TYPES = [...ALLOWED_IMAGE_TYPES, ...ALLOWED_PDF_TYPES];
+const MAX_IMAGE_SIZE = 5 * 1024 * 1024; // 5 MB
+const MAX_PDF_SIZE = 20 * 1024 * 1024; // 20 MB
 
 export async function POST(request: Request) {
   if (!(await verifySession())) {
@@ -27,15 +30,25 @@ export async function POST(request: Request) {
     // Validate file type
     if (!ALLOWED_TYPES.includes(file.type)) {
       return NextResponse.json(
-        { error: "Only image files are allowed (JPEG, PNG, WebP, GIF, SVG)" },
+        {
+          error:
+            "Only image files (JPEG, PNG, WebP, GIF, SVG) and PDF files are allowed",
+        },
         { status: 400 },
       );
     }
 
+    const isPdf = ALLOWED_PDF_TYPES.includes(file.type);
+    const maxSize = isPdf ? MAX_PDF_SIZE : MAX_IMAGE_SIZE;
+
     // Validate file size
-    if (file.size > MAX_FILE_SIZE) {
+    if (file.size > maxSize) {
       return NextResponse.json(
-        { error: "File size must be under 5 MB" },
+        {
+          error: isPdf
+            ? "PDF file size must be under 20 MB"
+            : "Image file size must be under 5 MB",
+        },
         { status: 400 },
       );
     }

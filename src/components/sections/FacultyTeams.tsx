@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import * as Collapsible from "@radix-ui/react-collapsible";
-import { ChevronDown /* ExternalLink */, User } from "lucide-react";
+import { ChevronDown, User } from "lucide-react";
 import type { FacultyCategory, FacultyMember } from "@/lib/faculty";
 
 interface Props {
@@ -23,13 +23,11 @@ function MemberCard({ m, locale }: { m: FacultyMember; locale: string }) {
           edu: "Боловсрол",
           exp: "Ажлын туршлага",
           res: "Судалгааны чиглэл",
-          cv: "CV үзэх",
         }
       : {
           edu: "Education",
           exp: "Experience",
           res: "Research Highlights",
-          cv: "View CV",
         };
 
   const role = l(m.role_mn, m.role_en, locale);
@@ -83,17 +81,6 @@ function MemberCard({ m, locale }: { m: FacultyMember; locale: string }) {
             </dd>
           </div>
         </dl>
-        {/* {m.cv_link && (
-          <a
-            href={m.cv_link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 mt-3 text-sm font-medium text-primary hover:text-primary-light transition-colors"
-          >
-            {labels.cv}
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
-        )} */}
       </div>
     </div>
   );

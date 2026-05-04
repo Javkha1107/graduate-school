@@ -66,7 +66,7 @@ export default async function NewsPage({
         image: n.news_img || n.banner_img,
         date: formatDate(n.created_at, locale),
         slug: n.slug,
-        category: getCategoryName(n.category),
+        category: getCategoryName(n.category, locale),
         categoryCode: n.category,
       }));
     }

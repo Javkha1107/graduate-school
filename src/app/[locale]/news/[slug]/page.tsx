@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Calendar, ArrowRight } from "lucide-react";
+import { ArrowLeft, Calendar, ArrowRight, FileText } from "lucide-react";
 import { getDictionary, t, type Locale } from "@/lib/i18n";
 import { getCategoryName } from "@/lib/supabase";
 import { getNewsBySlug, getRelatedNews } from "@/lib/news";
@@ -91,6 +91,7 @@ export default async function NewsDetailPage({
   let content: string | null = null;
   let category = "";
   let currentId = 0;
+  let pdfUrl: string | null = null;
 
   // Try Supabase
   try {
@@ -101,8 +102,9 @@ export default async function NewsDetailPage({
       date = item.created_at;
       content =
         locale === "mn" ? item.content_mn : item.content_en || item.content_mn;
-      category = getCategoryName(item.category);
+      category = getCategoryName(item.category, locale);
       currentId = item.id;
+      pdfUrl = item.pdf_url;
     }
   } catch {
     /* fallback */
@@ -216,6 +218,38 @@ export default async function NewsDetailPage({
           />
         ) : (
           <p className="text-muted-foreground">{t(dict, "notFound")}</p>
+        )}
+
+        {/* PDF Preview */}
+        {pdfUrl && (
+          <div className="mt-12 pt-8 border-t border-border/40">
+            <div className="flex items-center gap-2 mb-4">
+              <FileText className="h-5 w-5 text-red-500" />
+              <h2 className="text-lg font-semibold text-foreground">
+                {locale === "mn" ? "Хавсралт файл" : "Attached Document"}
+              </h2>
+            </div>
+            <div className="rounded-2xl border border-border overflow-hidden bg-muted/30">
+              <iframe
+                src={`${pdfUrl}#toolbar=1&navpanes=0`}
+                className="w-full h-[600px] sm:h-[800px]"
+                title={locale === "mn" ? "PDF хавсралт" : "PDF attachment"}
+              />
+            </div>
+            <div className="mt-3 text-center">
+              <a
+                href={pdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+              >
+                <FileText className="h-4 w-4" />
+                {locale === "mn"
+                  ? "PDF файлыг шинэ цонхонд нээх"
+                  : "Open PDF in new tab"}
+              </a>
+            </div>
+          </div>
         )}
       </article>
 

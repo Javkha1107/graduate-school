@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import Logo from "@/components/ui/Logo";
-import { LogOut, Newspaper, Users, Settings } from "lucide-react";
+import { LogOut, Newspaper, Users, Settings, Globe } from "lucide-react";
 
 const tabs = [
   { href: "/admin/news", label: "Мэдээ", icon: Newspaper },
   { href: "/admin/faculty", label: "Багш", icon: Users },
+  { href: "/admin/collaborations", label: "Гадаад харилцаа", icon: Globe },
   { href: "/admin/content", label: "Бусад", icon: Settings },
 ];
 

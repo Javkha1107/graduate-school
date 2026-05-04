@@ -9,14 +9,14 @@ export const contactInfo = {
     en: "Mongolian National University of Medical Sciences, S.Zorig Street, P.O.Box-48/111, Ulaanbaatar 14210, Mongolia",
   },
   mapUrl: "https://maps.app.goo.gl/w9fwD15dqYGgboUZA",
-  email: "graduate@mnums.edu.mn",
+  email: "grad.icec@mnums.edu.mn",
   phone: {
-    mn: "77477575",
+    mn: "77757575",
     en: "011 32 0623",
   },
   facebook: {
-    label: "MNUMS-Graduate School",
-    href: "https://www.facebook.com/profile.php?id=61568481335296",
+    label: "MNUMS-Graduate School of Medical Science",
+    href: "https://www.facebook.com/graduateschoolofmedicalscience",
   },
 };
 

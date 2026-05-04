@@ -26,12 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/research/institutes",
     "/research/conferences",
     "/research/journal-club",
-    "/student/library",
-    "/student/scholarship",
-    "/student/dormitory",
-    "/student/regulations",
-    "/student/events",
-    "/student/training",
   ];
 
   const entries: MetadataRoute.Sitemap = [];

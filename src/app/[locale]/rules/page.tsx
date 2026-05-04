@@ -42,7 +42,7 @@ export default async function RulesPage({
               <ul className="list-disc pl-5 space-y-2 text-foreground/80 leading-[1.85]">
                 <li>
                   <a
-                    href="http://postgraduate.mnums.edu.mn/wp-content/uploads/2023/10/2023.01.13-%D0%9015-TDS-juram.pdf"
+                    href="https://uucbkbmbtwcxuysmebwu.supabase.co/storage/v1/object/public/files/juram/juram.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary underline"

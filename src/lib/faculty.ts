@@ -28,7 +28,6 @@ export interface FacultyMember {
   experience_en: string;
   research_mn: string;
   research_en: string;
-  cv_link: string | null;
   sort_order: number;
 }
 

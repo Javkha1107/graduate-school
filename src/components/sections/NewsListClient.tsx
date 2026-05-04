@@ -76,7 +76,7 @@ export default function NewsListClient({
                   sizes="(max-width: 640px) 100vw, 50vw"
                 />
               ) : (
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-primary/90 flex flex-col items-center justify-center gap-3">
+                <div className="absolute inset-0 bg-linear-to-br from-primary/80 via-primary/60 to-primary/90 flex flex-col items-center justify-center gap-3">
                   <svg
                     className="h-12 w-12 text-white/30"
                     fill="none"

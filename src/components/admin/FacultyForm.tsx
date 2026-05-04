@@ -55,7 +55,6 @@ export default function FacultyForm({
     experience_en: initialData?.experience_en || "",
     research_mn: initialData?.research_mn || "",
     research_en: initialData?.research_en || "",
-    cv_link: initialData?.cv_link || "",
     sort_order: initialData?.sort_order ?? 0,
   });
 
@@ -98,7 +97,7 @@ export default function FacultyForm({
     setError("");
 
     try {
-      const payload = { ...form, cv_link: form.cv_link || null };
+      const payload = { ...form };
       const url =
         mode === "create"
           ? "/api/admin/faculty"
@@ -262,12 +261,6 @@ export default function FacultyForm({
                 placeholder="https://..."
                 value={form.photo_url}
                 onChange={(e) => update("photo_url", e.target.value)}
-              />
-              <label className={LBL}>CV линк</label>
-              <Input
-                placeholder="https://drive.google.com/..."
-                value={form.cv_link}
-                onChange={(e) => update("cv_link", e.target.value)}
               />
             </div>
           </div>

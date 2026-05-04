@@ -14,15 +14,15 @@ interface ProgramsProps {
 const programs = [
   {
     labelKey: "home.education.graduate",
-    href: "#",
+    href: "/training-centers/academic#introduction",
   },
   {
     labelKey: "home.education.postgraduate",
-    href: "#",
+    href: "/training-centers/postgraduate#admission",
   },
   {
     labelKey: "home.education.postDoctor",
-    href: "#",
+    href: "/training-centers/interdisciplinary#introduction",
   },
 ];
 
@@ -35,20 +35,13 @@ export default function Programs({ locale, dict }: ProgramsProps) {
           <FadeIn className="relative">
             <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl shadow-primary/10">
               <Image
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
+                src="/program.jpg"
                 alt="Medical education"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-linear-to-t from-primary-dark/30 to-transparent" />
-            </div>
-            {/* Floating stat card */}
-            <div className="absolute -bottom-6 -right-4 sm:right-8 bg-white rounded-2xl shadow-xl p-5 border border-border/40">
-              <p className="text-3xl font-bold text-primary">3</p>
-              <p className="text-xs text-muted-foreground mt-0.5">
-                {locale === "mn" ? "Хөтөлбөр" : "Programs"}
-              </p>
             </div>
           </FadeIn>
 

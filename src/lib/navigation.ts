@@ -127,20 +127,7 @@ export const navigation: NavItem[] = [
       },
     ],
   },
-  {
-    labelKey: "menu.student",
-    children: [
-      { labelKey: "menu.studentCouncil", href: "/student/council" },
-      {
-        labelKey: "menu.studentSupport",
-        href: "/student/support",
-      },
-      {
-        labelKey: "menu.transferRequest",
-        href: "/student/transfer",
-      },
-    ],
-  },
+
   {
     labelKey: "menu.research",
     children: [
@@ -165,10 +152,7 @@ export const navigation: NavItem[] = [
   },
   {
     labelKey: "menu.internationalRelations",
-    children: [
-      { labelKey: "menu.oita", href: "/collaboration/oita" },
-      { labelKey: "menu.tokushima", href: "/collaboration/tokushima" },
-    ],
+    href: "/collaboration",
   },
   {
     labelKey: "menu.rulesRegulations",

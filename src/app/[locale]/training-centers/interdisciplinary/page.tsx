@@ -8,13 +8,18 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  return { title: t(getDictionary(locale as Locale), "menu.interdisciplinaryCenter") };
+  return {
+    title: t(getDictionary(locale as Locale), "menu.interdisciplinaryCenter"),
+  };
 }
 
 // Staff data
 const staffData = {
   director: {
-    degree: { mn: "АУ-ы доктор, дэд профессор", en: "Ph.D, Associate Professor" },
+    degree: {
+      mn: "АУ-ы доктор, дэд профессор",
+      en: "Ph.D, Associate Professor",
+    },
     name: "Цэнд-Аюуш АЛТАНСҮХ",
     email: "altansukh.ts@mnums.edu.mn",
   },
@@ -36,7 +41,10 @@ const staffData = {
     },
   ],
   address: {
-    office: { mn: "АШУҮИС, Ахисан түвшний сургууль, 8 тоот", en: "MNUMS, Graduate School, Room 8" },
+    office: {
+      mn: "АШУҮИС, Ахисан түвшний сургууль, 8 тоот",
+      en: "MNUMS, Graduate School, Room 8",
+    },
     email: "grad.itc@mnums.edu.mn",
   },
 };
@@ -72,12 +80,18 @@ const jointPrograms = [
     subtitle: { mn: "program2Subtitle", en: "program2Subtitle" },
     rows: [
       {
-        name: { mn: "Анагаах ухааны докторын хос дипломын хөтөлбөр", en: "Dual Doctoral Degree in Medical Sciences" },
+        name: {
+          mn: "Анагаах ухааны докторын хос дипломын хөтөлбөр",
+          en: "Dual Doctoral Degree in Medical Sciences",
+        },
         code: "091201",
         form: { mn: "Танхимын сургалт", en: "On-campus" },
         duration: { mn: "4+ жил", en: "4+ years" },
         credits: "60+ б/ц",
-        school: { mn: "АШУҮИС, Япон улсын Ойта их сургууль", en: "MNUMS, Oita University, Japan" },
+        school: {
+          mn: "АШУҮИС, Япон улсын Ойта их сургууль",
+          en: "MNUMS, Oita University, Japan",
+        },
       },
     ],
   },
@@ -87,12 +101,18 @@ const jointPrograms = [
     subtitle: { mn: "program3Subtitle", en: "program3Subtitle" },
     rows: [
       {
-        name: { mn: "Анагаах ухааны докторын хос дипломын хөтөлбөр", en: "Dual Doctoral Degree in Medical Sciences" },
+        name: {
+          mn: "Анагаах ухааны докторын хос дипломын хөтөлбөр",
+          en: "Dual Doctoral Degree in Medical Sciences",
+        },
         code: "091201",
         form: { mn: "Танхимын сургалт", en: "On-campus" },
         duration: { mn: "4+ жил", en: "4+ years" },
         credits: "60+ б/ц",
-        school: { mn: "АШУҮИС, Япон улсын Токушима их сургууль", en: "MNUMS, Tokushima University, Japan" },
+        school: {
+          mn: "АШУҮИС, Япон улсын Токушима их сургууль",
+          en: "MNUMS, Tokushima University, Japan",
+        },
       },
     ],
   },
@@ -159,7 +179,35 @@ const postdocResearch = [
   },
   {
     year: "2026",
-    researchers: [],
+    researchers: [
+      {
+        name: { mn: "АУ-ы доктор Р.Наранхүү", en: "Ph.D R.Narankhuu" },
+        topic: {
+          mn: "Уламжлалт жор найрлагад суурилсан мөнгөний нано бөөмийн найрлага бүхий хепаклин-4 эмийг туршин зохион бүтээх, жорын хэлбэрийн үйлдвэрлэл, чанар стандартчилалын судалгаа",
+          en: "Research on experimental development, dosage form manufacturing, and quality standardization of Hepaclin-4 drug containing silver nanoparticles based on traditional prescription composition",
+        },
+        topicNote: {
+          mn: "АШУҮИС-ийн ШУТИГ-ын санхүүжилттэй төсөл /төслийн гүйцэтгэгчээр/",
+          en: "MNUMS Science and Technology Foundation funded project /as project researcher/",
+        },
+        publications: [],
+      },
+      {
+        name: {
+          mn: "АУ-ы доктор, НЭМУ-ы доктор Г.Дариймаа",
+          en: "Ph.D, Ph.D in Public Health G.Dariimaa",
+        },
+        topic: {
+          mn: "Prognostic values of Circulating Cell-Free DNA versus Tumor Stage in Carcinomas",
+          en: "Prognostic values of Circulating Cell-Free DNA versus Tumor Stage in Carcinomas",
+        },
+        topicNote: {
+          mn: "АШУҮИС-ийн Ахисан түвшний сургуулийн докторын дараах судалгааны төсөл /төслийн гүйцэтгэгчээр/",
+          en: "MNUMS Graduate School post-doctoral research project /as project researcher/",
+        },
+        publications: [],
+      },
+    ],
   },
 ];
 
@@ -245,7 +293,10 @@ export default async function InterdisciplinaryCenterPage({
 
                     {/* Post-doctoral researchers */}
                     {staffData.postdocs.map((postdoc, i) => (
-                      <div key={i} className="rounded-xl border border-border bg-muted/30 p-5">
+                      <div
+                        key={i}
+                        className="rounded-xl border border-border bg-muted/30 p-5"
+                      >
                         <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">
                           {t(p, "postdocResearcher")}
                         </p>
@@ -307,28 +358,50 @@ export default async function InterdisciplinaryCenterPage({
                       <table className="w-full text-sm">
                         <thead className="bg-primary text-white">
                           <tr>
-                            <th className="px-3 py-3 text-left">{t(p, "colNo")}</th>
-                            <th className="px-3 py-3 text-left">{t(p, "colProgram")}</th>
-                            <th className="px-3 py-3 text-left">{t(p, "colCode")}</th>
-                            <th className="px-3 py-3 text-left">{t(p, "colForm")}</th>
-                            <th className="px-3 py-3 text-left">{t(p, "colDuration")}</th>
-                            <th className="px-3 py-3 text-left">{t(p, "colCredits")}</th>
-                            <th className="px-3 py-3 text-left">{t(p, "colSchool")}</th>
+                            <th className="px-3 py-3 text-left">
+                              {t(p, "colNo")}
+                            </th>
+                            <th className="px-3 py-3 text-left">
+                              {t(p, "colProgram")}
+                            </th>
+                            <th className="px-3 py-3 text-left">
+                              {t(p, "colCode")}
+                            </th>
+                            <th className="px-3 py-3 text-left">
+                              {t(p, "colForm")}
+                            </th>
+                            <th className="px-3 py-3 text-left">
+                              {t(p, "colDuration")}
+                            </th>
+                            <th className="px-3 py-3 text-left">
+                              {t(p, "colCredits")}
+                            </th>
+                            <th className="px-3 py-3 text-left">
+                              {t(p, "colSchool")}
+                            </th>
                           </tr>
                         </thead>
                         <tbody>
                           {program.rows.map((row, i) => (
                             <tr
                               key={i}
-                              className={i % 2 === 0 ? "bg-white" : "bg-muted/50"}
+                              className={
+                                i % 2 === 0 ? "bg-white" : "bg-muted/50"
+                              }
                             >
-                              <td className="px-3 py-2.5 text-muted-foreground">{i + 1}.</td>
+                              <td className="px-3 py-2.5 text-muted-foreground">
+                                {i + 1}.
+                              </td>
                               <td className="px-3 py-2.5">{row.name[lang]}</td>
                               <td className="px-3 py-2.5">{row.code}</td>
                               <td className="px-3 py-2.5">{row.form[lang]}</td>
-                              <td className="px-3 py-2.5">{row.duration[lang]}</td>
+                              <td className="px-3 py-2.5">
+                                {row.duration[lang]}
+                              </td>
                               <td className="px-3 py-2.5">{row.credits}</td>
-                              <td className="px-3 py-2.5">{row.school[lang]}</td>
+                              <td className="px-3 py-2.5">
+                                {row.school[lang]}
+                              </td>
                             </tr>
                           ))}
                         </tbody>
@@ -356,7 +429,10 @@ export default async function InterdisciplinaryCenterPage({
                     {yearData.researchers.length > 0 ? (
                       <div className="space-y-6">
                         {yearData.researchers.map((researcher, i) => (
-                          <div key={i} className="rounded-xl border-l-4 border-l-primary border border-border bg-gradient-to-r from-primary/5 to-transparent p-6">
+                          <div
+                            key={i}
+                            className="rounded-xl border-l-4 border-l-primary border border-border bg-gradient-to-r from-primary/5 to-transparent p-6"
+                          >
                             <p className="font-bold text-lg text-foreground mb-3">
                               {researcher.name[lang]}
                             </p>
@@ -367,11 +443,12 @@ export default async function InterdisciplinaryCenterPage({
                               <p className="text-foreground/80 leading-relaxed">
                                 {researcher.topic[lang]}
                               </p>
-                              {"topicNote" in researcher && researcher.topicNote && (
-                                <p className="text-foreground/60 text-sm mt-1 italic">
-                                  ({researcher.topicNote[lang]})
-                                </p>
-                              )}
+                              {"topicNote" in researcher &&
+                                researcher.topicNote && (
+                                  <p className="text-foreground/60 text-sm mt-1 italic">
+                                    ({researcher.topicNote[lang]})
+                                  </p>
+                                )}
                             </div>
                             {researcher.publications.length > 0 && (
                               <div>
@@ -381,10 +458,16 @@ export default async function InterdisciplinaryCenterPage({
                                 <ol className="list-decimal pl-5 space-y-3 text-sm text-foreground/80">
                                   {researcher.publications.map((pub, j) => {
                                     // Extract DOI link from publication text
-                                    const doiMatch = pub.match(/(https:\/\/doi\.org\/[^\s]+)/);
-                                    const doiLink = doiMatch ? doiMatch[1] : null;
-                                    const textWithoutDoi = doiLink ? pub.replace(doiLink, '').trim() : pub;
-                                    
+                                    const doiMatch = pub.match(
+                                      /(https:\/\/doi\.org\/[^\s]+)/,
+                                    );
+                                    const doiLink = doiMatch
+                                      ? doiMatch[1]
+                                      : null;
+                                    const textWithoutDoi = doiLink
+                                      ? pub.replace(doiLink, "").trim()
+                                      : pub;
+
                                     return (
                                       <li key={j} className="leading-relaxed">
                                         <span>{textWithoutDoi}</span>

@@ -63,17 +63,18 @@ export default function Header({ locale, dict }: HeaderProps) {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500",
         hidden ? "-translate-y-full" : "translate-y-0",
         isTransparent
-          ? "bg-black/10 backdrop-blur-sm border-b border-white/10"
-          : "bg-white border-b border-border/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)]",
+          ? "bg-linear-to-b from-black/40 via-black/20 to-transparent backdrop-blur-[2px] border-b border-white/6"
+          : "bg-white/95 backdrop-blur-xl border-b border-border/40 shadow-[0_1px_3px_rgba(0,0,0,0.04),0_4px_12px_rgba(0,0,0,0.02)]",
       )}
     >
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href={`/${locale}`} className="shrink-0 group">
           <Logo
             height={48}
+            locale={locale}
             variant={isTransparent ? "white" : "default"}
             className="transition-transform duration-300 group-hover:scale-[1.02]"
           />
@@ -100,9 +101,9 @@ export default function Header({ locale, dict }: HeaderProps) {
                 key={action.labelKey}
                 onClick={() => setContactOpen(true)}
                 className={cn(
-                  "hidden lg:inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold tracking-wide transition-all duration-200 cursor-pointer",
+                  "hidden lg:inline-flex items-center rounded-lg px-3.5 py-2 text-xs font-semibold tracking-wide transition-all duration-300 cursor-pointer",
                   isTransparent
-                    ? "bg-white/15 text-white hover:bg-white/25 border border-white/20"
+                    ? "bg-white/10 text-white hover:bg-white/20 border border-white/20 backdrop-blur-sm"
                     : "bg-primary text-white hover:bg-primary-dark shadow-sm",
                 )}
               >
@@ -119,9 +120,9 @@ export default function Header({ locale, dict }: HeaderProps) {
                 target={action.external ? "_blank" : undefined}
                 rel={action.external ? "noopener noreferrer" : undefined}
                 className={cn(
-                  "hidden lg:inline-flex items-center rounded-lg px-3 py-2 text-xs font-semibold tracking-wide transition-all duration-200",
+                  "hidden lg:inline-flex items-center rounded-lg px-3.5 py-2 text-xs font-semibold tracking-wide transition-all duration-300",
                   isTransparent
-                    ? "bg-white/15 text-white hover:bg-white/25 border border-white/20"
+                    ? "bg-white/10 text-white hover:bg-white/20 border border-white/20 backdrop-blur-sm"
                     : action.external
                       ? "bg-primary/5 text-primary hover:bg-primary/10"
                       : "bg-primary text-white hover:bg-primary-dark shadow-sm",
@@ -135,9 +136,9 @@ export default function Header({ locale, dict }: HeaderProps) {
           <Link
             href={switchPath}
             className={cn(
-              "inline-flex items-center rounded-lg border px-2.5 py-2 text-xs font-bold tracking-wider transition-all duration-200 uppercase",
+              "inline-flex items-center rounded-lg border px-2.5 py-2 text-xs font-bold tracking-wider transition-all duration-300 uppercase",
               isTransparent
-                ? "border-white/20 text-white/80 hover:bg-white/15 hover:text-white"
+                ? "border-white/20 text-white/90 hover:bg-white/10 hover:text-white hover:border-white/30"
                 : "border-border/60 text-muted-foreground hover:bg-muted hover:text-foreground",
             )}
           >
@@ -168,7 +169,7 @@ export default function Header({ locale, dict }: HeaderProps) {
                     className="flex items-center gap-2.5"
                     onClick={() => setMobileOpen(false)}
                   >
-                    <Logo height={32} />
+                    <Logo height={32} locale={locale} />
                   </Link>
                   <Dialog.Close asChild>
                     <button
@@ -277,9 +278,9 @@ function DesktopNavItem({
         target={item.external ? "_blank" : undefined}
         rel={item.external ? "noopener noreferrer" : undefined}
         className={cn(
-          "rounded-lg px-2.5 py-2 text-[13px] font-medium transition-all duration-200",
+          "rounded-lg px-2.5 py-2 text-[13px] font-medium transition-all duration-300",
           isTransparent
-            ? "text-white/80 hover:text-white hover:bg-white/10"
+            ? "text-white/85 hover:text-white hover:bg-white/8"
             : "text-foreground/70 hover:text-foreground hover:bg-muted/60",
         )}
       >
@@ -297,12 +298,12 @@ function DesktopNavItem({
     >
       <button
         className={cn(
-          "flex items-center gap-1 rounded-lg px-2.5 py-2 text-[13px] font-medium transition-all duration-200 cursor-pointer outline-none",
+          "flex items-center gap-1 rounded-lg px-2.5 py-2 text-[13px] font-medium transition-all duration-300 cursor-pointer outline-none",
           isTransparent
-            ? "text-white/80 hover:text-white hover:bg-white/10"
+            ? "text-white/85 hover:text-white hover:bg-white/8"
             : "text-foreground/70 hover:text-foreground hover:bg-muted/60",
           open && !isTransparent && "bg-muted/60 text-foreground",
-          open && isTransparent && "bg-white/10 text-white",
+          open && isTransparent && "bg-white/8 text-white",
         )}
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}

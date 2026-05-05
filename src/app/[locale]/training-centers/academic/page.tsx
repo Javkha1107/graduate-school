@@ -63,7 +63,10 @@ export default async function AcademicCenterPage({
   const doctoralFooter = (p.doctoralFooter ?? []) as string[];
   const mastersSteps = (p.mastersSteps ?? []) as Step[];
   const admissionRequirements = (p.admissionRequirements ?? []) as string[];
-  const studentApplicationForms = (p.studentApplicationForms ?? []) as { label: string; url: string }[];
+  const studentApplicationForms = (p.studentApplicationForms ?? []) as {
+    label: string;
+    url: string;
+  }[];
   const scholarshipAmounts = (p.scholarshipAmounts ?? []) as string[];
   const scholarshipRequirements = (p.scholarshipRequirements ?? []) as string[];
   const scholarshipMaterials = (p.scholarshipMaterials ?? []) as string[];
@@ -302,7 +305,11 @@ export default async function AcademicCenterPage({
                     <p>{t(p, "admissionExamInfo")}</p>
                     <p>{t(p, "admissionExamSubjects")}</p>
                     <p>{t(p, "admissionResultsInfo")}</p>
-                    <p dangerouslySetInnerHTML={{ __html: t(p, "admissionRegisterLink") }} />
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: t(p, "admissionRegisterLink"),
+                      }}
+                    />
                   </div>
                 </div>
 
@@ -312,8 +319,16 @@ export default async function AcademicCenterPage({
                     {t(p, "admissionProcessTitle")}
                   </h3>
                   <div className="space-y-3 text-foreground/80 leading-[1.85]">
-                    <p dangerouslySetInnerHTML={{ __html: t(p, "admissionProcessIntro") }} />
-                    <p dangerouslySetInnerHTML={{ __html: t(p, "admissionOnlineReg") }} />
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: t(p, "admissionProcessIntro"),
+                      }}
+                    />
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: t(p, "admissionOnlineReg"),
+                      }}
+                    />
                     <p>{t(p, "admissionInPersonReg")}</p>
                   </div>
                 </div>
@@ -336,24 +351,33 @@ export default async function AcademicCenterPage({
                 {/* Tuition Fees & Bank Info */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {/* Mongolian Students - Highlighted */}
-                  <div className="rounded-xl border-l-4 border-l-primary border border-primary/20 bg-gradient-to-r from-primary/5 to-transparent p-5">
+                  <div className="rounded-xl border-l-4 border-l-primary border border-primary/20 bg-linear-to-r from-primary/5 to-transparent p-5">
                     <h4 className="text-base font-bold text-primary mb-3">
                       {t(p, "admissionMongolianTitle")}
                     </h4>
-                    <p className="font-medium text-foreground/80 mb-2">{t(p, "admissionMongolianTuition")}</p>
+                    <p className="font-medium text-foreground/80 mb-2">
+                      {t(p, "admissionMongolianTuition")}
+                    </p>
                     <div className="space-y-1.5 text-foreground/80 text-sm">
                       <p>{t(p, "admissionMongolianDoctoral")}</p>
                       <p>{t(p, "admissionMongolianMasters")}</p>
-                      <p className="mt-2" dangerouslySetInnerHTML={{ __html: t(p, "admissionPaymentGuide") }} />
+                      <p
+                        className="mt-2"
+                        dangerouslySetInnerHTML={{
+                          __html: t(p, "admissionPaymentGuide"),
+                        }}
+                      />
                     </div>
                   </div>
 
                   {/* International Students - Highlighted */}
-                  <div className="rounded-xl border-l-4 border-l-primary border border-primary/20 bg-gradient-to-r from-primary/5 to-transparent p-5">
+                  <div className="rounded-xl border-l-4 border-l-primary border border-primary/20 bg-linear-to-r from-primary/5 to-transparent p-5">
                     <h4 className="text-base font-bold text-primary mb-3">
                       {t(p, "admissionInternationalTitle")}
                     </h4>
-                    <p className="font-medium text-foreground/80 mb-2">{t(p, "admissionInternationalTuition")}</p>
+                    <p className="font-medium text-foreground/80 mb-2">
+                      {t(p, "admissionInternationalTuition")}
+                    </p>
                     <div className="space-y-1.5 text-foreground/80 text-sm">
                       <p>{t(p, "admissionInternationalDoctoral")}</p>
                       <p>{t(p, "admissionInternationalMasters")}</p>
@@ -362,7 +386,9 @@ export default async function AcademicCenterPage({
                       <p>{t(p, "admissionInternationalBank")}</p>
                       <p>{t(p, "admissionInternationalRecipient")}</p>
                       <p>{t(p, "admissionInternationalAccount")}</p>
-                      <p className="text-xs text-foreground/60">{t(p, "admissionInternationalNote")}</p>
+                      <p className="text-xs text-foreground/60">
+                        {t(p, "admissionInternationalNote")}
+                      </p>
                     </div>
                   </div>
 
@@ -376,7 +402,9 @@ export default async function AcademicCenterPage({
                       <p>{t(p, "admissionBankName")}</p>
                       <p>{t(p, "admissionBankRecipient")}</p>
                       <p>{t(p, "admissionBankAccount")}</p>
-                      <p className="text-xs text-foreground/60 mt-2">{t(p, "admissionBankNote")}</p>
+                      <p className="text-xs text-foreground/60 mt-2">
+                        {t(p, "admissionBankNote")}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -397,7 +425,12 @@ export default async function AcademicCenterPage({
                   <h3 className="text-lg font-semibold text-primary mb-3">
                     {t(p, "studentFormTitle")}
                   </h3>
-                  <p className="text-foreground/80" dangerouslySetInnerHTML={{ __html: t(p, "studentFormLink") }} />
+                  <p
+                    className="text-foreground/80"
+                    dangerouslySetInnerHTML={{
+                      __html: t(p, "studentFormLink"),
+                    }}
+                  />
                 </div>
 
                 {/* Application Forms */}
@@ -405,8 +438,12 @@ export default async function AcademicCenterPage({
                   <h3 className="text-lg font-semibold text-primary mb-3">
                     {t(p, "studentApplicationTitle")}
                   </h3>
-                  <p className="text-foreground/80 mb-2">{t(p, "studentApplicationIntro")}</p>
-                  <p className="text-primary mb-4">{t(p, "studentApplicationNote")}</p>
+                  <p className="text-foreground/80 mb-2">
+                    {t(p, "studentApplicationIntro")}
+                  </p>
+                  <p className="text-primary mb-4">
+                    {t(p, "studentApplicationNote")}
+                  </p>
                   <div className="space-y-3">
                     {studentApplicationForms.map((form, i) => (
                       <a
@@ -417,7 +454,9 @@ export default async function AcademicCenterPage({
                         className="flex items-center gap-2 rounded-lg border border-border bg-muted/30 p-3 hover:bg-primary/5 hover:border-primary/30 transition-colors"
                       >
                         <span className="text-primary">📄</span>
-                        <span className="text-foreground/80 text-sm">{form.label}</span>
+                        <span className="text-foreground/80 text-sm">
+                          {form.label}
+                        </span>
                       </a>
                     ))}
                   </div>
@@ -428,7 +467,12 @@ export default async function AcademicCenterPage({
                   <h3 className="text-lg font-semibold text-primary mb-3">
                     {t(p, "studentContractTitle")}
                   </h3>
-                  <p className="text-foreground/80" dangerouslySetInnerHTML={{ __html: t(p, "studentContractLink") }} />
+                  <p
+                    className="text-foreground/80"
+                    dangerouslySetInnerHTML={{
+                      __html: t(p, "studentContractLink"),
+                    }}
+                  />
                 </div>
 
                 {/* Research Scholarship */}
@@ -436,25 +480,38 @@ export default async function AcademicCenterPage({
                   <h3 className="text-lg font-semibold text-primary mb-3">
                     {t(p, "scholarshipTitle")}
                   </h3>
-                  <p className="text-foreground/80 mb-3" dangerouslySetInnerHTML={{ __html: t(p, "scholarshipRegulationLink") }} />
-                  
-                  <h4 className="font-semibold text-foreground mb-2">{t(p, "scholarshipMainTitle")}</h4>
-                  <p className="text-foreground/80 mb-4">{t(p, "scholarshipDescription")}</p>
-                  
+                  <p
+                    className="text-foreground/80 mb-3"
+                    dangerouslySetInnerHTML={{
+                      __html: t(p, "scholarshipRegulationLink"),
+                    }}
+                  />
+
+                  <h4 className="font-semibold text-foreground mb-2">
+                    {t(p, "scholarshipMainTitle")}
+                  </h4>
+                  <p className="text-foreground/80 mb-4">
+                    {t(p, "scholarshipDescription")}
+                  </p>
+
                   <ul className="list-disc pl-5 space-y-1 text-foreground/80 mb-6">
                     {scholarshipAmounts.map((amount, i) => (
                       <li key={i}>{amount}</li>
                     ))}
                   </ul>
 
-                  <h4 className="font-semibold text-foreground mb-2">{t(p, "scholarshipRequirementsTitle")}</h4>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    {t(p, "scholarshipRequirementsTitle")}
+                  </h4>
                   <ul className="list-disc pl-5 space-y-1.5 text-foreground/80 mb-6">
                     {scholarshipRequirements.map((req, i) => (
                       <li key={i}>{req}</li>
                     ))}
                   </ul>
 
-                  <h4 className="font-semibold text-foreground mb-2">{t(p, "scholarshipMaterialsTitle")}</h4>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    {t(p, "scholarshipMaterialsTitle")}
+                  </h4>
                   <ol className="list-decimal pl-5 space-y-1.5 text-foreground/80">
                     {scholarshipMaterials.map((mat, i) => (
                       <li key={i}>{mat}</li>

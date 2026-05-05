@@ -7,6 +7,7 @@ interface LogoProps {
   height?: number;
   className?: string;
   variant?: "default" | "white";
+  locale?: "mn" | "en";
 }
 
 export default function Logo({
@@ -15,6 +16,8 @@ export default function Logo({
   variant = "default",
 }: LogoProps) {
   const [error, setError] = useState(false);
+
+  const logoSrc = /* locale === "en" ? "/newLogo_eng.png" : */ "/newLogo.png";
 
   if (error) {
     return (
@@ -43,6 +46,7 @@ export default function Logo({
       </div>
     );
   }
+  /* ${variant === "white" ? "brightness-0 invert" : ""} */
 
   return (
     <div
@@ -50,10 +54,10 @@ export default function Logo({
       style={{ height, width: height * 3 }}
     >
       <Image
-        src="/newLogo.png"
+        src={logoSrc}
         alt="MNUMS Graduate School"
         fill
-        className={`object-contain object-left transition-all duration-300 ${variant === "white" ? "brightness-0 invert" : ""}`}
+        className={`object-contain object-left transition-all duration-300 `}
         sizes={`${Math.round(height * 3)}px`}
         onError={() => setError(true)}
       />

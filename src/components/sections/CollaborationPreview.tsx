@@ -24,8 +24,19 @@ export default function CollaborationPreview({
   const isSingle = count === 1;
 
   return (
-    <section className="py-24 sm:py-32 bg-muted/30 relative overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="py-24 sm:py-32 relative overflow-hidden">
+      {/* Refined background */}
+      <div className="absolute inset-0 bg-linear-to-b from-[#f0f4f8] via-[#e8eef6] to-[#f0f4f8]" />
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, var(--primary) 0.5px, transparent 0)",
+          backgroundSize: "32px 32px",
+        }}
+      />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
             {t(dict, "menu.internationalRelations")}
@@ -57,8 +68,21 @@ export default function CollaborationPreview({
                       />
                     </div>
                   ) : (
-                    <div className="aspect-4/3 w-full rounded-xl bg-muted/60 flex items-center justify-center">
-                      <Globe className="h-12 w-12 text-muted-foreground/30" />
+                    <div className="relative aspect-4/3 w-full rounded-xl bg-linear-to-br from-primary-dark/5 via-primary/10 to-primary-light/5 flex items-center justify-center overflow-hidden">
+                      <div
+                        className="absolute inset-0 opacity-[0.04]"
+                        style={{
+                          backgroundImage:
+                            "radial-gradient(circle at 2px 2px, var(--primary) 1px, transparent 0)",
+                          backgroundSize: "24px 24px",
+                        }}
+                      />
+                      <div className="relative flex flex-col items-center gap-3">
+                        <Globe className="h-12 w-12 text-primary/20" />
+                        <span className="text-xs text-primary/30 font-medium tracking-wide uppercase">
+                          International
+                        </span>
+                      </div>
                     </div>
                   )}
                   <div className="flex flex-col">
@@ -81,7 +105,7 @@ export default function CollaborationPreview({
           })()
         ) : (
           /* ── Multiple items: grid cards ── */
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {collaborations.slice(0, 6).map((collab, i) => {
               const title = locale === "en" ? collab.title_en : collab.title_mn;
               const body = locale === "en" ? collab.body_en : collab.body_mn;
@@ -90,7 +114,7 @@ export default function CollaborationPreview({
                 <FadeIn key={collab.id} delay={i * 0.1}>
                   <Link
                     href={`/${locale}/collaboration#${collab.slug}`}
-                    className="group flex flex-col rounded-2xl border border-border/40 bg-white overflow-hidden hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5 transition-all duration-400"
+                    className="group flex flex-col h-full rounded-2xl border border-border/40 bg-white overflow-hidden hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5 transition-all duration-400"
                   >
                     {collab.image_url ? (
                       <div className="relative aspect-video w-full">
@@ -103,8 +127,21 @@ export default function CollaborationPreview({
                         />
                       </div>
                     ) : (
-                      <div className="aspect-video w-full bg-muted/60 flex items-center justify-center">
-                        <Globe className="h-10 w-10 text-muted-foreground/30" />
+                      <div className="relative aspect-video w-full bg-linear-to-br from-primary-dark/5 via-primary/10 to-primary-light/5 flex items-center justify-center overflow-hidden">
+                        <div
+                          className="absolute inset-0 opacity-[0.04]"
+                          style={{
+                            backgroundImage:
+                              "radial-gradient(circle at 2px 2px, var(--primary) 1px, transparent 0)",
+                            backgroundSize: "24px 24px",
+                          }}
+                        />
+                        <div className="relative flex flex-col items-center gap-2">
+                          <Globe className="h-10 w-10 text-primary/20" />
+                          <span className="text-xs text-primary/30 font-medium tracking-wide uppercase">
+                            International
+                          </span>
+                        </div>
                       </div>
                     )}
                     <div className="p-5 flex-1 flex flex-col">

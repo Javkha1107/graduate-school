@@ -24,6 +24,7 @@ import {
   X,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -633,11 +634,13 @@ export default function NewsForm({ initialData, mode }: NewsFormProps) {
                 onChange={(e) => handleImageUpload(e, "banner_img")}
               />
               {form.banner_img ? (
-                <div className="relative group rounded-xl overflow-hidden">
-                  <img
+                <div className="relative group rounded-xl overflow-hidden h-36">
+                  <Image
                     src={form.banner_img}
                     alt="Banner"
-                    className="w-full h-36 object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, 50vw"
                   />
                   <button
                     type="button"
@@ -674,11 +677,13 @@ export default function NewsForm({ initialData, mode }: NewsFormProps) {
                 onChange={(e) => handleImageUpload(e, "news_img")}
               />
               {form.news_img ? (
-                <div className="relative group rounded-xl overflow-hidden">
-                  <img
+                <div className="relative group rounded-xl overflow-hidden h-36">
+                  <Image
                     src={form.news_img}
                     alt="News"
-                    className="w-full h-36 object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, 50vw"
                   />
                   <button
                     type="button"

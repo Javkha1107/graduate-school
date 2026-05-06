@@ -9,7 +9,6 @@ import {
   Upload,
   User,
   FileText,
-  Globe,
   GraduationCap,
   Briefcase,
   FlaskConical,
@@ -25,6 +24,7 @@ import {
   SelectItem,
 } from "@/components/ui/select";
 import type { FacultyCategory, FacultyMember } from "@/lib/faculty";
+import Image from "next/image";
 
 interface FacultyFormProps {
   mode: "create" | "edit";
@@ -230,10 +230,10 @@ export default function FacultyForm({
             <div className="shrink-0">
               {form.photo_url ? (
                 <div className="relative group w-32 h-32 rounded-xl overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={form.photo_url}
                     alt=""
+                    fill
                     className="w-full h-full object-cover"
                   />
                   <button

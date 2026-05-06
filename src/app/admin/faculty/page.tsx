@@ -24,6 +24,7 @@ import {
   AlertDialogCancel,
 } from "@/components/ui/alert-dialog";
 import type { FacultyCategory, FacultyMember } from "@/lib/faculty";
+import Image from "next/image";
 
 export default function AdminFacultyPage() {
   const [categories, setCategories] = useState<FacultyCategory[]>([]);
@@ -234,10 +235,10 @@ export default function AdminFacultyPage() {
                           <div className="flex items-center gap-3">
                             <div className="w-9 h-9 rounded-full bg-muted flex items-center justify-center shrink-0 overflow-hidden">
                               {m.photo_url ? (
-                                /* eslint-disable-next-line @next/next/no-img-element */
-                                <img
+                                <Image
                                   src={m.photo_url}
                                   alt=""
+                                  fill
                                   className="w-full h-full object-cover"
                                 />
                               ) : (

@@ -300,7 +300,7 @@ export default async function ConferencesPage({
                     : "View the Model Regulation on the Activities of the Constituent School Academic Council"}
                 </p>
                 <a
-                  href="https://drive.google.com/file/d/1jZZhRsbA7DG5hjWVoVT61QAFjjvWkrrA/view"
+                  href="https://uucbkbmbtwcxuysmebwu.supabase.co/storage/v1/object/public/files/juram/ErdminZuwlulJuram.PDF"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base text-primary hover:text-primary-light underline underline-offset-2 inline-flex items-center gap-1.5 transition-colors font-medium"

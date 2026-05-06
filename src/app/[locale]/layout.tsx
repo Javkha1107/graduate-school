@@ -20,6 +20,9 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://graduate.mnums.edu.mn";
+
 export async function generateMetadata({
   params,
 }: {
@@ -36,6 +39,7 @@ export async function generateMetadata({
     ) || title;
 
   return {
+    metadataBase: new URL(BASE_URL),
     title: { default: title, template: `%s | ${String(dict.graduateSchool)}` },
     description: description.substring(0, 160),
     openGraph: {

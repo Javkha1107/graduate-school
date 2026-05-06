@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import AdminHeader from "@/components/admin/AdminHeader";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -93,8 +94,29 @@ export default function AdminCollaborationsPage() {
   }, [router]);
 
   useEffect(() => {
-    fetchItems();
-  }, [fetchItems]);
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch("/api/admin/collaborations");
+        if (cancelled) return;
+        if (res.status === 401) {
+          router.push("/admin/login");
+          return;
+        }
+        const data = await res.json();
+        if (!cancelled && Array.isArray(data)) {
+          setItems(data);
+        }
+      } catch {
+        /* ignore */
+      }
+      if (!cancelled) setLoading(false);
+    })();
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function startNew() {
     setEditing({ ...emptyItem, id: "", slug: "", sort_order: 0 });
@@ -272,10 +294,13 @@ export default function AdminCollaborationsPage() {
             <Field label="Зураг">
               <div className="flex items-center gap-3">
                 {editing.image_url && (
-                  <img
+                  <Image
                     src={editing.image_url}
                     alt=""
+                    width={96}
+                    height={64}
                     className="h-16 w-24 rounded-lg object-cover border border-border"
+                    unoptimized
                   />
                 )}
                 <label className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 text-sm cursor-pointer hover:bg-muted transition-colors">
@@ -338,10 +363,13 @@ export default function AdminCollaborationsPage() {
                     className="flex items-center gap-4 px-5 py-4 hover:bg-muted/30 transition-colors group"
                   >
                     {item.image_url ? (
-                      <img
+                      <Image
                         src={item.image_url}
                         alt=""
+                        width={72}
+                        height={48}
                         className="h-12 w-18 rounded-lg object-cover border border-border shrink-0"
+                        unoptimized
                       />
                     ) : (
                       <div className="h-12 w-18 rounded-lg bg-muted/60 border border-border flex items-center justify-center shrink-0">

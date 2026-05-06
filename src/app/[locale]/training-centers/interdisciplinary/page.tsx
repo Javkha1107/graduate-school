@@ -431,7 +431,7 @@ export default async function InterdisciplinaryCenterPage({
                         {yearData.researchers.map((researcher, i) => (
                           <div
                             key={i}
-                            className="rounded-xl border-l-4 border-l-primary border border-border bg-gradient-to-r from-primary/5 to-transparent p-6"
+                            className="rounded-xl border-l-4 border-l-primary border border-border bg-linear-to-r from-primary/5 to-transparent p-6"
                           >
                             <p className="font-bold text-lg text-foreground mb-3">
                               {researcher.name[lang]}

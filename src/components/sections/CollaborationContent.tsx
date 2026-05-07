@@ -62,7 +62,7 @@ export default function CollaborationContent({
                 )}
 
                 {body && (
-                  <div className="prose prose-sm max-w-none text-foreground/75 leading-[1.85]">
+                  <div className="prose prose-sm max-w-none text-foreground/85 leading-[1.85]">
                     {body
                       .split("\n")
                       .map((paragraph, i) =>

@@ -26,7 +26,7 @@ export default async function PostdoctoralPage({
     <>
       <PageHero title={t(section, "title")} subtitle={t(section, "subtitle")} />
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
-        <p className="text-foreground/75 leading-[1.85] text-[15px] mb-10">
+        <p className="text-foreground/85 leading-[1.85] text-base mb-10">
           {t(section, "mainText")}
         </p>
 
@@ -40,7 +40,7 @@ export default async function PostdoctoralPage({
               .map(([key, val]) => (
                 <li
                   key={key}
-                  className="flex items-start gap-3 text-sm text-foreground/75 leading-relaxed"
+                  className="flex items-start gap-3 text-base text-foreground/85 leading-relaxed"
                 >
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary/60 shrink-0" />
                   <span>{String(val)}</span>
@@ -59,7 +59,7 @@ export default async function PostdoctoralPage({
               .map(([key, val]) => (
                 <li
                   key={key}
-                  className="flex items-start gap-3 text-sm text-foreground/75 leading-relaxed"
+                  className="flex items-start gap-3 text-base text-foreground/85 leading-relaxed"
                 >
                   <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent/60 shrink-0" />
                   <span>{String(val)}</span>
@@ -78,7 +78,7 @@ export default async function PostdoctoralPage({
               .map(([key, val]) => (
                 <p
                   key={key}
-                  className="text-sm text-foreground/75 leading-relaxed mb-4 last:mb-0"
+                  className="text-base text-foreground/85 leading-relaxed mb-4 last:mb-0"
                 >
                   {String(val)}
                 </p>

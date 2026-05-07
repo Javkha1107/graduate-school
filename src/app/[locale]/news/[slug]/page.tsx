@@ -308,7 +308,7 @@ export default async function NewsDetailPage({
                       <Calendar className="h-3 w-3" />
                       {item.date}
                     </div>
-                    <h3 className="text-lg sm:text-xl font-bold text-white leading-snug drop-shadow-md overflow-hidden max-h-14 group-hover:max-h-80 transition-[max-height] duration-500 ease-in-out">
+                    <h3 className="text-lg sm:text-2xl font-bold text-white leading-snug drop-shadow-md overflow-hidden max-h-14 group-hover:max-h-80 transition-[max-height] duration-500 ease-in-out">
                       {item.title}
                     </h3>
                   </div>

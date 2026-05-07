@@ -37,7 +37,7 @@ export default async function DoctoralPage({
           {t(section, "mainText4")}
         </p>
 
-        <h2 className="text-xl font-bold mb-4">
+        <h2 className="text-2xl font-bold mb-4">
           {t(dict, "doctor.tableHead")}
         </h2>
         <div className="overflow-x-auto">

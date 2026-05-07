@@ -103,35 +103,20 @@ export default function AdminFacultyPage() {
 
       <div className="p-4 sm:p-8">
         {/* Stats */}
-        <div className="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
+        <div className="mb-6 grid grid-cols-3 gap-3">
           {[
-            {
-              label: "Нийт багш",
-              value: members.length,
-              color: "from-blue-50 to-blue-100/50 border-blue-200/60",
-              text: "text-blue-600",
-            },
-            {
-              label: "Ангилал",
-              value: categories.length,
-              color: "from-purple-50 to-purple-100/50 border-purple-200/60",
-              text: "text-purple-600",
-            },
-            {
-              label: "Шүүсэн",
-              value: filtered.length,
-              color: "from-emerald-50 to-emerald-100/50 border-emerald-200/60",
-              text: "text-emerald-600",
-            },
+            { label: "Нийт багш", value: members.length },
+            { label: "Ангилал", value: categories.length },
+            { label: "Шүүсэн", value: filtered.length },
           ].map((s) => (
             <motion.div
               key={s.label}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`rounded-2xl border bg-linear-to-br ${s.color} p-4`}
+              className="rounded-lg border border-border bg-card px-4 py-3"
             >
               <p className="text-xs text-muted-foreground">{s.label}</p>
-              <p className={`mt-1 text-2xl font-bold ${s.text}`}>
+              <p className="mt-0.5 text-lg font-semibold text-foreground">
                 {loading ? "—" : s.value}
               </p>
             </motion.div>
@@ -233,13 +218,13 @@ export default function AdminFacultyPage() {
                       >
                         <td className="px-5 py-4">
                           <div className="flex items-center gap-3">
-                            <div className="w-9 h-9 rounded-full bg-muted flex items-center justify-center shrink-0 overflow-hidden">
+                            <div className="relative w-9 h-9 rounded-full bg-muted flex items-center justify-center shrink-0 overflow-hidden">
                               {m.photo_url ? (
                                 <Image
                                   src={m.photo_url}
                                   alt=""
                                   fill
-                                  className="w-full h-full object-cover"
+                                  className="object-cover"
                                 />
                               ) : (
                                 <User className="w-4 h-4 text-muted-foreground/50" />

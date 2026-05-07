@@ -62,7 +62,7 @@ export default async function OnlineCenterPage({
 
               {/* Programs list */}
               <div>
-                <h3 className="text-lg font-semibold text-primary mb-3">
+                <h3 className="text-lg font-semibold text-foreground mb-3">
                   {isMn ? "Хөтөлбөрүүд" : "Programmes"}
                 </h3>
                 <ol className="list-decimal pl-5 space-y-1.5 text-foreground/80 leading-[1.85]">
@@ -74,7 +74,7 @@ export default async function OnlineCenterPage({
 
               {/* Accreditation */}
               <div className="rounded-xl border border-primary/20 bg-primary/5 p-6">
-                <h3 className="text-lg font-semibold text-primary mb-3">
+                <h3 className="text-lg font-semibold text-foreground mb-3">
                   {isMn ? "Магадлан итгэмжлэл" : "Accreditation"}
                 </h3>
                 <p className="text-foreground/80 leading-[1.85]">
@@ -86,7 +86,7 @@ export default async function OnlineCenterPage({
 
               {/* Curriculum details */}
               <div>
-                <h3 className="text-lg font-semibold text-primary mb-3">
+                <h3 className="text-lg font-semibold text-foreground mb-3">
                   {isMn ? "Сургалтын агуулга" : "Curriculum"}
                 </h3>
                 <ul className="list-disc pl-5 space-y-2 text-foreground/80 leading-[1.85]">

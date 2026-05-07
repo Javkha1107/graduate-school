@@ -1,6 +1,7 @@
 import { getDictionary, t, getObj, type Locale } from "@/lib/i18n";
 import PageHero from "@/components/sections/PageHero";
 import PageSidebar from "@/components/sections/PageSidebar";
+import { ExternalLink } from "lucide-react";
 import {
   academicCenterPrograms,
   academicCenterContacts,
@@ -89,7 +90,7 @@ export default async function AcademicCenterPage({
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-2">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
                     {t(p, "mission")}
                   </h3>
                   <p className="text-foreground/80 leading-[1.85]">
@@ -100,7 +101,7 @@ export default async function AcademicCenterPage({
                   {t(p, "description")}
                 </p>
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "activities")}
                   </h3>
                   <ul className="list-disc pl-5 space-y-1.5 text-foreground/80 leading-[1.85]">
@@ -294,7 +295,7 @@ export default async function AcademicCenterPage({
               <div className="space-y-8">
                 {/* Announcement */}
                 <div className="rounded-xl border border-primary/20 bg-primary/5 p-6">
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "admissionAnnouncementTitle")}
                   </h3>
                   <p className="font-medium text-foreground mb-3">
@@ -315,7 +316,7 @@ export default async function AcademicCenterPage({
 
                 {/* Process */}
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "admissionProcessTitle")}
                   </h3>
                   <div className="space-y-3 text-foreground/80 leading-[1.85]">
@@ -335,7 +336,7 @@ export default async function AcademicCenterPage({
 
                 {/* Requirements */}
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "admissionRequirementsTitle")}
                   </h3>
                   <p className="text-foreground/80 mb-3 font-medium">
@@ -394,7 +395,7 @@ export default async function AcademicCenterPage({
 
                   {/* Bank Info - Bottom full width */}
                   <div className="rounded-xl border border-border bg-muted/30 p-5 lg:col-span-2">
-                    <h4 className="text-base font-semibold text-primary mb-3">
+                    <h4 className="text-base font-semibold text-foreground mb-3">
                       {t(p, "admissionFeeTitle")}
                     </h4>
                     <div className="space-y-1.5 text-foreground/80 text-sm">
@@ -422,7 +423,7 @@ export default async function AcademicCenterPage({
               <div className="space-y-8">
                 {/* Student Form */}
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "studentFormTitle")}
                   </h3>
                   <p
@@ -435,13 +436,13 @@ export default async function AcademicCenterPage({
 
                 {/* Application Forms */}
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "studentApplicationTitle")}
                   </h3>
                   <p className="text-foreground/80 mb-2">
                     {t(p, "studentApplicationIntro")}
                   </p>
-                  <p className="text-primary mb-4">
+                  <p className="text-foreground/80 mb-4">
                     {t(p, "studentApplicationNote")}
                   </p>
                   <div className="space-y-3">
@@ -451,12 +452,13 @@ export default async function AcademicCenterPage({
                         href={form.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 rounded-lg border border-border bg-muted/30 p-3 hover:bg-primary/5 hover:border-primary/30 transition-colors"
+                        className="flex items-center gap-3 rounded-lg border border-border bg-muted/30 p-3.5 hover:bg-primary/5 hover:border-primary/30 transition-colors group"
                       >
                         <span className="text-primary">📄</span>
-                        <span className="text-foreground/80 text-sm">
+                        <span className="text-foreground/85 text-sm flex-1">
                           {form.label}
                         </span>
+                        <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary shrink-0 transition-colors" />
                       </a>
                     ))}
                   </div>
@@ -464,7 +466,7 @@ export default async function AcademicCenterPage({
 
                 {/* Training Contract */}
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "studentContractTitle")}
                   </h3>
                   <p
@@ -477,7 +479,7 @@ export default async function AcademicCenterPage({
 
                 {/* Research Scholarship */}
                 <div className="rounded-xl border border-primary/20 bg-primary/5 p-6">
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "scholarshipTitle")}
                   </h3>
                   <p

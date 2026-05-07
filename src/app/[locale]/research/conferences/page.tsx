@@ -70,12 +70,12 @@ export default async function ConferencesPage({
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 {t(dict, "menu.conferences")}
               </h2>
-              <p className="text-foreground/75 leading-[1.85] text-base mb-6">
+              <p className="text-foreground/85 leading-[1.85] text-base mb-6">
                 {bodyText}
               </p>
               {links.length > 0 && (
                 <div className="rounded-xl border border-primary/20 bg-primary/5 p-6 sm:p-8">
-                  <h3 className="text-lg font-semibold mb-4 text-primary tracking-tight">
+                  <h3 className="text-lg font-semibold mb-4 text-foreground tracking-tight">
                     {archiveTitle}
                   </h3>
                   <ul className="space-y-3">
@@ -235,10 +235,10 @@ export default async function ConferencesPage({
                           key={i}
                           className="hover:bg-muted/30 transition-colors"
                         >
-                          <td className="px-4 py-3 text-foreground/75">
+                          <td className="px-4 py-3 text-foreground/85">
                             {i + 1}
                           </td>
-                          <td className="px-4 py-3 text-foreground/75">
+                          <td className="px-4 py-3 text-foreground/85">
                             {position}
                           </td>
                           <td className="px-4 py-3 font-medium text-foreground">
@@ -256,7 +256,7 @@ export default async function ConferencesPage({
                 <h3 className="text-lg font-semibold text-foreground mb-4">
                   {isMn ? "Хэлэлцэх асуудал" : "Agenda"}
                 </h3>
-                <ol className="list-decimal list-outside pl-6 space-y-3 text-foreground/75 leading-[1.85] text-base">
+                <ol className="list-decimal list-outside pl-6 space-y-3 text-foreground/85 leading-[1.85] text-base">
                   {(isMn
                     ? [
                         'Докторын зэрэг горилогчийн эрдэм шинжилгээний ажлын сэдэв, аргачлал болон удирдагч батлах, явцын хэлэлцүүлэг, магистрын зэрэг горилогчийн эрдэм шинжилгээний ажлын жинхэнэ хамгаалалтын хэлэлцүүлэг зэргийг тус тус АШУҮИС-ийн "Төгсөлтийн сургалтын үйл ажиллагааг зохицуулах журам"-д заасны дагуу шийдвэрлэх',
@@ -294,7 +294,7 @@ export default async function ConferencesPage({
 
               {/* Regulation link */}
               <div className="mt-8 rounded-xl border border-primary/20 bg-primary/5 p-6">
-                <p className="text-foreground/75 text-base mb-2">
+                <p className="text-foreground/85 text-base mb-2">
                   {isMn
                     ? "Бүрэлдэхүүн сургуулийн Эрдмийн зөвлөлийн үйл ажиллагааны үлгэрчилсэн журамтай"
                     : "View the Model Regulation on the Activities of the Constituent School Academic Council"}
@@ -313,12 +313,47 @@ export default async function ConferencesPage({
 
             {/* CAJMS */}
             <section id="cajms" className="scroll-mt-24">
-              <h2 className="text-2xl font-bold text-foreground mb-6">
-                {t(dict, "menu.cajms")}
+              <h2 className="text-2xl font-bold text-foreground mb-2">
+                Central Asian Journal of Medical Sciences
               </h2>
-              <p className="text-foreground/75 leading-[1.85] text-base">
-                {comingSoon}
+              <p className="text-muted-foreground text-sm mb-6">
+                {t(dict, "cajms.subtitle")}
               </p>
+
+              <p className="text-foreground/85 leading-[1.85] text-base mb-6 whitespace-pre-line">
+                {t(dict, "cajms.body")}
+              </p>
+
+              <div className="rounded-xl border border-primary/20 bg-primary/5 p-6 space-y-4">
+                <div className="flex flex-col gap-1">
+                  <p className="text-sm text-foreground/60">
+                    {t(dict, "cajms.infoLabel")}
+                  </p>
+                  <a
+                    href="https://www.mongoliajol.info/index.php/CAJMS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base text-primary hover:text-primary-light underline underline-offset-2 inline-flex items-center gap-1.5 transition-colors font-medium"
+                  >
+                    {t(dict, "cajms.infoLink")}
+                    <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                  </a>
+                </div>
+                <div className="border-t border-primary/10 pt-4 flex flex-col gap-1">
+                  <p className="text-sm text-foreground/60">
+                    {t(dict, "cajms.submitLabel")}
+                  </p>
+                  <a
+                    href="https://www.cajms.mn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base text-primary hover:text-primary-light underline underline-offset-2 inline-flex items-center gap-1.5 transition-colors font-medium"
+                  >
+                    {t(dict, "cajms.submitLink")}
+                    <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                  </a>
+                </div>
+              </div>
             </section>
 
             {/* Эрүүл Мэндийн Шинжлэх Ухаан сэтгүүл */}
@@ -326,7 +361,7 @@ export default async function ConferencesPage({
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 {t(dict, "menu.healthScienceJournal")}
               </h2>
-              <p className="text-foreground/75 leading-[1.85] text-base">
+              <p className="text-foreground/85 leading-[1.85] text-base">
                 {comingSoon}
               </p>
             </section>
@@ -334,11 +369,27 @@ export default async function ConferencesPage({
             {/* Судалгааны ёс зүйн хяналтын хороо */}
             <section id="ethics-committee" className="scroll-mt-24">
               <h2 className="text-2xl font-bold text-foreground mb-6">
-                {t(dict, "menu.ethicsCommittee")}
+                {t(dict, "ethicsCommittee.fullTitle")}
               </h2>
-              <p className="text-foreground/75 leading-[1.85] text-base">
-                {comingSoon}
+
+              <p className="text-foreground/85 leading-[1.85] text-base mb-6 whitespace-pre-line">
+                {t(dict, "ethicsCommittee.body")}
               </p>
+
+              <div className="rounded-xl border border-primary/20 bg-primary/5 p-6">
+                <p className="text-sm text-foreground/60 mb-2">
+                  {t(dict, "ethicsCommittee.linkLabel")}
+                </p>
+                <a
+                  href="https://mnums.edu.mn/%d1%91%d1%81-%d0%b7%d2%af%d0%b9%d0%bd-%d1%85%d0%be%d1%80%d0%be%d0%be-%d2%af%d0%b9%d0%bb-%d0%b0%d0%b6%d0%b8%d0%bb%d0%bb%d0%b0%d0%b3%d0%b0%d0%b0-%d0%b6%d1%83%d1%80%d0%b0%d0%bc-%d1%85%d1%83%d0%b2%d0%b0/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-primary hover:text-primary-light underline underline-offset-2 inline-flex items-center gap-1.5 transition-colors font-medium"
+                >
+                  {t(dict, "ethicsCommittee.linkText")}
+                  <ExternalLink className="w-3.5 h-3.5 shrink-0" />
+                </a>
+              </div>
             </section>
           </main>
         </div>

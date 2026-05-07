@@ -31,7 +31,7 @@ export default function ContentPage({
             return (
               <p
                 key={key}
-                className="text-foreground/75 leading-[1.85] text-base"
+                className="text-foreground/85 leading-[1.85] text-base"
               >
                 {text}
               </p>
@@ -47,7 +47,7 @@ export default function ContentPage({
                   return (
                     <li
                       key={key}
-                      className="flex items-start gap-3 text-base text-foreground/75 leading-relaxed"
+                      className="flex items-start gap-3 text-base text-foreground/85 leading-relaxed"
                     >
                       <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary/60 shrink-0" />
                       <span>{text}</span>

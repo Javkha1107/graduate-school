@@ -175,41 +175,30 @@ export default function AdminNewsPage() {
 
       <div className="p-4 sm:p-8">
         {/* Stats */}
-        <div className="mb-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="mb-6 grid grid-cols-4 gap-3">
           {[
-            {
-              label: "Нийт",
-              value: news.length,
-              color: "from-blue-50 to-blue-100/50 border-blue-200/60",
-              text: "text-blue-600",
-            },
+            { label: "Нийт", value: news.length },
             {
               label: "Идэвхтэй",
               value: news.filter((n) => n.is_active).length,
-              color: "from-emerald-50 to-emerald-100/50 border-emerald-200/60",
-              text: "text-emerald-600",
             },
             {
               label: "Идэвхгүй",
               value: news.filter((n) => !n.is_active).length,
-              color: "from-amber-50 to-amber-100/50 border-amber-200/60",
-              text: "text-amber-600",
             },
             {
               label: "Ангилал",
               value: new Set(news.map((n) => n.category)).size,
-              color: "from-purple-50 to-purple-100/50 border-purple-200/60",
-              text: "text-purple-600",
             },
           ].map((stat) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`rounded-2xl border bg-linear-to-br ${stat.color} p-4`}
+              className="rounded-lg border border-border bg-card px-4 py-3"
             >
               <p className="text-xs text-muted-foreground">{stat.label}</p>
-              <p className={`mt-1 text-2xl font-bold ${stat.text}`}>
+              <p className="mt-0.5 text-lg font-semibold text-foreground">
                 {loading ? "—" : stat.value}
               </p>
             </motion.div>

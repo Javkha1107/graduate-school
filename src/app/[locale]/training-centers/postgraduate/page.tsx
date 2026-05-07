@@ -319,7 +319,7 @@ export default async function PostgraduateCenterPage({
               <div className="space-y-10">
                 {subspecializations.map((group, gi) => (
                   <div key={gi} className="space-y-3">
-                    <h3 className="text-base font-semibold text-primary">
+                    <h3 className="text-base font-semibold text-foreground">
                       {group.parent[lang]}
                     </h3>
                     <div className="overflow-x-auto rounded-lg overflow-hidden">

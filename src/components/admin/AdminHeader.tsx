@@ -33,7 +33,7 @@ export default function AdminHeader() {
                 <Link
                   key={tab.href}
                   href={tab.href}
-                  className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                  className={`flex items-center gap-2 rounded-lg px-3 py-2 font-medium transition-colors ${
                     active
                       ? "bg-primary/10 text-primary"
                       : "text-muted-foreground hover:bg-muted hover:text-foreground"

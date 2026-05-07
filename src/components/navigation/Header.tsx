@@ -101,7 +101,7 @@ export default function Header({ locale, dict }: HeaderProps) {
                 key={action.labelKey}
                 onClick={() => setContactOpen(true)}
                 className={cn(
-                  "hidden lg:inline-flex items-center rounded-lg px-3.5 py-2 text-xs font-semibold tracking-wide transition-all duration-300 cursor-pointer",
+                  "hidden lg:inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer",
                   isTransparent
                     ? "bg-white/10 text-white hover:bg-white/20 border border-white/20 backdrop-blur-sm"
                     : "bg-primary text-white hover:bg-primary-dark shadow-sm",
@@ -120,7 +120,7 @@ export default function Header({ locale, dict }: HeaderProps) {
                 target={action.external ? "_blank" : undefined}
                 rel={action.external ? "noopener noreferrer" : undefined}
                 className={cn(
-                  "hidden lg:inline-flex items-center rounded-lg px-3.5 py-2 text-xs font-semibold tracking-wide transition-all duration-300",
+                  "hidden lg:inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-semibold tracking-wide transition-all duration-300",
                   isTransparent
                     ? "bg-white/10 text-white hover:bg-white/20 border border-white/20 backdrop-blur-sm"
                     : action.external
@@ -136,7 +136,7 @@ export default function Header({ locale, dict }: HeaderProps) {
           <Link
             href={switchPath}
             className={cn(
-              "inline-flex items-center rounded-lg border px-2.5 py-2 text-xs font-bold tracking-wider transition-all duration-300 uppercase",
+              "inline-flex items-center rounded-lg border px-2.5 py-2 text-sm font-bold tracking-wider transition-all duration-300 uppercase",
               isTransparent
                 ? "border-white/20 text-white/90 hover:bg-white/10 hover:text-white hover:border-white/30"
                 : "border-border/60 text-muted-foreground hover:bg-muted hover:text-foreground",
@@ -278,7 +278,7 @@ function DesktopNavItem({
         target={item.external ? "_blank" : undefined}
         rel={item.external ? "noopener noreferrer" : undefined}
         className={cn(
-          "rounded-lg px-2.5 py-2 text-[13px] font-medium transition-all duration-300",
+          "rounded-lg px-2.5 py-2 text-[15px] font-medium transition-all duration-300",
           isTransparent
             ? "text-white/85 hover:text-white hover:bg-white/8"
             : "text-foreground/70 hover:text-foreground hover:bg-muted/60",
@@ -298,7 +298,7 @@ function DesktopNavItem({
     >
       <button
         className={cn(
-          "flex items-center gap-1 rounded-lg px-2.5 py-2 text-[13px] font-medium transition-all duration-300 cursor-pointer outline-none",
+          "flex items-center gap-1 rounded-lg px-2.5 py-2 text-[15px] font-medium transition-all duration-300 cursor-pointer outline-none",
           isTransparent
             ? "text-white/85 hover:text-white hover:bg-white/8"
             : "text-foreground/70 hover:text-foreground hover:bg-muted/60",
@@ -382,7 +382,7 @@ function DropdownItem({
       >
         <button
           className={cn(
-            "flex w-full items-center justify-between gap-2 px-4 py-2.5 text-sm transition-colors cursor-pointer",
+            "flex w-full items-center justify-between gap-2 px-4 py-2.5 text-[15px] transition-colors cursor-pointer",
             isTransparent
               ? subOpen
                 ? "bg-white/20 text-white"
@@ -424,7 +424,7 @@ function DropdownItem({
                   target={sub.external ? "_blank" : undefined}
                   rel={sub.external ? "noopener noreferrer" : undefined}
                   className={cn(
-                    "block px-4 py-2.5 text-sm transition-colors leading-snug",
+                    "block px-4 py-2.5 text-[15px] transition-colors leading-snug",
                     isTransparent
                       ? "text-white/80 hover:bg-white/10 hover:text-white"
                       : "text-foreground/70 hover:bg-muted/60 hover:text-foreground",
@@ -448,7 +448,7 @@ function DropdownItem({
       target={item.external ? "_blank" : undefined}
       rel={item.external ? "noopener noreferrer" : undefined}
       className={cn(
-        "block px-4 py-2.5 text-sm transition-colors leading-snug",
+        "block px-4 py-2.5 text-[15px] transition-colors leading-snug",
         isTransparent
           ? "text-white/80 hover:bg-white/10 hover:text-white"
           : "text-foreground/70 hover:bg-muted/60 hover:text-foreground",

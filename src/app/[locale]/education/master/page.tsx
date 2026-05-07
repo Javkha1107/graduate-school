@@ -26,7 +26,7 @@ export default async function MasterPage({
     <>
       <PageHero title={t(section, "title")} subtitle={t(section, "mainText")} />
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
-        <p className="text-foreground/75 leading-[1.85] text-[15px] mb-10">
+        <p className="text-foreground/85 leading-[1.85] text-base mb-10">
           {t(section, "mainText2")}
         </p>
 
@@ -98,7 +98,7 @@ export default async function MasterPage({
                 return (
                   <li
                     key={key}
-                    className="flex items-start gap-3 text-sm text-foreground/75 leading-relaxed"
+                    className="flex items-start gap-3 text-base text-foreground/85 leading-relaxed"
                   >
                     <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary/60 shrink-0" />
                     <span>{text}</span>

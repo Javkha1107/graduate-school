@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 interface Section {
   id: string;
   label: string;
+  disabled?: boolean;
 }
 
 interface PageSidebarProps {
@@ -77,15 +78,18 @@ export default function PageSidebar({
           {onThisPageLabel}
         </p>
         <nav className="space-y-1">
-          {sections.map(({ id, label }, index) => (
+          {sections.map(({ id, label, disabled }, index) => (
             <button
               key={id}
-              onClick={() => scrollToSection(id, index === 0)}
+              onClick={() => !disabled && scrollToSection(id, index === 0)}
+              disabled={disabled}
               className={cn(
-                "block w-full text-left px-3 py-2 text-sm rounded-lg transition-colors cursor-pointer",
-                activeSection === id
-                  ? "bg-primary/10 text-primary font-medium"
-                  : "text-foreground/60 hover:text-foreground hover:bg-muted/60",
+                "block w-full text-left px-3 py-2 text-sm rounded-lg transition-colors",
+                disabled
+                  ? "text-foreground/25 cursor-not-allowed"
+                  : activeSection === id
+                    ? "bg-primary/10 text-primary font-medium cursor-pointer"
+                    : "text-foreground/60 hover:text-primary/80 hover:bg-primary/10 cursor-pointer",
               )}
             >
               {label}

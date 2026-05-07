@@ -36,7 +36,7 @@ export default async function MasterOnlinePage({
           );
         })}
 
-        <h2 className="text-xl font-bold mt-8 mb-4">
+        <h2 className="text-2xl font-bold mt-8 mb-4">
           {locale === "mn" ? "Хөтөлбөрүүд" : "Programmes"}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
@@ -56,7 +56,7 @@ export default async function MasterOnlinePage({
           )}
         </div>
 
-        <h2 className="text-xl font-bold mt-8 mb-4">
+        <h2 className="text-2xl font-bold mt-8 mb-4">
           {t(section, "group") || "Regulations"}
         </h2>
         <ul className="space-y-3">

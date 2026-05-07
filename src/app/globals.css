@@ -216,7 +216,7 @@ body {
   margin-bottom: 1rem;
   line-height: 1.8;
   color: var(--foreground);
-  opacity: 0.85;
+  opacity: 0.9;
 }
 .prose ul {
   list-style: disc;

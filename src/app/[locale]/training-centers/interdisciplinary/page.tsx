@@ -247,7 +247,7 @@ export default async function InterdisciplinaryCenterPage({
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-2">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
                     {t(p, "goal")}
                   </h3>
                   <p className="text-foreground/80 leading-[1.85]">
@@ -256,7 +256,7 @@ export default async function InterdisciplinaryCenterPage({
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "activities")}
                   </h3>
                   <ul className="list-disc pl-5 space-y-1.5 text-foreground/80 leading-[1.85]">
@@ -268,7 +268,7 @@ export default async function InterdisciplinaryCenterPage({
 
                 {/* Staff cards */}
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
                     {t(p, "staff")}
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -423,7 +423,7 @@ export default async function InterdisciplinaryCenterPage({
               <div className="space-y-10">
                 {postdocResearch.map((yearData) => (
                   <div key={yearData.year} className="space-y-6">
-                    <h3 className="text-xl font-bold text-primary">
+                    <h3 className="text-2xl font-bold text-primary">
                       {yearData.year} {lang === "mn" ? "он" : ""}
                     </h3>
                     {yearData.researchers.length > 0 ? (
@@ -437,7 +437,7 @@ export default async function InterdisciplinaryCenterPage({
                               {researcher.name[lang]}
                             </p>
                             <div className="mb-4">
-                              <p className="text-sm font-semibold text-primary mb-1">
+                              <p className="text-sm font-semibold text-foreground mb-1">
                                 {t(p, "projectTopic")}:
                               </p>
                               <p className="text-foreground/80 leading-relaxed">
@@ -452,7 +452,7 @@ export default async function InterdisciplinaryCenterPage({
                             </div>
                             {researcher.publications.length > 0 && (
                               <div>
-                                <p className="text-sm font-semibold text-primary mb-2">
+                                <p className="text-sm font-semibold text-foreground mb-2">
                                   {t(p, "projectPublications")}:
                                 </p>
                                 <ol className="list-decimal pl-5 space-y-3 text-sm text-foreground/80">

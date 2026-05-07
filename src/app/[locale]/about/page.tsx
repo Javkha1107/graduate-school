@@ -30,7 +30,7 @@ export default async function AboutPage({
             return val !== key ? (
               <p
                 key={key}
-                className="text-foreground/75 leading-[1.85] text-[15px]"
+                className="text-foreground/85 leading-[1.85] text-base"
               >
                 {val}
               </p>
@@ -46,7 +46,7 @@ export default async function AboutPage({
             {Object.values(departments).map((val, i) => (
               <li
                 key={i}
-                className="flex items-start gap-3 text-sm text-foreground/75 leading-relaxed"
+                className="flex items-start gap-3 text-base text-foreground/85 leading-relaxed"
               >
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary/60 shrink-0" />
                 <span>{String(val)}</span>
@@ -55,7 +55,7 @@ export default async function AboutPage({
           </ul>
         </div>
 
-        <p className="text-foreground/75 leading-[1.85] text-[15px]">
+        <p className="text-foreground/85 leading-[1.85] text-base">
           {t(section, "text10")}
         </p>
       </div>

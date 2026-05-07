@@ -82,7 +82,7 @@ export default async function StructurePage({
               <div className="mb-8">
                 <GraduateSchoolScheme texts={schemeTexts} />
               </div>
-              <div className="text-foreground/75 leading-[1.85] text-base text-justify space-y-4">
+              <div className="text-foreground/85 leading-[1.85] text-base text-justify space-y-4">
                 {locale === "mn" ? (
                   <p className="indent-5">
                     Ахисан түвшний сургууль нь төгсөлтийн болон төгсөлтийн

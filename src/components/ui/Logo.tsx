@@ -17,7 +17,8 @@ export default function Logo({
 }: LogoProps) {
   const [error, setError] = useState(false);
 
-  const logoSrc = /* locale === "en" ? "/newLogo_eng.png" : */ "/newLogo.png";
+  const logoSrc = "/newLogo.png";
+  // locale === "en" ? "/cropped_english_logo.jpg" :
 
   if (error) {
     return (
@@ -57,7 +58,7 @@ export default function Logo({
         src={logoSrc}
         alt="MNUMS Graduate School"
         fill
-        className={`object-contain object-left transition-all duration-300 `}
+        className={`object-contain object-left transition-all duration-300`}
         sizes={`${Math.round(height * 3)}px`}
         onError={() => setError(true)}
       />

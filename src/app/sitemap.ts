@@ -5,11 +5,51 @@ const BASE_URL =
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["mn", "en"];
+
   const pages = [
+    // Home
     "",
-    "/news",
+    // Introduction
+    "/introduction/greeting",
+    "/introduction/history",
+    "/introduction/structure",
+    "/introduction/academic-council",
+    "/introduction/program-committee",
+    "/introduction/faculty",
+    // Education
+    "/education/master",
+    "/education/master-online",
+    "/education/doctoral",
+    "/education/postdoctoral",
+    // Research
+    "/research/projects",
+    "/research/publications",
+    "/research/institutes",
+    "/research/conferences",
+    "/research/journal-club",
+    "/research/ethics-committee",
+    "/research/cajms",
+    // Admission
     "/admission",
+    "/admission/registration",
+    "/admission/tuition",
+    // Collaboration
+    "/collaboration",
+    "/collaboration/oita",
+    "/collaboration/tokushima",
+    // Training Centers
+    "/training-centers/academic",
+    "/training-centers/interdisciplinary",
+    "/training-centers/online",
+    "/training-centers/postgraduate",
+    // News
+    "/news",
+    "/news/forms",
+    // Rules
+    "/rules",
+    // Contact
     "/contact",
+    // About (legacy routes)
     "/about",
     "/about/greeting",
     "/about/academic-council",
@@ -17,15 +57,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about/health-research",
     "/about/e-learning",
     "/about/medical-law",
-    "/education/master",
-    "/education/master-online",
-    "/education/doctoral",
-    "/education/postdoctoral",
-    "/research/projects",
-    "/research/publications",
-    "/research/institutes",
-    "/research/conferences",
-    "/research/journal-club",
+    "/about/collaboration",
+    "/about/oita",
+    "/about/kyushu",
+    "/about/lumiere",
   ];
 
   const entries: MetadataRoute.Sitemap = [];
@@ -36,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${BASE_URL}/${locale}${page}`,
         lastModified: new Date(),
         changeFrequency: page === "" ? "daily" : "weekly",
-        priority: page === "" ? 1 : 0.7,
+        priority: page === "" ? 1 : page === "/news" ? 0.9 : 0.7,
       });
     }
   }

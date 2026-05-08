@@ -3,13 +3,21 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import Logo from "@/components/ui/Logo";
-import { LogOut, Newspaper, Users, Settings, Globe } from "lucide-react";
+import {
+  LogOut,
+  Newspaper,
+  Users,
+  Settings,
+  Globe,
+  BookOpen,
+} from "lucide-react";
 
 const tabs = [
   { href: "/admin/news", label: "Мэдээ", icon: Newspaper },
   { href: "/admin/faculty", label: "Багш", icon: Users },
   { href: "/admin/collaborations", label: "Гадаад харилцаа", icon: Globe },
   { href: "/admin/content", label: "Бусад", icon: Settings },
+  { href: "/admin/manual", label: "Гарын авлага", icon: BookOpen },
 ];
 
 export default function AdminHeader() {

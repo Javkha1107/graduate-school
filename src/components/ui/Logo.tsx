@@ -14,11 +14,11 @@ export default function Logo({
   height = 48,
   className = "",
   variant = "default",
+  locale,
 }: LogoProps) {
   const [error, setError] = useState(false);
 
-  const logoSrc = "/newLogo.png";
-  // locale === "en" ? "/cropped_english_logo.jpg" :
+  const logoSrc = locale === "en" ? "/english-logo.png" : "/newLogo.png";
 
   if (error) {
     return (
